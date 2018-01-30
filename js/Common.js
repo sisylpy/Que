@@ -65,9 +65,9 @@ function createDiv(item,divWidth,divHeight){
     descDiv.style.height = divHeight + 'px';
     descDiv.style.backgroundColor = '#3b6caa';
     descDiv.style.position = 'absolute';
-    descDiv.style.display = 'none';
-    descDiv.style.left = '5px';
+    descDiv.style.left = '0px';
     descDiv.style.top= seatY + 'px';
+    descDiv.style.display = 'none';
     descDiv.setAttribute("class","underLine");
     return descDiv;
 }

@@ -111,14 +111,14 @@ for (i = 0; i < items.length; i++) {
                             }
                         }
                         //鼠标离开左侧下拉菜单，隐藏对应右侧内容
-                        dropDownMenuLists[i].onmouseleave = function () {
-                            this.style.color = orignalColor;
-                            this.style.backgroundColor = '';
-                            if (0 < i < dropDownMenuLists.length) {
-                                drownMenuRightDiv[i].style.display = 'none';
-                            }
-
-                        }
+                        // dropDownMenuLists[i].onmouseleave = function () {
+                        //     this.style.color = orignalColor;
+                        //     this.style.backgroundColor = '';
+                        //     if (0 < i < dropDownMenuLists.length) {
+                        //         drownMenuRightDiv[i].style.display = 'none';
+                        //     }
+                        //
+                        // }
 
                     }
 
@@ -141,11 +141,6 @@ for (i = 0; i < items.length; i++) {
 
 
     }
-}
-
-
-
-
 
 
 

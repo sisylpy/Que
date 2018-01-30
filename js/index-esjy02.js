@@ -1,7 +1,8 @@
 //一，导航
 //0，获取windowload所需全部元素
-var items = document.getElementsByClassName('esjy-mh-mainitem'); //导航菜单
-var hiddenSmall = document.getElementById('esjy-megamenu-sections');//获取下拉菜单
+// var items = document.getElementsByClassName('esjy-mh-mainitem'); //导航菜单
+var items = $('.esjy-mh-mainitem');
+var hiddenSmall = document.getElementById('esjy-megamenu-sections');//获取下拉菜单的id
 var dropDownMenus = hiddenSmall.children; //下拉菜单
 hiddenSmall.style.transition = 'all, 0.5s';//下拉菜单的下滑动画
 var orignalColor = '#3e3e3e';
@@ -9,9 +10,7 @@ var orignalBackgroundColor = '#fff';
 var onmouseColor = '#4ff';
 var onmouseBackgroundColor = '#3e3e3e';
 var i = 0;//导航菜单循环变量
-var itemdatalink_id  //导航菜单和下拉菜单的链接属性
-var dropMune = null;
-var a = null;
+var itemdatalink_id; //导航菜单和下拉菜单的链接属性
 
 
 
@@ -41,12 +40,9 @@ for (i = 0; i < items.length; i++) {
             //2.1.3.1,显示鼠标划过子菜单
             for (var i = 0; i < dropDownMenus.length; i++) {
                 dropDownMenus[i].style.display = 'none';
-                var dit = dropDownMenus[i].getAttribute('data-linkid');
-                if (itemdatalink_id === dit) {
-                    dropDownMenus[i].style.display = 'block';
-                    var ddropMune = dropDownMenus[i];
-                    dropMune = ddropMune.getElementsByClassName('esjy-dropdown-menu');
-                    a = 10;
+                var dropDownid = dropDownMenus[i].getAttribute('data-linkid');
+                if (itemdatalink_id === dropDownid) {
+                    dropDownMenus[i].style.display = 'block';//让鼠标划过所对应的下拉菜单显示
 
                 }
                 //2.1.3.2, 获取鼠标划过下拉菜单的右侧
@@ -57,9 +53,12 @@ for (i = 0; i < items.length; i++) {
                     drownMenuRightDiv[j].style.display = 'none';
                 }drownMenuRightDiv[0].style.display = 'block';
             }
+
             //2.1.4 显示并移动下拉菜单
             hiddenSmall.style.display = 'block';
             hiddenSmall.style.transform = 'translateY(' + hiddenSmall.offsetHeight + 'px)';
+            // hiddenSmall.style.transform = 'translateY(494px)';
+
         }
     }
     //2.2 鼠标离开导航菜单
@@ -67,7 +66,8 @@ for (i = 0; i < items.length; i++) {
         this.firstChild.style.transform = 'translateY(0px)';
         this.firstChild.style.webkitTransform = 'translateY(0px)';
         this.firstChild.style.display = 'none';
-        hiddenSmall.style.transform = 'translateY(0px)';
+        hiddenSmall.style.transform = 'translateY(-' + hiddenSmall.offsetHeight + 'px)';
+        // hiddenSmall.style.transform = 'translateY(-50px)';
     }
 }
 
@@ -76,7 +76,6 @@ for (i = 0; i < items.length; i++) {
 
 // var  ddd = dropMune.children;
 // b = a+2;
-console.log('sun:'+ a);
 
 
 
