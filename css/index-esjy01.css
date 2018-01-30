@@ -1,0 +1,438 @@
+@charset "utf-8";
+@media (min-width: 580px) {
+  html {
+    font-size: 12.37333333px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 13.65333333px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 15.36px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 960px) {
+  html {
+    font-size: 20.48px;
+  }
+}
+@media (min-width: 1080px) {
+  html {
+    font-size: 23.04px;
+  }
+}
+@media (min-width: 1280px) {
+  html {
+    font-size: 27.30666667px;
+  }
+}
+@media (min-width: 1480px) {
+  html {
+    font-size: 31.57333333px;
+  }
+}
+/*reset css*/
+*,
+::before,
+::after {
+  /*选中所有的元素，和伪元素*/
+  margin: 0;
+  padding: 0;
+  /*针对移动端*/
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /*主流移动端浏览器兼容*/
+  /*点击高亮效果清除*/
+  -webkit-tap-highlight-color: transparent;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #333;
+}
+input,
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  /*清除移动端输入框的特有样式*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/*common css 公用样式*/
+.f_left {
+  float: left;
+}
+.f_right {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.m_l10 {
+  margin-left: 10px;
+}
+.m_r10 {
+  margin-right: 10px;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: bisque;
+}
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: none;
+}
+a {
+  color: #323232;
+}
+.esjy-mhtype-full {
+  position: fixed;
+  height: 3.5rem;
+  width: 100%;
+  z-index: 2;
+}
+#ibm-universal-nav {
+  height: 3.5rem;
+  width: 100%;
+  clear: both;
+}
+nav {
+  height: 3.5rem;
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  border-bottom: 1px solid gray;
+  z-index: 9;
+}
+nav .esjy-home {
+  height: 3.5rem;
+  width: 8rem;
+  float: left;
+  position: relative;
+}
+nav .esjy-home a {
+  height: 3.5rem;
+  width: 8rem;
+}
+nav .esjy-home a img {
+  height: 3.5rem;
+  line-height: 1.75rem;
+  width: 8rem;
+  padding: 0.5rem 1.5rem;
+}
+nav .esjy-masthead-categories {
+  height: 3.5rem;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+nav .esjy-masthead-categories li {
+  float: left;
+  padding-right: 1.2rem;
+  position: relative;
+}
+nav .esjy-masthead-categories li a {
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 1rem;
+  text-underline-position: below;
+  display: block;
+  position: relative;
+}
+nav .ibm-hidden {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  float: left;
+}
+nav .esjy-masthead-rightside {
+  float: right;
+  height: 3.5rem;
+  width: 30% ;
+  position: relative;
+}
+nav .esjy-masthead-rightside p {
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  float: left;
+  width: 30%;
+  border: 1px solid gray;
+}
+nav .esjy-masthead-rightside .esjy-masthead-iconsonly {
+  float: left;
+  height: 3.5rem;
+  width: 70%;
+  background-color: green;
+}
+nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin {
+  float: left;
+  height: 3.5rem;
+  width: 50%;
+}
+nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin button {
+  height: 3.5rem;
+  width: 50%;
+}
+nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin .esjy-dropdown-menu {
+  display: none;
+  width: 10rem;
+  height: 20rem;
+  background-color: paleturquoise;
+}
+nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu {
+  float: left;
+  height: 3.5rem;
+  width: 50%;
+}
+nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu button {
+  height: 3.5rem;
+  width: 50%;
+}
+.esjy-hidden-small {
+  width: 100%;
+  height: 444px;
+  top: -444px;
+  position: relative;
+  z-index: 5;
+  background-color: black;
+}
+.esjy-megamenu-section {
+  width: 100%;
+  height: 444px;
+  background-color: greenyellow;
+}
+.esjy-megamenu-section .esjy-columns {
+  width: 100%;
+  height: 100%;
+  background: paleturquoise;
+  position: relative;
+  overflow: hidden;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 {
+  width: 30%;
+  height: 100%;
+  background-color: gray;
+  float: left;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul {
+  width: 100%;
+  height: 100%;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  border: 1px solid green;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li a {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core {
+  float: left;
+  width: 70%;
+  height: 100%;
+  position: relative;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel {
+  width: 100%;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h3 {
+  width: 100%;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h3 a {
+  width: 100%;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns {
+  width: 100%;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 {
+  float: left;
+  width: 50%;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 ul {
+  width: 100%;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 ul li {
+  width: 100%;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 ul li a {
+  width: 100%;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 p {
+  width: 100%;
+}
+.esjy-content-wrapper {
+  width: 100%;
+  position: relative;
+  top: 3.5rem;
+  float: left;
+  z-index: 1;
+}
+header {
+  width: 100%;
+  height: 0;
+}
+main {
+  width: 100%;
+  position: relative;
+}
+main .esjy-content-main {
+  width: 100%;
+  position: relative;
+  z-index: 12;
+}
+main .esjy-content-main .carousel {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+}
+main .esjy-content-main .carousel .carousel-indicators {
+  position: absolute;
+  left: 50%;
+  width: 60%;
+  padding-left: 0;
+  padding-top: 1rem;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+  bottom: 0;
+  height: 3rem;
+}
+main .esjy-content-main .carousel .carousel-indicators li {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  border: 1px solid #3b6caa;
+  border-radius: 12px;
+  margin-left: 10px;
+}
+main .esjy-content-main .carousel .carousel-indicators .active {
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  margin: 1px;
+  margin-left: 10px;
+  background-color: #3b6caa;
+}
+main .esjy-content-main .carousel .carousel-inner .item {
+  width: 100%;
+  height: 25rem;
+}
+main .esjy-content-main .carousel .carousel-inner .item img {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+}
+main .esjy-content-main .carousel .carousel-inner .item video {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+}
+main .esjy-content-main .esjy-columns {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+main .esjy-content-main .esjy-columns .esjy-col-1-1 {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+main .esjy-content-main .esjy-columns .esjy-col-1-1 h1 {
+  text-align: center;
+}
+main .esjy-content-main .esjy-columns .esjy-col-1-1 .particles-part {
+  float: left;
+  position: absolute;
+  background-color: #3b6caa;
+}
+main .esjy-content-main .esjy-columns .esjy-col-1-1 .particles-part canvas {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+main .esjy-content-main .esjy-columns .esjy-col-1-1 .esjy-columns {
+  float: left;
+  position: relative;
+}
+main .esjy-content-main .esjy-columns .esjy-col-1-1 .esjy-columns .esjy-alternate-background {
+  float: left;
+  position: relative;
+  color: white;
+}
+main .esjy-content-main .esjy-columns .esjy-col-1-1 .esjy-columns .esjy-alternate-background h2 {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+main .esjy-content-main .esjy-columns .esjy-col-1-1 .esjy-columns .esjy-alternate-background p {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.ibm-padding-bottom-r2 {
+  width: 100%;
+  height: 150px;
+  float: left;
+}
+.ibm-padding-bottom-r2 .esjy-center {
+  width: 100%;
+}
+.ibm-padding-bottom-r2 .esjy-center p {
+  width: 100%;
+}
+.ibm-padding-bottom-r2 .esjy-center p a {
+  width: 100%;
+  display: block;
+  float: left;
+  color: white;
+  background-color: #3b6caa;
+  line-height: 5rem;
+  text-align: center;
+}
+.thumbnail {
+  height: 30rem;
+}
+.sThumbnail {
+  height: 20rem;
+}

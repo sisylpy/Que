@@ -1,0 +1,451 @@
+@charset "utf-8";
+@import "../myless/main";
+
+
+//0，导航总头部
+.esjy-mhtype-full {
+  position: fixed;
+  height: @navHeight;
+  width: 100%;
+  z-index: 2;
+}
+#ibm-universal-nav {
+  height: @navHeight;
+  width: 100%;
+  clear: both;
+}
+
+//1，导航栏
+nav {
+  height: @navHeight;
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  border-bottom: 1px solid gray;
+  z-index: 9;
+
+  //1.1,企业logo位置
+  .esjy-home {
+    height: @homeSizeHeight;
+    width: @homeSizeWidth;
+    float: left;
+    position: relative;
+    a {
+      height: @homeSizeHeight;
+      width: @homeSizeWidth;
+      img {
+        height: @homeSizeHeight;
+        line-height: @homeSizeHeight * 0.5;
+        width: @homeSizeWidth;
+        padding: 0.5rem 1.5rem;
+      }
+    }
+  }
+  //1.2,左边按钮
+  .esjy-masthead-categories{
+    height:@navHeight;
+    width: 50%;
+    float: left;
+    position: relative;
+
+    li{
+      float: left;
+      padding-right: 1.2rem;
+      position: relative;
+
+      a {
+        line-height: @navHeight;
+        text-align: center;
+        font-size: 1rem;
+        text-underline-position: below;
+        display: block;
+        position: relative;
+        span {
+
+        }
+      }
+    }
+  }
+
+ // 1.3,隐藏地图（ibm）
+ .ibm-hidden {
+   visibility: hidden;
+   height: 0;
+   width: 0;
+   float: left;
+ }
+  //1.4, 导航栏右侧
+  .esjy-masthead-rightside {
+    float: right;
+    height: @navHeight;
+    width: 30% ;
+    //background-color: yellow;
+    position: relative;
+    //1.4.1,按钮'市场'
+    p {
+      height: @navHeight;
+      line-height: @navHeight;
+      text-align: center;
+      float: left;
+      width: 30%;
+      border: 1px solid gray;
+    }
+    //1.4.2,搜索
+    //.search {
+    //}
+
+    //1.4.3,icon式按钮部分
+    .esjy-masthead-iconsonly {
+      float: left;
+      height: @navHeight;
+      width: 70%;
+      background-color: green;
+
+      //1.4.3.1,用户icon式按钮
+      .esjy-masthead-item-signin {
+        float: left;
+        height: @navHeight;
+        width: 50%;
+        //1.4.3.1.1,用户按钮
+        button {
+          height: @navHeight;
+          width: 50%;
+        }
+        //1.4.3.1.2,用户下拉菜单
+        .esjy-dropdown-menu {
+          display: none;
+          width: 10rem;
+          height: 20rem;
+          background-color: paleturquoise;
+        }
+      }
+      //1.4.3.2 主菜单式按钮
+      .ibm-masthead-item-menu {
+        float: left;
+        height: @navHeight;
+        width: 50%;
+        //1.4.3.2.1,主菜单按钮
+        button{
+          height: @navHeight;
+          width: 50%;
+
+        }
+      }
+    }
+  }
+}
+
+
+
+
+//2，隐藏的下拉菜单
+.esjy-hidden-small {
+  width: 100%;
+  height: @drownMenuHeight;
+  top: -@drownMenuHeight;
+  position: relative;
+  z-index: 5;
+  background-color: black;
+
+}
+
+
+//2.1,下拉菜单
+.esjy-megamenu-section {
+  width: 100%;
+  height: @drownMenuHeight;
+  background-color: greenyellow;
+
+
+
+
+  //下拉菜单内容
+  .esjy-columns {
+    width: 100%;
+    height: 100%;
+    background: paleturquoise;
+    position: relative;
+    overflow: hidden;
+
+
+    //左侧二级菜单
+    .esjy-background-neutral-white-30 {
+      width: 30%;
+      height: 100%;
+      background-color: gray;
+      float: left;
+      ul{
+        width: 100%;
+        height: 100%;
+        //background-color: red;
+        li{
+          width: 100%;
+          height: 2rem;
+          //background-color: pink;
+          line-height: 2rem;
+          text-align: center;
+          border: 1px solid green;
+          a {
+            display: block;
+            width: 100%;
+            height: 2rem;
+            line-height: 2rem;
+            text-align: center;
+          }
+        }
+      }
+
+    }
+    //  左侧二级菜单结束
+
+  //  右侧下拉菜单esjy-background-white-core
+    .esjy-background-white-core {
+      float: left;
+      width: 70%;
+      height: 100%;
+      //background-color: rebeccapurple;
+      position: relative;
+
+      .esjy-megapanel {
+        width: 100%;
+        h3 {
+          width: 100%;
+          a {
+            width: 100%;
+          }
+        }
+        .esjy-columns{
+          width: 100%;
+          .ibm-col-6-2 {
+            float: left;
+            width: 50%;
+            ul{
+              width: 100%;
+              li{
+                width:100%;
+                a{
+                  width:100%;
+
+                }
+              }
+            }
+            p{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  //下拉菜单内容结束
+
+}
+
+
+//主容器外包裹（主体最外层）
+.esjy-content-wrapper {
+  width: 100%;
+  //height: 1000px;
+  position: relative;
+  top: @navHeight;
+  float: left;
+  z-index: 1;
+
+}
+
+//ibm头部
+  header {
+    width: 100%;
+    height: 0;
+  }
+
+//主容器
+main {
+  width: 100%;
+  position: relative;
+  //第二大主容器
+  .esjy-content-main {
+    width: 100%;
+    position: relative;
+    z-index: 12;
+
+
+    //轮播图
+    .carousel {
+      width: 100%;
+      height: @mainCarouselHeight;
+      position: relative;
+
+
+      //轮播图指示器
+      .carousel-indicators {
+        position: absolute;
+        left: 50%;
+        width: 60%;
+        padding-left: 0;
+        padding-top: 1rem;
+        margin-left: -30%;
+        text-align: center;
+        list-style: none;
+        bottom: 0;
+        height: @mainCarouseContrloHeight;
+        //z-index: 15;
+        li {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          margin: 1px;
+          text-indent: -999px;
+          cursor: pointer;
+          border: 1px solid @esjyColor;
+          border-radius: 12px;
+          margin-left: 10px;
+
+        }
+        .active {
+          width: 13px;
+          height: 13px;
+          border-radius: 13px;
+          margin: 1px;
+          margin-left: 10px;
+          background-color: @esjyColor;
+        }
+      }
+
+      //轮播图内部
+      .carousel-inner {
+        //媒体和文字
+        .item {
+          width: 100%;
+          height: @mainCarouselHeight;
+
+          //媒体图片
+          img {
+            width: 100%;
+            height: @mainCarouselHeight;
+            position: relative;
+
+
+          }
+          //媒体视频
+          video {
+            position: relative;
+            width: 100%;
+            height: @mainCarouselHeight;
+          }
+
+          //文字说明
+          .carousel-caption {
+
+          }
+
+        }
+      }
+
+      .carousel-btn {
+        //width: 100%;
+        //height: 100%;
+        //position: relative;
+        //background-color: green;
+        //margin-left: 40%;
+
+      }
+      //轮播图——结束
+
+    }
+
+    //主体部分
+    .esjy-columns {
+      width: 100%;
+      position: relative;
+      float: left;
+
+      .esjy-col-1-1 {
+        width: 100%;
+        position: relative;
+        float: left;
+
+        h1{
+          text-align: center;
+        }
+
+        .particles-part {
+          float: left;
+          position: absolute;
+          background-color: @esjyColor;
+          canvas {
+            width: 100%;
+            height: 100%;
+            float: left;
+          }
+
+        }
+        .esjy-columns {
+          float: left;
+          position: relative;
+
+          .esjy-alternate-background {
+            float: left;
+            position: relative;
+            color: white;
+            h2 {
+              float: left;
+              width: 100%;
+              text-align: center;
+            }
+            p{
+              float: left;
+              width: 100%;
+              text-align: center;
+
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.ibm-padding-bottom-r2 {
+  width: 100%;
+  height: 150px;
+
+
+  float: left;
+  .esjy-center {
+    width: 100%;
+
+    p{
+      width: 100%;
+
+
+      a{
+        width: 100%;
+        display: block;
+        float: left;
+        color: white;
+        background-color: #3b6caa;
+        line-height: 5rem;
+        text-align: center;
+
+      }
+    }
+
+  }
+}
+.thumbnail{
+  height: 30rem;
+}
+
+.sThumbnail {
+  height: 20rem;
+}
+
+
+
+
+
+

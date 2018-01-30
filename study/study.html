@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Title</title>
+
+    <style>
+        img {
+            /*float: right;*/
+            float: left;
+        }
+
+        p {
+           /*clear: both;*/
+            /*float: left;*/
+        }
+
+        /*h1 > p {*/
+            /*color: red;*/
+        /*}*/
+
+        /*p:hover {*/
+            /*color: purple;*/
+        /*}*/
+        /*p:first-child {*/
+            /*color: green;*/
+        /*}*/
+        /*p:last-child {*/
+            /*color: greenyellow;*/
+        /*}*/
+
+        h2:before {
+            color: greenyellow;
+        }
+        h1:first-letter {
+            color: yellow;
+        }
+        h1:after {
+            content: 'TTTTT';
+            color: purple;
+        }
+        p:after {
+            content: 'bbbb';
+            color: aqua;
+        }
+
+        .news::before {
+            content: 'aafbn';
+
+        }
+
+        .xp {
+            /*background-color: blue;*/
+            background-image: url("../images/b1.jpg" ) ;
+
+            margin-left: 50px;
+            padding-left: 50px;
+            border: 1px solid red;
+
+        }
+
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position:absolute;
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<!--<div  id= 'box' style="height: 200px; width: 200px; background-color: green">aaa</div>-->
+
+<!--<div class="news">-->
+    <!--<img  src="../images/00.jpg" height="445" width="500"/>-->
+    <!--<h1>kdfjka-->
+        <!--<p class="xp">xiao p-->
+            <!--&lt;!&ndash;<h3>h3</h3>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h2>h2h2h2</h2>&ndash;&gt;-->
+        <!--<span>dkfdjk</span>-->
+        <!--&lt;!&ndash;<div>dkfjakfa</div>&ndash;&gt;-->
+            <!--<p> nei bp</p>-->
+        <!--</p>-->
+        <!--<p> diergemmmm</p>-->
+    <!--</h1>-->
+    <!--<p >B内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容-->
+        <!--内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容-->
+        <!--内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容-->
+        <!--内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容-->
+        <!--内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容-->
+        <!--1111111111111111111-->
+        <!--0000000000000000-->
+    <!--</p>-->
+    <!--<p>disnage </p>-->
+
+    <!---->
+<!--</div>-->
+
+
+<input type="button" value="donghua " id="btn">
+<div id="box"></div>
+
+</body>
+
+
+<script>
+
+    // var dom = document.querySelector('div');
+    //
+    // dom.addEventListener('touchstart',function (e) {
+    //     console.log(e);
+    // })
+    //
+    // dom.addEventListener('touchmove',function (e) {
+    //     console.log(e);
+    // })
+    //
+    // dom.addEventListener('touchend',function (e) {
+    //     console.log(e);
+    // })
+
+//
+
+    var btn = document.getElementById('btn');
+    var box = document.getElementById('box');
+
+    btn.onclick = function () {
+
+        setInterval(function () {
+
+
+            var current = box.offsetLeft;
+            current += 5;
+            box.style.left = current + 'px';
+
+        },30)
+
+    }
+
+
+</script>
+</html>

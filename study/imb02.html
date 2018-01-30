@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="//www.ibm.com/favicon.ico">
+    <link rel="canonical" href="https://www.ibm.com/analytics/cn/zh/">
+    <title>大数据分析 - 大数据分析软件 - 数据挖掘、数据可视化、行业大数据分析案例和解决方案 - IBM - 中国</title>
+    <meta name="description" content="IBM 大数据分析为您提供各行业大数据分析、数据挖掘、数据可视化成功案例和解决方案及大数据分析软件明星产品。想了解更多关于全新 IBM Analytics - 大数据分析等信息，就到 IBM 大数据分析频道" />
+    <meta name="keywords" content="大数据分析,IBM 大数据分析,数据分析,IBM 数据分析,大数据,数据分析软件,大数据分析软件,数据分析案例,大数据分析案例,数据挖掘,数据可视化,行业数据分析,大数据分析解决方案" />
+    <meta name="dcterms.date" content="2017-11-03">
+    <meta name="dcterms.rights" content="Copyright IBM Corp. 2017">
+    <meta name="geo.country" content="CN">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- my social content -->
+    <meta property="og:url" content="https://www.ibm.com/analytics/cn/zh/" />
+    <meta property="og:title" content="大数据分析 - 大数据分析软件 - 数据挖掘、数据可视化、行业大数据分析案例和解决方案 - IBM - 中国" />
+    <meta property="og:description" content="IBM 大数据分析为您提供各行业大数据分析、数据挖掘、数据可视化成功案例和解决方案及大数据分析软件明星产品。想了解更多关于全新 IBM Analytics - 大数据分析等信息，就到 IBM 大数据分析频道" />
+    <meta property="og:site_name" content="大数据分析 - 大数据分析软件 - 数据挖掘、数据可视化、行业大数据分析案例和解决方案 - IBM - 中国" />
+    <meta property="og:locale" content="zh-CN" />
+    <!-- Begin social img -->
+    <!-- my twitter social content -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="https://www.ibm.com/analytics/cn/zh/" />
+    <meta name="twitter:title" content="大数据分析 - 大数据分析软件 - 数据挖掘、数据可视化、行业大数据分析案例和解决方案 - IBM - 中国" />
+    <meta name="twitter:description" content="IBM 大数据分析为您提供各行业大数据分析、数据挖掘、数据可视化成功案例和解决方案及大数据分析软件明星产品。想了解更多关于全新 IBM Analytics - 大数据分析等信息，就到 IBM 大数据分析频道" />
+    <meta name="twitter:creator" content="Ken Robertson/Worcester/IBM" />
+    <meta name="twitter:image:src" content="" />
+    <!-- Facebook img -->
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="400" />
+    <!-- End social img-->
+    <script>
+        digitalData = {
+            page: {
+                category: {
+                    primaryCategory: "IBM_Analytics"
+                },
+                pageInfo: {
+                    effectiveDate: "2016-09-07",
+                    expiryDate: "2017-03-17",
+                    language: "zh-CN",
+                    publishDate: "2017-11-03",
+                    publisher: "IBM Corporation",
+                    version: "v18",
+                    ibmDynamicCm: false,
+                    ibm: {
+                        contentDelivery: "IBM",
+                        contentProducer: "IBM",
+                        country: "CN",
+                        industry: "大数据分析",
+                        owner: "Ken Robertson/Worcester/IBM",
+                        owningPortal: "大数据分析",
+                        siteID: "IBM_Analytics",
+                        subject: "SWQ00",
+                        type: "CT000",
+                        contactModuleConfiguration: {
+                            contactInformationBundleKey: {
+                                focusArea: "Analytics - All",
+                                languageCode: "zh",
+                                regionCode: "CN"
+                            },
+                            contactModuleTranslationKey: {
+                                languageCode: "zh",
+                                regionCode: "CN"
+                            }
+                        }
+                    },
+                    analytics: {
+                        defimg: "defaults/main_img_0.jpg"
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="//www.ibm.com/common/stats/ida_stats.js"></script>
+    <script type="text/javascript" src="//1.www.s81c.com/common/v18/js/www.js"></script>
+    <script src="//1.www.s81c.com/common/v18/js/tables.js"></script>
+    <link href="//1.www.s81c.com/common/v18/css/www.css" rel="stylesheet" title="www" type="text/css" />
+    <!-- IBM Analytics custom -->
+    <link href="/analytics/shared/v1/css/page/analytics-home/custom-home-v18.css" rel="stylesheet" type="text/css" />
+    <link href="/analytics/cn/zh/scripts/analytics_cn_zh.css" rel="stylesheet" title="www" type="text/css" />
+    <script src="https://www.ibm.com/common/digitaladvisor/cm-app/1.5.6/cm-app.min.js" defer></script>
+    <!-- <script src="https://www.ibm.com/analytics/cn/zh/scripts/youku-video.js?a"></script> -->
+    <script src="scripts/mp4.js"></script>
+    <script>
+        IBMCore.common.util.config.set({
+            masthead: {
+                type: "alternate"
+            },
+            footer: {
+                type: "alternate"
+            }
+        });
+    </script>
+    <script>
+        IBMCore.common.util.config.set({
+            contactModuleWidget: {
+                color: "red-50"
+            }
+        });
+    </script>
+
+    <style type="text/css">
+        @media only screen and (max-width: 580px) and (min-width: 320px){
+            .ctas div {
+                box-sizing: border-box;
+                padding: 25px;
+                position: relative;
+                width: 100% !important;
+            }
+        }
+        .ibm-contact-widget-btn {
+            background-color: #d74108 !important;
+            display: block;
+        }
+        .ibm-contact-widget-btn.ibm-active{
+            background-color: #d74108 !important;
+            display: block;
+        }
+    </style>
+    <script type="text/javascript">
+        document.body.addEventListener('touchstart', function () {
+//...空函数即可
+        });
+    </script>
+</head>
+
+<body id="ibm-com" class="ibm-type">
+<div id="ibm-top" class="ibm-landing-page">
+    <!-- MASTHEAD_BEGIN -->
+    <div id="ibm-masthead" aria-label="IBM">
+        <div id="ibm-mast-options">
+            <ul role="toolbar" aria-labelledby="ibm-masthead">
+                <li id="ibm-geo" role="presentation"><a href="//www.ibm.com/planetwide/select/selector.html" role="button" aria-label="已选定中国 - 选择国家或地区">中国</a></li>
+                <li id="ibm-language" role="presentation"><span class="ibm-active" role="button" aria-disabled="true">中文</span> <a href="//www.ibm.com/cn/zh/" lang="zh-CN" role="button">中文</a></li>
+            </ul>
+        </div>
+        <div id="ibm-universal-nav">
+            <nav aria-label="IBM">
+                <div id="ibm-home"><a href="//www.ibm.com/cn/zh/">IBM?</a></div>
+                <ul id="ibm-menu-links" role="toolbar" aria-label="站点地图">
+                    <li><a href="//www.ibm.com/sitemap/cn/zh/">站点地图</a></li>
+                </ul>
+            </nav>
+            <div id="ibm-search-module" role="search" aria-labelledby="ibm-masthead">
+                <form id="ibm-search-form" action="//www.ibm.com/Search/" method="get">
+                    <p>
+                        <label for="q">IBM</label>
+                        <input type="text" maxlength="100" value="" placeholder="搜索" name="q" id="q" aria-label="搜索" />
+                        <input type="hidden" value="18" name="v" />
+                        <input type="hidden" value="utf" name="zh" />
+                        <input type="hidden" value="zh" name="lang" />
+                        <input type="hidden" value="cn" name="cc" />
+                        <input type="submit" id="ibm-search" class="ibm-btn-search" value="提交" />
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- MASTHEAD_END -->
+    <!-- PRIMARY_NAV_START -->
+    <header role="banner">
+        <div class="ibm-sitenav-menu-container">
+            <div class="ibm-sitenav-menu-name"><a href="//www.ibm.com/analytics/cn/zh/">IBM 大数据分析</a></div>
+            <div class="ibm-sitenav-menu-list">
+                <ul role="menubar">
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">明星产品</button>
+                        <ul role="menu" aria-label="明星产品">
+                            <li role="presentation"><a role="menuitem" href="/analytics/cn/zh/technology/spss/">SPSS</a></li>
+
+                            <li role="presentation"><a role="menuitem" href="/analytics/cn/zh/technology/products/cognos-analytics.html">Cognos Analytics</a></li>
+                            <li role="presentation"><a role="menuitem" href="/analytics/cn/zh/technology/cloud-data-services/dashdb-local/">Db2 Warehouse Local</a></li>
+                            <li role="presentation"><a role="menuitem" href="/analytics/cn/zh/technology/db2/">Db2</a></li>
+                            <li role="presentation"><a role="menuitem" href="/analytics/cn/zh/technology/hadoop/">Hadoop</a></li>
+                        </ul>
+                    </li>
+
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem" onClick="location.href='//www.ibm.com/analytics/cn/zh/technology/';">技术</button>
+                        <ul role="menu" aria-label="技术">
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/technology/advanced-analytics/">高级分析</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/technology/cloud-data-services.html">云数据服务</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/technology/data-architecture/">数据架构</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/technology/enterprise-content-management.html">企业内容管理</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/technology/agile/">数据集成与治理</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/technology/open-source/">开源</a></li>
+                        </ul>
+                    </li>
+
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem" onClick="location.href='//www.ibm.com/analytics/cn/zh/industry/';">行业</button>
+                        <ul role="menu" aria-label="行业">
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/industry/banking-solutions/">银行业</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/industry/insurance-solutions/">保险业</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/industry/retail-analytics/">零售业</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/industry/telecom-customer-experience-management/">电信业</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/us/en/industry/consumer-products/">消费品行业 （英文）</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/industry/government">政府</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/us/en/industry/audience-analysis-media-and-entertainment/">媒体和娱乐业 （英文）</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/industry/wealth-management">财富管理</a></li>
+                        </ul>
+                    </li>
+
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem" onClick="location.href='//www.ibm.com/analytics/cn/zh/business/';">业务</button>
+                        <ul role="menu" aria-label="业务">
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/business/customer-analytics/">客户分析</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/business/fraud-protection/">欺诈防御</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/business/performance-management">绩效管理</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/cn/zh/business/risk-management/">风险管理</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/analytics/us/en/business/sales-analytics/">销售分析 （英文）</a></li>
+                        </ul>
+                    </li>
+
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">资讯</button>
+                        <ul role="menu" aria-label="业务">
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/ibm/cn/analytics/cn/zh/2016_insight_economy/index.html">大数据案例</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/ibm/cn/analytics/cn/zh/webcast/index.html">大数据讲堂</a></li>
+                            <li role="presentation"><a role="menuitem" href="//www.ibm.com/ibm/cn/analytics/cn/zh/sme/index.html">约数据大咖</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- PRIMARY_NAV_END -->
+    <div id="ibm-content-wrapper">
+        <!-- LEADSPACE_END -->
+        <header aria-labelledby="ibm-pagetitle-h1">
+            <div class="ibm-alternate-background ibm-background-blue-80 ibm-hidden-small" id="ibm-leadspace-head" style="border-bottom:none;">
+                <div class="leadspace-background-image1">
+                    <div id="ibm-leadspace-body" class="ibm-analytics-leadspace-body">
+                        <div class="ibm-columns">
+                            <div class="ibm-col-6-3 ibm-padding-top-2 ibm-hidden-small ibm-hidden-medium"><img src="/analytics/common/img/analytics-homepage/leadspace-YL1.png" alt="IBM 大数据分析" class="ibm-resize" /></div>
+                            <div class="ibm-col-6-3 ibm-padding-top-3 ibm-padding-bottom-2 ibm-col-medium-1-1 medium-leadspace">
+                                <img src="/analytics/common/img/analytics-homepage/leadspace-YL1.png" alt="Analytics" class="ibm-resize ibm-hidden-medium ibm-hidden-large ibm-hidden-xlarge" />
+                                <h1 class="ibm-h1 ibm-padding-top-2" id="ibm-pagetitle-h1">IBM 大数据分析</h1>
+                                <h4 class="ibm-h4 ibm-textcolor-white">IBM 大数据分析 提供完整的大数据和分析解决方案组合，推动企业往认知商业的发展。我们的解决方案可以帮助企业运用数据解答最棘手的业务难题，发现新的模式，形成突破性的构想。</h4>
+                                <p>本月明星产品免费试用：</p>
+                                <p class="float-left ibm-bottom-margin-1 "> <a class="ibm-btn-pri ibm-btn-yellow-10 ibm-youku-video ibm-btn-nowrap" href="https://www.ibm.com/analytics/cn/zh/technology/products/cognos-analytics.html" target="_blank">全新商业智能软件 Cognos Analytics</a>
+                                </p>
+
+                                <p class="float-left">
+                                    <a href="#StarProduct" onClick="scrlTempPos('StarProduct');return false"><span class="ibm-icon-nolink ibm-anchor-down-link">更多明星产品</span></a>
+                                </p>
+                                <img src="/analytics/common/img/analytics-homepage/leadspace.png" alt="Analytics" class="ibm-hidden-small ibm-hidden-large ibm-hidden-xlarge ibm-padding-top-1" style="width:50%;float:right;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Leadspace Start -->
+            <div class="ibm-alternate-background ibm-hidden-medium ibm-hidden-large ibm-hidden-xlarge" id="" style="background:url(images/analytics_homepage_seti.jpg?) no-repeat center center;background-size:cover;border-bottom:none;">
+                <div class="leadspace-background-image1">
+                    <div id="ibm-leadspace-body" class="ibm-analytics-leadspace-body">
+                        <div class="ibm-columns">
+                            <div class="ibm-col-1-1 ibm-padding-top-1 ibm-padding-bottom-2 medium-leadspace">
+                                <h1 class="ibm-h1 ibm-padding-top-1" id="ibm-pagetitle-h1">IBM 大数据分析</h1>
+                                <h4 class="ibm-h4 ibm-textcolor-white">IBM 大数据分析解决方案，推动企业认知商业的发展，帮助企业运用数据解答最棘手的业务难题，发现新的模式，形成突破性的构想。</h4>
+                                <p class="ibm-textcolor-yellow-10">免费咨询：<a style="color:#FDE876" href="tel:4008101818,2835">400-810-1818 转 2385</a></p>
+                                <p>本期明星产品免费试用：</p><br/>
+                                <p><a class="ibm-btn-pri ibm-youku-video ibm-btn-nowrap" href="https://www.ibm.com/analytics/cn/zh/technology/products/cognos-analytics.html" target="_blank" style="background:#003bc9; border-color:#003bc9;">新一代商业智能软件 Cognos Analytics</a></p><br/>
+                                <p class="ibm-ind-link ibm-button-link"><a class="ibm-anchor-down-link ibm-btn-pri ibm-btn-blue-50" href="keyproducts" onclick="jQuery('html, body').animate({scrollTop: jQuery('#keyproducts').offset().top - 40}, 1000);window.location = '#keyproducts'; return false;">更多明星产品</a></p>
+                            </div>
+                        </div>
+                        <!--NEWS_FLASH_START-->
+                        <div class="ibm-alternate-background ibm-hidden-medium ibm-hidden-large ibm-hidden-xlarge" style="background:rgba(0,59,201,0.8)">
+                            <div class="ibm-columns ibm-padding-top-1">
+                                <div class="ibm-col-1-1">
+                                    <p class="ibm-h4"><span class="ibm-bold">IBM 大数据分析案例</span></p>
+                                    <p>汇聚了银行、保险、零售、消费品、电信、政府、媒体娱乐、交通运输等八大行业通过大数据分析解决业务难题的成功经验。</p>
+                                    <p class="ibm-padding-top-1 ibm-button-link">
+                                        <a href="https://www.ibm.com/ibm/cn/analytics/cn/zh/2016_insight_economy/index.html" class="ibm-btn-white ibm-btn-pri">进入案例中心</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--NEWS_FLASH_END-->
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Leadspace End -->
+        </header>
+        <!-- LEADSPACE_END -->
+        <!--NEWS_FLASH_START-->
+        <div id="newsflash-container" class="ibm-alternate-background ibm-hidden-small">
+            <div class="ibm-columns ibm-padding-top-1">
+                <div class="ibm-col-6-2 ibm-center ibm-padding-top-1 ibm-padding-bottom-1"><img src="/analytics/common/img/analytics-homepage/DatasciX-icon.png?" class="ibm-resize" alt="IBM 大数据分析案例" style="max-width:300px;"></div>
+                <div class="ibm-col-6-4">
+                    <p class="ibm-h4"><span class="ibm-bold">IBM 大数据分析案例</span></p>
+                    <p>IBM 行业案例中心，汇聚了银行、保险、零售、消费品、电信、政府、媒体娱乐、交通运输等八大行业在应用大数据分析，解决业务难题方面的成功经验。IBM 基于认知计算的行业解决方案能够为业务决策者提供变革性的洞察。</p>
+                    <p class="ibm-padding-top-1 ibm-button-link">
+                        <a style="margin-right:25px" href="https://www.ibm.com/ibm/cn/analytics/cn/zh/2016_insight_economy/index.html" class="ibm-btn-white ibm-btn-pri">&nbsp;进入案例中心，深度探索企业实践</a>
+
+                        <br class="ibm-hidden-large ibm-hidden-xlarge">
+                        <br class="ibm-hidden-large ibm-hidden-xlarge">
+                    </p>
+                    <noscript>
+                        <video controls preload="auto" width="320">
+                            <source src="//www.ibm.com/ibm/cn/video/HPzXlFp4rKE.mp4" type="video/mp4" />
+                        </video>
+                    </noscript>
+                </div>
+            </div>
+        </div>
+        <!--NEWS_FLASH_END-->
+        <!--MAIN_CONTENT_BEGIN-->
+        <div role="main">
+            <div id="ibm-pcon">
+                <div id="ibm-content">
+                    <div id="ibm-content-body">
+                        <!-- CONTENT_BEGIN -->
+                        <div id="ibm-content-main">
+                            <!--MAIN_CONTENT_BEGIN-->
+                            <div id="video_place">
+                            </div>
+                            <div id="back_place">
+                            </div>
+
+
+                            <!--CARDS_CATEGORIES_BEGIN-->
+                            <style type="text/css">
+                                .card-container{
+                                }
+                                .ibm-width-50{
+                                    box-sizing: border-box;
+                                    border: 1px #0064ff solid;
+                                    float: left;
+                                    width: 50%;
+                                    padding: 40px 0;
+                                    color: #0064ff;
+                                    background: #fff;
+                                }
+                                .ibm-width-50:hover{
+                                    background: #0064ff;
+                                    color: #fff;
+                                }
+                                .ibm-width-50:active{
+                                    background: #0064ff;
+                                    color: #fff;
+                                }
+                                .ibm-width-50:visited{
+                                    color: #0064ff;
+                                    background: #fff;
+                                }
+
+
+                            </style>
+
+                            <div class="card-container ibm-center-block ibm-hidden-meidum ibm-hidden-large ibm-hidden-xlarge">
+                                <div class="ibm-columns ibm-nospacing">
+                                    <div class="ibm-col-1-1" style="background:#f4f4f4;">
+                                        <h3 class="ibm-h4 ibm-padding-content">解决方案</h3>
+                                    </div>
+                                </div>
+
+                                <a class="card-blocklink" href="https://www.ibm.com/analytics/cn/zh/technology/data-architecture/">
+                                    <div class="ibm-width-50">
+                                        <h3 class="ibm-h4 ibm-center">混合型数据库</h3>
+                                    </div>
+                                </a>
+
+                                <a class="card-blocklink" href="https://www.ibm.com/analytics/cn/zh/technology/data-science/">
+                                    <div class="ibm-width-50">
+                                        <h3 class="ibm-h4 ibm-center">数据科学</h3>
+                                    </div>
+                                </a>
+
+                                <a class="card-blocklink" href="https://www.ibm.com/analytics/cn/zh/technology/advanced-analytics/">
+                                    <div class="ibm-width-50">
+                                        <h3 class="ibm-h4 ibm-center">高级分析</h3>
+                                    </div>
+                                </a>
+
+                                <a class="card-blocklink" href="https://www.ibm.com/analytics/cn/zh/technology/enterprise-content-management.html">
+                                    <div class="ibm-width-50">
+                                        <h3 class="ibm-h4 ibm-center">企业内容管理</h3>
+                                    </div>
+                                </a>
+
+                                <a class="card-blocklink" href="https://www.ibm.com/analytics/cn/zh/technology/open-source/">
+                                    <div class="ibm-width-50">
+                                        <h3 class="ibm-h4 ibm-center">Hadoop 与 Spark</h3>
+                                    </div>
+                                </a>
+
+                                <a class="card-blocklink" href="https://www.ibm.com/analytics/cn/zh/technology/agile/">
+                                    <div class="ibm-width-50">
+                                        <h3 class="ibm-h4 ibm-center">数据集成与治理</h3>
+                                    </div>
+                                </a>
+
+
+                                <!--a class="card-blocklink" href="https://www.ibm.com/analytics/cn/zh/technology/data-architecture/">
+                                <div class="ibm-width-50" style="background:url(//www.ibm.com/analytics/us/en/images/HybridDBWarehouseFeature.jpg) no-repeat center center; background-size:cover;">
+                                <div class="ibm-width-50 ibm-alternate-background" style="background:rgba(0,0,0,0.5); border:none;">
+                                    <h3 class="ibm-h3 ibm-center" style="color:#fff;">混合型数据库</h3>
+                                </div>
+                                </div>
+                                </a>
+
+                                <a class="card-blocklink" href="https://www.ibm.com/analytics/cn/zh/technology/data-science/">
+                                <div style="background:url(//www.ibm.com/analytics/us/en/images/DataScienceFeature.jpg) no-repeat center center; background-size:cover;">
+                                <div class="ibm-width-50 ibm-alternate-background" style="background:rgba(0,0,0,0.5); border:none;">
+                                    <h3 class="ibm-h3 ibm-center" style="color:#fff;">数据科学</h3>
+                                </div>
+                                </div>
+                                </a-->
+
+
+                            </div>
+
+
+
+
+
+
+
+
+                            <div class="ibm-columns ibm-hidden-small" data-items=".ibm-card__content" data-widget="setsameheight">
+                                <div class="ibm-col-6-2 ibm-col-medium-4-2">
+                                    <div class="ibm-card">
+                                        <div class="ibm-card__image">
+                                            <img src="//www.ibm.com/analytics/us/en/images/HybridDBWarehouseFeature.jpg" alt="大数据分析混合型数据库" class="ibm-resize"></div>
+                                        <div class="ibm-card__content ibm-padding-bottom-3" style="position:relative;">
+                                            <h2 class="ibm-h2 ibm-textcolor-blue-40 ibm-light ibm-large">混合型数据库</h2>
+                                            <p>探索现代数据仓库基础架构和混合数据仓库逻辑。</p>
+                                            <p style="color:#3b6caa;position:absolute; bottom:20px;">热销产品：<a href="https://www.ibm.com/analytics/cn/zh/technology/db2/">Db2</a></p>
+
+                                        </div>
+                                        <div class="ibm-card__image ibm-alternate-background ibm-background-cool-gray-80">
+
+                                            <p class="ibm-center ibm-padding-top-1 ibm-padding-bottom-1">
+                                                <a class="ibm-btn-sec ibm-btn-white ibm-h3 ibm-light" href="https://www.ibm.com/analytics/cn/zh/technology/data-architecture/"><span style="padding-left: 20px; padding-right: 20px;">了解更多</span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ibm-col-6-2 ibm-col-medium-4-2">
+                                    <div class="ibm-card">
+                                        <div class="ibm-card__image">
+                                            <img src="//www.ibm.com/analytics/us/en/images/DataScienceFeature.jpg" alt="IBM 大数据分析应用于数据科学" class="ibm-resize"></div>
+                                        <div class="ibm-card__content ibm-padding-bottom-3" style="position:relative;">
+                                            <h2 class="ibm-h2 ibm-textcolor-blue-40 ibm-light ibm-large">数据科学</h2>
+                                            <p>从大量结构化和非结构化数据中发现业务真相！</p>
+                                            <p style="color:#3b6caa;position:absolute; bottom:20px;">热销产品：<a href="https://www.ibm.com/analytics/cn/zh/technology/spss/">SPSS</a>、<a href="https://www.ibm.com/analytics/cn/zh/technology/products/cognos-analytics.html">Cognos Analytics</a></p>
+
+                                        </div>
+                                        <div class="ibm-card__image ibm-alternate-background ibm-background-cool-gray-80">
+
+                                            <p class="ibm-center ibm-padding-top-1 ibm-padding-bottom-1">
+                                                <a class="ibm-btn-sec ibm-btn-white ibm-h3 ibm-light" href="https://www.ibm.com/analytics/cn/zh/technology/data-science/"><span style="padding-left: 20px; padding-right: 20px;">了解更多</span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ibm-col-6-2 ibm-col-medium-4-2">
+                                    <div class="ibm-card">
+                                        <div class="ibm-card__image">
+
+                                            <img src="//www.ibm.com/analytics/us/en/images/BusinessAnalyticsFeature.jpg" alt="IBM 大数据分析应用于高级分析"  class="ibm-resize"></div>
+                                        <div class="ibm-card__content ibm-padding-bottom-3" style="position:relative;">
+                                            <h2 class="ibm-h2 ibm-textcolor-blue-40 ibm-light ibm-large">高级分析</h2>
+                                            <p>从企业内外各种来源、所有类型的数据中发掘商机</p>
+                                            <p style="color:#3b6caa;position:absolute; bottom:20px;">热销产品：<a href="https://www.ibm.com/analytics/cn/zh/technology/spss/">SPSS</a></p>
+                                        </div>
+                                        <div class="ibm-card__image ibm-alternate-background ibm-background-cool-gray-80">
+
+                                            <p class="ibm-center ibm-padding-top-1 ibm-padding-bottom-1">
+                                                <a class="ibm-btn-sec ibm-btn-white ibm-h3 ibm-light" href="https://www.ibm.com/analytics/cn/zh/technology/advanced-analytics/"><span style="padding-left: 20px; padding-right: 20px;">了解更多</span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ibm-col-6-2 ibm-col-medium-4-2">
+                                    <div class="ibm-card">
+                                        <div class="ibm-card__image">
+                                            <img src="//www.ibm.com/analytics/us/en/images/ECMFeature.jpg" alt="IBM 大数据分析应用于企业内容管理" class="ibm-resize"></div>
+                                        <div class="ibm-card__content ibm-padding-bottom-3">
+                                            <h2 class="ibm-h2 ibm-textcolor-blue-40 ibm-light ibm-large">企业内容管理</h2>
+                                            <p>对企业内容取得、分析并采取行动</p>
+
+                                        </div>
+                                        <div class="ibm-card__image ibm-alternate-background ibm-background-cool-gray-80">
+
+                                            <p class="ibm-center ibm-padding-top-1 ibm-padding-bottom-1">
+                                                <a class="ibm-btn-sec ibm-btn-white ibm-h3 ibm-light" href="https://www.ibm.com/analytics/cn/zh/technology/enterprise-content-management.html"><span style="padding-left: 20px; padding-right: 20px;">了解更多</span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ibm-col-6-2 ibm-col-medium-4-2">
+                                    <div class="ibm-card">
+                                        <div class="ibm-card__image">
+                                            <img src="//www.ibm.com/analytics/us/en/images/HadoopFeature.jpg" alt="Hadoop 与 Spark 大数据分析平台" class="ibm-resize"></div>
+                                        <div class="ibm-card__content ibm-padding-bottom-3">
+                                            <h2 class="ibm-h2 ibm-textcolor-blue-40 ibm-light ibm-large">Hadoop 与 Spark</h2>
+                                            <p>通过整合 Hadoop 和 Spark 开放的、一致性的分析平台，大大降低风险,保护您的投资</p>
+
+                                        </div>
+                                        <div class="ibm-card__image ibm-alternate-background ibm-background-cool-gray-80">
+
+                                            <p class="ibm-center ibm-padding-top-1 ibm-padding-bottom-1">
+                                                <a class="ibm-btn-sec ibm-btn-white ibm-h3 ibm-light" href="https://www.ibm.com/analytics/cn/zh/technology/open-source/"><span style="padding-left: 20px; padding-right: 20px;">了解更多</span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ibm-col-6-2 ibm-col-medium-4-2">
+                                    <div class="ibm-card">
+                                        <div class="ibm-card__image">
+                                            <img src="//www.ibm.com/analytics/us/en/images/DataAndIGFeature.jpg" alt="IBM 大数据分析应用于数据集成与治理" class="ibm-resize"></div>
+                                        <div class="ibm-card__content ibm-padding-bottom-3">
+                                            <h2 class="ibm-h2 ibm-textcolor-blue-40 ibm-light ibm-large">数据集成与治理</h2>
+                                            <p>探索、丰富、集成并管理数据的生命周期!</p>
+
+                                        </div>
+                                        <div class="ibm-card__image ibm-alternate-background ibm-background-cool-gray-80">
+
+                                            <p class="ibm-center ibm-padding-top-1 ibm-padding-bottom-1">
+                                                <a class="ibm-btn-sec ibm-btn-white ibm-h3 ibm-light" href="https://www.ibm.com/analytics/cn/zh/technology/agile/"><span style="padding-left: 20px; padding-right: 20px;">了解更多</span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--CARDS_CATEGORIES_END-->
+
+                            <!-- FEATURED_SOLUTIONS_BEGIN -->
+                            <section id="analytics-featured-solutions" data-solution="analytics-featured-solutions">
+                                <!--div id="analytics-featured-container" class="ibm-padding-bottom-2 ibm-padding-top-2 ibm-alternate-background">
+                                    <div class="ibm-columns">
+                                        <div class="ibm-col-6-2 ibm-col-medium-6-3">
+                                            <div class="">
+                                                <a href="//player.youku.com/embed/XMTQyODU5MTA2MA" rel="width=600&amp;height=400" data-widget="tooltip" title="（Youku，02:12）"><img src="images/WA-monitor-550x400-v2.png" alt="Watson Analytics 数据可视化分析工具" class="ibm-resize"></a>
+                                            </div>
+                                            <noscript>
+                          <video controls preload="auto" width="320">
+                          <source src="//v.youku.com/v_show/id_XMTQyODU5MTA2MA==.html" type="video/mp4" />
+                                    </video>
+                                </noscript>
+
+                                        </div>
+                                        <div class="ibm-col-6-4 ibm-col-medium-6-3 ibm-padding-top-2">
+                                            <div class="ibm-padding-left-1">
+                                                <p class="ibm-textcolor-yellow-10">IBM 大数据分析 特色产品</p>
+                                                <h3 class="ibm-h3 ">                                                       <a href="https://www.ibm.com/analytics/watson-analytics/cn-zh/index.html">数据可视化工具—Watson Analytics</a> </h3>
+                                                <p class="ibm-h4">专业的数据可视化分析工具，基于云平台的智慧的、自动化的数据发现服务和自动预测性分析功能，帮助用户轻松理解数据中的奥秘，并自动创建仪表板和信息图。</p>
+                                                <p class="ibm-padding-top-2 ibm-padding-bottom-2">
+                                                    <a class="ibm-btn-pri ibm-btn-yellow-10 ibm-h4" href="https://www.ibm.com/account/us-en/signup/register.html?a=MTBmNDg2NDktNDI2MC00&ctx=C001&trial=yes&catalogName=Master&quantity=1&partNumber=WA2PROTRIAL&source=mrsaas-trial-ibmid&pkg=ov49121&S_OFF_CD=10000752&siteID=ECOM&a=MTBmNDg2NDktNDI2MC00&ctx=C001&trial=yes&catalogName=Master&quantity=1&partNumber=WA2PROTRIAL&source=mrsaas-trial-ibmid&pkg=ov49121&S_OFF_CD=10000752"
+                                                                    target="_blank" data-widget="tooltip" title="（英文）">免费试用</a>
+
+
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div-->
+                                <div class="ibm-hidden-medium ibm-hidden-large ibm-hidden-xlarge">
+                                    <div id="keyproducts" class="ibm-columns ibm-nospacing">
+                                        <div class="ibm-col-1-1 ibm-alternate-background" style="background:#003bc9;">
+                                            <h3 class="ibm-h4 ibm-padding-content">明星产品</h3>
+                                        </div>
+                                    </div>
+                                    <div class="ibm-columns ibm-padding-bottom-2">
+                                        <div class="ibm-col-1-1 ibm-center ibm-padding-top-1">
+                                            <img class="ibm-downsize" src="https://www.ibm.com/analytics/us/en/images/ibm-spss-laptop.png" alt="SPSS" />
+                                            <p class="ibm-h2 ibm-padding-top-1"><a class="ibm-textcolor-black" href="https://www.ibm.com/analytics/cn/zh/technology/spss/index.html">SPSS</a></p>
+                                            <p class="ibm-h4 ibm-padding-bottom-2">全球领先的数据挖掘与统计分析软件</p>
+                                            <p class="ibm-button-link">
+                                                <a style="margin-right:0;" class="ibm-btn-pri ibm-btn-blue-50" href="https://www.ibm.com/account/us-en/signup/register.html?a=IBMSPSSStatistics&ctx=C001&cc=cn&lc=zh&trial=yes&quantity=1&catalogName=Master&partNumber=SPSS_S_TRIAL&source=mrsaas-trial-ibmid&pkg=ov5354&siteID=ECOM&S_TACT=000000OA&S_OFF_CD=10001871">免费试用</a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="ibm-columns ibm-padding-bottom-2" style="background:#f4f4f4;">
+                                        <div class="ibm-col-1-1 ibm-center ibm-padding-top-1">
+                                            <img class="ibm-downsize" src="https://www.ibm.com/analytics/us/en/images/ibm-laptop-cognos-analytics.png" alt="Cognos Analytics" />
+                                            <p class="ibm-h2 ibm-padding-top-1"><a class="ibm-textcolor-black" href="https://www.ibm.com/analytics/cn/zh/technology/products/cognos-analytics.html">Cognos Analytics</a></p>
+                                            <p class="ibm-h4 ibm-padding-bottom-2">新一代商业智能软件及解决方案</p>
+                                            <p class="ibm-button-link">
+                                                <a style="margin-right:0;" class="ibm-btn-pri ibm-btn-blue-50" href="https://www.ibm.com/marketing/iwm/dre/signup?source=urx-20471&S_PKG=ov61729">免费试用</a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="ibm-columns ibm-padding-bottom-2">
+                                        <div class="ibm-col-1-1 ibm-center ibm-padding-top-1">
+                                            <img class="ibm-downsize" src="https://www.ibm.com/analytics/us/en/images/ibm-laptop-db2.png" alt="IBM Db2" />
+                                            <p class="ibm-h2 ibm-padding-top-1"><a class="ibm-textcolor-black" href="https://www.ibm.com/analytics/cn/zh/technology/db2/">IBM Db2</a></p>
+                                            <p class="ibm-h4 ibm-padding-bottom-2">最新升级混合云数据管理解决方案</p>
+                                            <p class="ibm-button-link">
+                                                <a style="margin-right:0;" class="ibm-btn-pri ibm-btn-blue-50" href="https://www.ibm.com/marketing/iwm/iwm/web/pick.do?source=swg-dm-db2trial&S_PKG=ov12916&S_TACT=000022MA&lang=zh_CN">免费试用</a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="ibm-band" style="padding:20px;">
+                                        <div class="ibm-columns">
+                                            <div class="ibm-col-1-1">
+                                                <p>IBM 大数据分析<br/>免费咨询电话：<br/>
+                                                    <a href="tel:4008101818,2385">400-810-1818 转 2385（手机）</a><br/>
+                                                    <a href="tel:8008101818,2385">800-810-1818 转 2385（座机）</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                        </div>
+                        <div id="StarProduct" class="ibm-padding-bottom-3 ibm-background-neutral-white-30 ibm-padding-top-3 ibm-hidden-small">
+                            <div class="ibm-columns" data-widget="setsameheight" data-items=".ibm-col-4-2">
+                                <div class="ibm-col-1-1 ibm-padding-bottom-1">
+                                    <h2 class="ibm-h2 ibm-light  ibm-textcolor-blue-40">IBM 大数据分析软件明星产品</h2>
+                                </div>
+                                <div class="ibm-col-4-2 ibm-col-medium-1-1">
+                                    <!--featured product-begin-->
+                                    <div class="ibm-card__content ibm-padding-bottom-2">
+                                        <div class="ibm-mo__image ibm-hidden-small">
+                                            <a id="btn-video9" href="#video9" data-widget="tooltip" title="（MP4，01:25）"><img src="images/new-assets/featured-cognos.png" alt="Cognos数据挖掘和商业智能软件" class="featured-product-circle"></a>
+                                        </div>
+                                        <div class="ibm-mo__body">
+                                            <a id="btn-video9" href="#video9" data-widget="tooltip" title="（MP4，01:25）"><img src="images/new-assets/featured-cognos.png" alt="Cognos数据挖掘和商业智能软件" class="featured-product-circle ibm-padding-top-1 ibm-center ibm-padding-bottom-1 ibm-hidden-medium ibm-hidden-large ibm-hidden-xlarge"></a>
+                                            <h4 class="ibm-bold"><a href="//www.ibm.com/analytics/cn/zh/technology/products/cognos-analytics.html" target="_blank">Cognos Analytics</a><span class="ibm-textcolor-gray-50 ibm-small ibm-light"> | 商业智能</span></h4>
+                                            <p class="ibm-padding-bottom-1"> 通过安全的商业智能软件即服务 (SaaS) 解决方案获得期望的自助服务、所需的数据监管以及可信的报告。</p>
+                                            <p>
+
+                                                <a class="ibm-forward-link ibm-inlinelink" href="https://www.ibm.com/marketing/iwm/dre/signup?source=urx-20471&S_PKG=ov61729&lang=zh_CN" style="margin-right:35px;" target="_blank">申请免费试用</a>
+
+
+                                            </p>
+                                            <!--p><span class="ibm-no-mobile">咨询：400-810-1818 转 2385</span><span class="ibm-mobile"><a href="tel:4008101818,2385">咨询：400-810-1818 转 2385</a></span></p-->
+                                            <noscript>
+                                                <video controls preload="auto" width="320">
+                                                    <source src="//www.ibm.com/ibm/cn/video/uJ_Nmrm9U6E.mp4" type="video/mp4" />
+                                                </video>
+                                            </noscript>
+                                        </div>
+                                    </div>
+                                    <!--featured-product-end-->
+                                </div>
+                                <div class="ibm-col-4-2 ibm-col-medium-1-1">
+                                    <!--featured product-begin-->
+                                    <div class="ibm-card__content ibm-padding-bottom-2">
+                                        <div class="ibm-mo__image ibm-hidden-small">
+                                            <a id="btn-video7" href="#video7" data-widget="tooltip" title="（MP4，04:14）"><img src="images/new-assets/featured-spss.png" alt="SPSS 大数据分析软件" class="featured-product-circle"></a>
+                                        </div>
+                                        <div class="ibm-mo__body">
+                                            <a id="btn-video7" href="#video7" data-widget="tooltip" title="（MP4，04:14）"><img src="images/new-assets/featured-spss.png" alt="SPSS 大数据分析软件" class="featured-product-circle ibm-padding-top-1 ibm-center ibm-padding-bottom-1 ibm-hidden-medium ibm-hidden-large ibm-hidden-xlarge"></a>
+                                            <h4 class="ibm-bold"><a href="technology/spss/" target="_blank">SPSS</a><span class="ibm-textcolor-gray-50 ibm-small ibm-light"> | 预测性分析</span></h4>
+                                            <p class="ibm-padding-bottom-1"> SPSS 是全球领先的统计分析、数据挖掘、预测建模产品及解决方案，2009年被 IBM 收购（即 IBM SPSS）。</p>
+                                            <p>
+
+                                                <a class="ibm-forward-link ibm-inlinelink" href="//www.ibm.com/analytics/cn/zh/technology/spss/spss-trials.html#keytrial" style="margin-right:35px;" target="_blank"> &nbsp;免费试用</a>
+                                            </p>
+                                            <noscript>
+                                                <video controls preload="auto" width="320">
+                                                    <source src="//www.ibm.com/ibm/cn/video/HZr3CmOgL_M.mp4" type="video/mp4" />
+                                                </video>
+                                            </noscript>
+                                        </div>
+                                    </div>
+                                    <!--featured-product-end-->
+                                </div>
+                                <div class="ibm-col-4-2 ibm-col-medium-1-1">
+                                    <!--featured product-begin-->
+                                    <div class="ibm-card__content ibm-padding-bottom-2">
+                                        <div class="ibm-mo__image ibm-hidden-small">
+                                            <a data-widget="tooltip" role="presentation" tabindex="-1" title="（Youku，00:02:36）" href="//v.youku.com/v_show/id_XMTI5MTY1NDMxNg?lnk=bua" target="_blank"><img src="images/new-assets/Picture1.png?a" alt="云端数据仓储与分析" class="featured-product-circle"></a>
+                                        </div>
+                                        <div class="ibm-mo__body">
+                                            <a data-widget="tooltip" role="presentation" tabindex="-1" title="（Youku，00:02:36）" href="//v.youku.com/v_show/id_XMTI5MTY1NDMxNg?lnk=bua" target="_blank"><img src="images/new-assets/Picture1.png?a" alt="云端数据仓储与分析" class="featured-product-circle ibm-padding-top-1 ibm-center ibm-padding-bottom-1 ibm-hidden-medium ibm-hidden-large ibm-hidden-xlarge"></a>
+                                            <h4 class="ibm-bold"><a href="//www.ibm.com/analytics/cn/zh/technology/cloud-data-services/dashdb-local/" target="_blank">Db2 Warehouse Local</a><span class="ibm-textcolor-gray-50 ibm-small ibm-light"> | 云端数据仓储与分析</span></h4>
+                                            <p class="ibm-padding-bottom-1">Db2 Warehouse Local 是一款在私有云、虚拟私有云和其他容器支持的基础架构中使用的数据仓储和分析解决方案。</p>
+                                            <p>
+
+                                                <a class="ibm-forward-link ibm-inlinelink" href="https://www.ibm.com/account/us-en/signup/register.html?a=NDllOGRkMjMtMTI0My00&ctx=C001&cc=cn&lc=zh&source=mrsaas-trial-ibmid&pkg=ov51381" style="margin-right:35px;" target="_blank"> &nbsp;免费试用</a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <!--featured-product-end-->
+                                </div>
+
+                                <!--div class="ibm-col-4-2 ibm-col-medium-1-1">
+
+                                    <div class="ibm-card__content ibm-padding-bottom-2">
+                                        <div class="ibm-mo__image ibm-hidden-small">
+                                            <a data-widget="tooltip" role="presentation" tabindex="-1" title="（Youku，07:25）" href="//player.youku.com/embed/XMTU4NDc1OTk5Ng=="><img src="images/new-assets/Picture2.png?a" alt="Watson Analytics 数据可视化" class="featured-product-circle"></a>
+                                        </div>
+                                        <div class="ibm-mo__body">
+                                            <a data-widget="tooltip" role="presentation" tabindex="-1" title="（Youku，07:25）" href="//player.youku.com/embed/XMTU4NDc1OTk5Ng=="><img src="images/new-assets/Picture2.png?as" alt="Watson Analytics 数据可视化" class="featured-product-circle ibm-padding-top-1 ibm-center ibm-padding-bottom-1 ibm-hidden-medium ibm-hidden-large ibm-hidden-xlarge"></a>
+                                            <h4 class="ibm-bold"><a href="https://www.ibm.com/analytics/watson-analytics/cn-zh/index.html" target="_blank">Watson Analytics</a><span class="ibm-textcolor-gray-50 ibm-small ibm-light"> | 数据可视化
+                                            </span></h4>
+                                            <p class="ibm-padding-bottom-1">数据可视化和预测分析，无需下载安装，便可在几分钟内完成数据分析。</p>
+                                            <p>
+
+
+                                                <a class="ibm-forward-link ibm-inlinelink" href="https://www.ibm.com/account/us-en/signup/register.html?a=MTBmNDg2NDktNDI2MC00&ctx=C001&trial=yes&catalogName=Master&quantity=1&partNumber=WA2PROTRIAL&source=mrsaas-trial-ibmid&pkg=ov49121&siteID=ECOM&a=MTBmNDg2NDktNDI2MC00&ctx=C001&trial=yes&catalogName=Master&quantity=1&partNumber=WA2PROTRIAL&source=mrsaas-trial-ibmid&pkg=ov49121&S_OFF_CD=10000753"
+                                                                style="margin-right:35px;" target="_blank" data-widget="tooltip" title="（英文）"> &nbsp;免费试用</a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                </div-->
+                                <div class="ibm-col-4-2 ibm-col-medium-1-1">
+                                    <!--featured product-begin-->
+                                    <div class="ibm-card__content ibm-padding-bottom-2">
+                                        <div class="ibm-mo__image ibm-hidden-small">
+                                            <a id="btn-video8" href="#video8" data-widget="tooltip" title="（MP4，01:39）"><img src="images/new-assets/featured-db2.png" alt="IBM Db2 数据库" class="featured-product-circle"></a>
+                                        </div>
+                                        <div class="ibm-mo__body">
+                                            <a id="btn-video8" href="#video8" data-widget="tooltip" title="（MP4，01:39）"><img src="images/new-assets/featured-db2.png" alt="IBM Db2 数据库" class="featured-product-circle ibm-padding-top-1 ibm-center ibm-padding-bottom-1 ibm-hidden-medium ibm-hidden-large ibm-hidden-xlarge"></a>
+                                            <h4 class="ibm-bold"><a href="technology/db2/" target="_blank">IBM Db2</a><span class="ibm-textcolor-gray-50 ibm-small ibm-light"> | 数据库</span></h4>
+                                            <p class="ibm-padding-bottom-1">IBM Db2 是最理想的企业级数据库解决方案。IBM Db2 经过优化，可以提供业界领先的性能，降低成本，帮助各种规模的企业实现极致的性能、灵活性、可扩展性和可靠性。</p>
+                                            <p>
+                                                <a class="ibm-forward-link ibm-inlinelink" href="//www.ibm.com/analytics/cn/zh/technology/db2/db2-trials.html" style="margin-right:35px;" target="_blank"> &nbsp;免费试用</a>
+                                            </p>
+                                            <noscript>
+                                                <video controls preload="auto" width="320">
+                                                    <source src="//www.ibm.com/ibm/cn/video/5T6f74gYu1Y.mp4" type="video/mp4" />
+                                                </video>
+                                            </noscript>
+                                        </div>
+                                    </div>
+                                    <!--featured-product-end-->
+                                </div>
+                                <div class="ibm-col-4-2 ibm-col-medium-1-1">
+                                    <!--featured product-begin-->
+                                    <div class="ibm-card__content ibm-padding-bottom-2">
+                                        <div class="ibm-mo__image ibm-hidden-small">
+                                            <a id="btn-video10" href="#video10" data-widget="tooltip" title="（MP4，01:39）"><img src="images/new-assets/featured-hadoop.png" alt="Hadoop 大数据管理平台" class="featured-product-circle ibm-padding-top-1"></a>
+                                        </div>
+                                        <div class="ibm-mo__body">
+                                            <a id="btn-video10" href="#video10" data-widget="tooltip" title="（MP4，01:39）"><img src="images/new-assets/featured-hadoop.png" alt="Hadoop 大数据管理平台" class="featured-product-circle ibm-padding-top-1 ibm-center ibm-padding-bottom-1 ibm-hidden-medium ibm-hidden-large ibm-hidden-xlarge"></a>
+                                            <h4 class="ibm-bold"><a href="/analytics/cn/zh/technology/hadoop/" target="_blank">Hadoop</a><span class="ibm-textcolor-gray-50 ibm-small ibm-light"> | 数据管理平台</span></h4>
+                                            <p class="ibm-padding-bottom-1">利用 IBM BigInsights 中的完整分析功能套件，制定决策更快速，更完善！将一流的开源软件与企业级功能完美结合。</p>
+                                            <p>
+
+                                                <a class="ibm-forward-link ibm-inlinelink" href="https://www.ibm.com/marketing/iwm/dre/signup?source=MAIL-analytics&S_PKG=ov42187&disableCookie=Yes&lang=zh_CN&S_OFF_CD=10002629" style="margin-right:35px;" target="_blank"> &nbsp;询价</a>
+                                            </p>
+                                            <p><span class="ibm-no-mobile">咨询：400-810-1818 转 2385</span><span class="ibm-mobile"><a href="tel:4008101818,2385">咨询：400-810-1818 转 2385</a></span></p>
+                                            <noscript>
+                                                <video controls preload="auto" width="320">
+                                                    <source src="//www.ibm.com/ibm/cn/video/Y-qnQo1bo_w.mp4" type="video/mp4" />
+                                                </video>
+                                            </noscript>
+                                        </div>
+                                    </div>
+                                    <!--featured-product-end-->
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+                        <!-- FEATURED_SOLUTIONS_END_END -->
+
+                        <!--PARTNERSHIPS_BEGIN -->
+                        <section id="partnerships" class="ibm-hidden-small">
+                            <div class="ibm-band ibm-background-white ibm-center" id="featured-products">
+                                <div class="ibm-columns">
+                                    <!-- eTree :.: Column 1-1 :.: W040991P78871W84-->
+                                    <div class="ibm-col-1-1">
+                                        <h2 class="ibm-h2">大数据和分析
+                                        </h2>
+                                        <div class="ibm-columns">
+                                            <div class="ibm-col-5-1"></div>
+                                            <div class="ibm-col-5-3">
+                                                <p><strong>得益于越来越多的数据类型和来源，通过分析获得的洞察使一切皆有可能。通过大数据和分析
+                                                    ，IBM 帮助企业从社交数据、新闻数据、事件数据、天气数据以及物联化的机器和设备的数据中更深入地了解人员、事件、地点和事物，从而更加胸有成竹对重要的迹象采取行动，获得竞争优势。</strong></p>
+                                            </div>
+                                            <div class="ibm-col-5-1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ibm-col-1-1">
+                                        <div class="ibm-columns">
+                                            <div class="ibm-col-5-1"></div>
+                                            <div class="ibm-col-5-1 m-five">
+                                                <div onClick="location.href='//www.ibm.com/ibm/cn/analytics/cn/zh/webcast/index.html#s1'" class="solution-container">
+                                                    <h2 class="ibm-h2 ibm-textcolor-blue-40">大数据讲堂</h2>
+                                                    <p>IBM 大数据讲堂， 与您一同践行大数据</p>
+                                                    <p class="ibm-ind-link"><a href="//www.ibm.com/ibm/cn/analytics/cn/zh/webcast/index.html#s1" class="ibm-forward-link" data-homepers-ind="undefined">了解更多信息</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="ibm-col-5-1 m-five">
+                                                <div onClick="location.href='//www.ibm.com/ibm/cn/analytics/cn/zh/sme/index.html'" class="solution-container">
+                                                    <h2 class="ibm-h2 ibm-textcolor-blue-40">约数据大咖</h2>
+                                                    <p>“数据大咖有约” - 助力未来企业领袖之人</p>
+                                                    <p class="ibm-ind-link"><a href="//www.ibm.com/ibm/cn/analytics/cn/zh/sme/index.html" class="ibm-forward-link" data-homepers-ind="undefined">了解更多信息</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="ibm-col-5-1 m-five">
+                                                <div onClick="location.href='//www.ibm.com/ibm/cn/analytics/cn/zh/2016_insight_economy/'" class="solution-container">
+                                                    <h2 class="ibm-h2 ibm-textcolor-blue-40">大数据案例</h2>
+                                                    <p>一站式解读全行业案例，探索企业转型奥秘</p>
+                                                    <p class="ibm-ind-link"><a href="//www.ibm.com/ibm/cn/analytics/cn/zh/2016_insight_economy/" class="ibm-forward-link" data-homepers-ind="undefined">了解更多信息</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- PARTNERSHIPS_END -->
+                        <!--CLIENT_REFERENCES_BEGIN-->
+                        <section id="ibm-analytics-client-references" class="ibm-hidden-small" data-solution="ibm-analytics-client-references">
+                            <div id="client-container" class="colored-band-cta ibm-background-cool-gray-80 ibm-background-alternate">
+                                <div class="ctas" data-widget="setsameheight" data-items=".ibm-col-5-1">
+                                    <div class="ibm-col-5-1 no-margin ibm-padding-top-r1 ibm-padding-bottom-r1 testfirst client-references-background-color">
+                                        <h2 class="ibm-h2 ibm-light  ibm-textcolor-white ibm-padding-top-2">客户成功案例</h2>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                    <div class="ibm-col-5-1 no-margin ibm-padding-top-r1 ibm-padding-bottom-r1 ibm-background-blue-40 ibm-alternate-background ">
+                                        <p class="ibm-h4"><strong>本田研发部</strong></p>
+                                        <p>在本田，许多领域对于数据挖掘的需求都出现激增情况，但是，这还不足以说服业务线主管决定在现实运营中使用分析功能来削减成本、提高运营效率和创造新价值。</p>
+                                        <p class="ibm-padding-top-1 ibm-padding-bottom-2"><a id="btn-video3" href="#video3" data-widget="tooltip" title="（MP4，01:18）" style="margin-right:35px;"><span class="ibm-icon-nolink ibm-video-link">观看视频</span></a></p>
+                                        <noscript>
+                                            <video controls preload="auto" width="320">
+                                                <source src="//www.ibm.com/ibm/cn/video/zs7qqEfD720.mp4" type="video/mp4" />
+                                            </video>
+                                        </noscript>
+                                    </div>
+                                    <div class="ibm-col-5-1 no-margin ibm-padding-top-r1 ibm-padding-bottom-r1 ibm-background-blue-50 ibm-alternate-background ">
+                                        <p class="ibm-h4"><strong>视频游戏厂商 Hothead Games</strong></p>
+                                        <p>IBM Cloudant 助力 Hothead Games 霸占体育手游排行榜榜首. “出色的数据层应该做到几乎让您觉察不到，通过与 Cloudant 的大数据专家合作，我们在所有的 Big Win 体育游戏中实现了上述目标。”</p>
+                                        <p class="ibm-textcolor-white ibm-small">Physion 创始人兼 CEO Barry Wark</p>
+                                        <p class="ibm-padding-top-1 ibm-padding-bottom-2"><a class="ibm-inlinelink ibm-video-player-con" data-widget="tooltip" title="（Youku，02:40）" href="//v.youku.com/v_show/id_XMTY2MjYyMjczNg" target="_blank"><span class="ibm-icon-nolink ibm-video-link">观看视频</span></a></p>
+                                        <p class="ibm-button-link"><a href="https://www.ibm.com/marketing/iwm/dre/signup?source=mrs-form-5932&S_PKG=ov52694&lang=zh_CN" target="_blank" class="ibm-btn-pri ibm-btn-yellow-10 ibm-btn-wrap btn-mobile" onClick="goPage(this);return false;">案例详情</a></p>
+
+                                        <noscript>
+                                            <video controls preload="auto" width="320">
+                                                <source src="//www.ibm.com/ibm/cn/video/-tMhhLdxlYA.mp4" type="video/mp4" />
+                                            </video>
+                                        </noscript>
+                                    </div>
+                                    <div class="ibm-col-5-1 no-margin ibm-padding-top-r1 ibm-padding-bottom-r1 ibm-background-blue-60 ibm-alternate-background ">
+                                        <p class="ibm-h4"><strong>移动应用提供商 Dimagi</strong></p>
+                                        <p>移动应用提供商 Dimagi 选择了 IBM Cloudant Dedicated Cluster 作为新的数据层，获得了强大的高性能数据库即服务解决方案，能够在富有弹性而且可扩展的全球云平台上运行。</p>
+                                        <p class="ibm-padding-top-1 ibm-padding-bottom-2"><a id="btn-video5" href="#video5" data-widget="tooltip" title="（MP4，03:13）" style="margin-right:35px;"><span class="ibm-icon-nolink ibm-video-link">观看视频</span></a></p>
+                                        <noscript>
+                                            <video controls preload="auto" width="320">
+                                                <source src="//www.ibm.com/ibm/cn/video/5-9hJCoUftM.mp4" type="video/mp4" />
+                                            </video>
+                                        </noscript>
+                                    </div>
+                                    <div class="ibm-col-5-1 no-margin ibm-padding-top-r1 ibm-padding-bottom-r1 ibm-background-blue-70 ibm-alternate-background ">
+                                        <p class="ibm-h4"><strong>丹麦农业食品公司 SEGES</strong></p>
+                                        <p>通过与创新型软件和设计咨询机构 Mj?lner Informatics 合作，SEGES 使用 IBM? Watson? Analytics 探索相关数据，更深入地洞察农业趋势，做到有的放矢。</p>
+                                        <p class="ibm-padding-top-1 ibm-padding-bottom-2"><a class="ibm-forward-link ibm-inlinelink" href="https://www.ibm.com/software/businesscasestudies/us/en/corp?synkey=H760814P32716W86"> &nbsp;阅读案例研究（英文）</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--CLIENT_REFERENCES_END-->
+                        <!--a class="ibm-hidden-small" href="//www.ibm.com/ibm/cn/analytics/cn/zh/webcast/index.html" target="_blank">
+                            <div class="ibm-band ibm-padding-top-r3 ibm-padding-bottom-r3" style="background: rgb(255, 255, 255) url('//www.ibm.com/big-data/images/banner_v220160202_1.jpg') no-repeat scroll center top / cover ; ">
+                            </div>
+                        </a>
+                        <br />
+                        <a class="ibm-hidden-small" href="//www.ibm.com/ibm/cn/analytics/cn/zh/sme/index.html?re=analyticshomepage" target="_blank">
+                            <div class="ibm-band ibm-padding-top-r3 ibm-padding-bottom-r3" style="background: rgb(255, 255, 255) url('//www.ibm.com/analytics/cn/zh/images/banner_banking_1600x320.png') no-repeat scroll center top / cover ; ">
+                            </div>
+                        </a-->
+                        <!--SERVICES_BEGIN-->
+                        <section id="email-get-connected" class="ibm-hidden-small">
+                            <div id="email-get-conected-container" class="ibm-background-purple-70">
+                                <div class="ibm-columns ibm-alternate-background ibm-padding-top-2 ibm-padding-bottom-1">
+                                    <div class="ibm-col-4-3 ibm-col-medium-1-1 ">
+                                        <h3 class="ibm-h3  ibm-light">了解如何定义、实施、实现和扩展 IBM 大数据分析 解决方案</h3></div>
+                                    <div class="ibm-col-4-1 ibm-col-medium-1-1 ibm-center">
+                                        <p><a href="//www.ibm.com/software/analytics/services_overview/" class="ibm-btn-pri ibm-btn-white" style="color:#323232 !important;">了解更多信息
+                                        </a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--SERVICES_END-->
+                        <!-- ANALYTICS_FOOTER_BEGIN -->
+                        <section id="footer" class="ibm-padding-bottom-r2 ibm-background-white ibm-hidden-small">
+                            <div class="ibm-columns ibm-textcolor-grey-80">
+                                <div class="ibm-col-5-1 ibm-padding-top-2">
+                                    <h4 class="ibm-bold ibm-textcolor-gray-80">特色产品</h4>
+                                    <p><a class="ibm-textcolor-gray-80" href="//www.ibm.com/analytics/cn/zh/technology/spss/">SPSS</a></p>
+                                    <p><a class="ibm-textcolor-gray-80" href="//www.ibm.com/analytics/cn/zh/technology/db2/">Db2</a></p>
+                                    <p><a class="ibm-textcolor-gray-80" href="//www.ibm.com/analytics/cn/zh/technology/hadoop/">IBM BigInsights for Hadoop</a></p>
+                                    <p><a class="ibm-textcolor-gray-80" href="//www.ibm.com/analytics/cn/zh/technology/cloud-data-services/cloudant/">Cloudant</a></p>
+                                    <p><a class="ibm-textcolor-gray-80" href="//www.ibm.com/analytics/cn/zh/technology/cloud-data-services/dashdb/">Db2 Warehouse on Cloud</a></p>
+                                    <p><a class="ibm-textcolor-gray-80" href="https://www.ibm.com/analytics/watson-analytics/cn-zh/index.html">Watson Analytics</a></p>
+                                </div>
+                                <div class="ibm-col-5-1 ibm-padding-top-2">
+                                    <h4 class="ibm-bold ibm-textcolor-gray-80">特色行业解决方案</h4>
+                                    <p><a class="ibm-textcolor-gray-80" href="https://www.ibm.com/analytics/cn/zh/industry/banking">银行业</a></p>
+                                    <p><a class="ibm-textcolor-gray-80" href="//www.ibm.com/analytics/cn/zh/industry/energy-and-utilities/index.shtml">能源与公用事业</a></p>
+                                    <p><a class="ibm-textcolor-gray-80" href="//www.ibm.com/analytics/cn/zh/industry/government/index.shtml">政府</a></p>
+                                    <p><a class="ibm-textcolor-gray-80" href="//www.ibm.com/analytics/us/en/industry/healthcare/">医疗保健行业（英文）</a></p>
+                                    <p><a class="ibm-textcolor-gray-80" href="//www.ibm.com/analytics/cn/zh/industry/retail/index.shtml ">零售业</a></p>
+                                </div>
+                                <div class="ibm-col-5-1 ibm-padding-top-2">
+                                    <h4 class="ibm-bold ibm-textcolor-gray-80">面向以下领域的解决方案：</h4>
+                                    <p><a class="ibm-textcolor-gray-80" href="//www.ibm.com/analytics/cn/zh/technology/">技术</a></p>
+                                    <p><a class="ibm-textcolor-gray-80" href="//www.ibm.com/analytics/cn/zh/industry/">行业</a></p>
+                                    <p><a class="ibm-textcolor-gray-80" href="//www.ibm.com/analytics/cn/zh/business/">业务</a></p>
+                                </div>
+                                <div class="ibm-col-6-2 ibm-padding-top-2">
+                                    <h4 class="ibm-bold">关注 IBM 大数据分析</h4>
+                                    <h4 style="font-weight:bold;" class="ibm-bold   ibm-icon-nolink ibm-phone-link">咨询电话：</h4>
+                                    <p style="padding-left:2.3rem;" class="ibm-no-mobile">
+                                        400-810-1818 转 2385（手机）
+                                        <br> 800-810-1818 转 2385（座机）
+                                    </p>
+                                    <p style="margin-top:-10px;" class="ibm-mobile">
+                                        <a href="tel:4008101818,2385?lnk=bua">400-810-1818 转 2385</a>（手机）
+                                        <br>
+                                        <a href="tel:8008101818,2385?lnk=bua">800-810-1818 转 2385</a>（座机）
+                                    </p>
+                                    <h4 style="font-weight:bold;" class="ibm-bold"> IBM 大数据分析官方微信：</h4>
+                                    <p style="padding-left: 2.3rem;"><img width="140" height="140" alt="Big Data" src="//www.ibm.com/analytics/cn/zh/images/cn_zh_QRcode_20160202.png">
+                                        <br> 关注 IBM 大数据分析微信，即时资讯，手握洞察 或 搜索官方微信 IBMBDA</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ANALYTICS_FOOTER_END-->
+                        <!-- CONTENT_END -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MAIN_CONTENT_END-->
+</div>
+<!-- FOOTER_BEGIN -->
+<div id="ibm-footer-module">
+    <!-- Dynamic footer links inserted here inside a <section> -->
+</div>
+<footer aria-label="IBM">
+    <div id="ibm-footer">
+        <ul>
+            <li><a href="//www.ibm.com/contact/cn/zh/">联系 IBM</a></li>
+            <li><a href="//www.ibm.com/privacy/cn/zh/">隐私条约</a></li>
+            <li><a href="//www.ibm.com/legal/cn/zh/">使用条款</a></li>
+            <li><a href="//www.ibm.com/accessibility/cn/zh/">辅助功能选项</a></li>
+        </ul>
+    </div>
+</footer>
+<!-- FOOTER_END -->
+</div>
+
+<script src="https://www-05.ibm.com/sk/_dev/mikec/watermark/watermark.js" type="text/javascript"></script>
+
+
+
+
+</body>
+
+</html>
+

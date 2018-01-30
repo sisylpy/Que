@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="t">
+    <serverData>
+      <paths name="t">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/Users/lipeiyi/Desktop/ceshi2" local="$PROJECT_DIR$" web="//Users/lipeiyi/Desktop/ceshi2" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/" />
+            <excludedPath local="true" path="$PROJECT_DIR$" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
