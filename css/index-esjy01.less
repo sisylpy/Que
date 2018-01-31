@@ -170,7 +170,7 @@ nav {
 
     //左侧二级菜单
     .esjy-background-neutral-white-30 {
-      width: 30%;
+      width: 35%;
       height: 100%;
       background-color: gray;
       float: left;
@@ -180,18 +180,29 @@ nav {
         //background-color: red;
         li{
           width: 100%;
-          height: 2rem;
-          //background-color: pink;
-          line-height: 2rem;
+          height: 2.6rem;
+          line-height: 2.6rem;
           text-align: center;
           border: 1px solid green;
+          .esjy-show-active {
+            background-color: @esjyColor;
+            color: white;
+          }
           a {
+            font-size:1.2rem;
             display: block;
             width: 100%;
-            height: 2rem;
-            line-height: 2rem;
-            text-align: center;
+            height: 2.6rem;
+            line-height: 2.6rem;
+            //text-align: center;
+            //padding: 7px 20px 8px 40px
+
+
           }
+          .esjy-show-active {
+            font-weight: 600;
+          }
+
         }
       }
 
@@ -201,13 +212,14 @@ nav {
   //  右侧下拉菜单esjy-background-white-core
     .esjy-background-white-core {
       float: left;
-      width: 70%;
+      width: 65%;
       height: 100%;
       //background-color: rebeccapurple;
       position: relative;
 
       .esjy-megapanel {
         width: 100%;
+        display: none;
         h3 {
           width: 100%;
           a {
@@ -234,6 +246,9 @@ nav {
             }
           }
         }
+      }
+      .esjy-show-active {
+        display: block;
       }
     }
 

@@ -222,15 +222,15 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
 }
 .esjy-hidden-small {
   width: 100%;
-  height: 444px;
-  top: -444px;
+  height: 35rem;
+  top: -35rem;
   position: relative;
   z-index: 5;
   background-color: black;
 }
 .esjy-megamenu-section {
   width: 100%;
-  height: 444px;
+  height: 35rem;
   background-color: greenyellow;
 }
 .esjy-megamenu-section .esjy-columns {
@@ -241,7 +241,7 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
   overflow: hidden;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 {
-  width: 30%;
+  width: 35%;
   height: 100%;
   background-color: gray;
   float: left;
@@ -252,26 +252,34 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li {
   width: 100%;
-  height: 2rem;
-  line-height: 2rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
   text-align: center;
   border: 1px solid green;
 }
+.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li .esjy-show-active {
+  background-color: #3b6caa;
+  color: white;
+}
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li a {
+  font-size: 1.2rem;
   display: block;
   width: 100%;
-  height: 2rem;
-  line-height: 2rem;
-  text-align: center;
+  height: 2.6rem;
+  line-height: 2.6rem;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li .esjy-show-active {
+  font-weight: 600;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core {
   float: left;
-  width: 70%;
+  width: 65%;
   height: 100%;
   position: relative;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel {
   width: 100%;
+  display: none;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h3 {
   width: 100%;
@@ -297,6 +305,9 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 p {
   width: 100%;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-show-active {
+  display: block;
 }
 .esjy-content-wrapper {
   width: 100%;

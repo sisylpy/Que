@@ -11,8 +11,9 @@ var onmouseColor = '#4ff';
 var onmouseBackgroundColor = '#3e3e3e';
 var i = 0;//导航菜单循环变量
 var itemdatalink_id; //导航菜单和下拉菜单的链接属性
-
-
+var allLeftMunes;
+var activeLeftMune;
+var showRight;
 
 
 //1，添加隐藏的下划线
@@ -26,7 +27,7 @@ for (; i < items.length; i++) {
 for (i = 0; i < items.length; i++) {
     //2.1 鼠标划过导航菜单
     items[i].onmouseover = function () {
-        //2.1.1, 鼠标划过下划线向上移动4px
+
         this.firstChild.style.transform = 'translateY(-4px)';
         this.firstChild.style.webkitTransform = 'translateY(-4px)';
         this.firstChild.style.display = 'block';
@@ -44,80 +45,115 @@ for (i = 0; i < items.length; i++) {
                 if (itemdatalink_id === dropDownid) {
                     dropDownMenus[i].style.display = 'block';//让鼠标划过所对应的下拉菜单显示
 
+                    //初始状态左侧菜单第一个li为active
+                    var drownLeftMunes = document.getElementById(itemdatalink_id);
+                    var tempallLeftMunes = drownLeftMunes.children[0];
+                    var temptwoallLeftMunes = tempallLeftMunes.children[0];
+                    allLeftMunes = temptwoallLeftMunes.children;
+                    var forwordLinks = drownLeftMunes.children[0].getElementsByClassName('esjy-arrow-forward-link');
+                    activeLeftMune = forwordLinks[0];
+                    $(activeLeftMune).addClass('esjy-show-active');
+
+                    if(activeLeftMune){
+                        //todo: $(activeLeftMune).removeClass('esjy-show-active')
+
+
+
+                    }
+
+
+                    //2.1.3.2, 获取鼠标划过下拉菜单的右侧
+                    var drownMenuRight = dropDownMenus[i].getElementsByClassName('esjy-background-white-core');
+                    var drownMenuRightDiv = drownMenuRight[0].children;
+                    $(drownMenuRightDiv[0]).addClass('esjy-show-active');
+                    showRight = drownMenuRightDiv[0];
+
+                    if (showRight) {
+                        // $(showRight).removeClass('esjy-show-active');
+                        //todo showRight = drownMenuRightDiv[0];
+                    }
+
+
+
+
+
+
+                    //2.1.3.4 显示并移动下拉菜单
+                    hiddenSmall.style.display = 'block';
+                    hiddenSmall.style.transform = 'translateY(' + hiddenSmall.offsetHeight + 'px)';
+
                 }
-                //2.1.3.2, 获取鼠标划过下拉菜单的右侧
-                var drownMenuRight = dropDownMenus[i].getElementsByClassName('esjy-background-white-core');
-                var drownMenuRightDiv = drownMenuRight[0].children;
-                //2.1.3.3,遍历所有右侧菜单，默认显示第一个
-                for (var j = 0; j < drownMenuRightDiv.length; j++) {
-                    drownMenuRightDiv[j].style.display = 'none';
-                }drownMenuRightDiv[0].style.display = 'block';
             }
 
-            //2.1.4 显示并移动下拉菜单
-            hiddenSmall.style.display = 'block';
-            hiddenSmall.style.transform = 'translateY(' + hiddenSmall.offsetHeight + 'px)';
-            // hiddenSmall.style.transform = 'translateY(494px)';
-
         }
+
     }
-    //2.2 鼠标离开导航菜单
+
     items[i].onmouseleave = function () {
         this.firstChild.style.transform = 'translateY(0px)';
         this.firstChild.style.webkitTransform = 'translateY(0px)';
         this.firstChild.style.display = 'none';
         hiddenSmall.style.transform = 'translateY(-' + hiddenSmall.offsetHeight + 'px)';
-        // hiddenSmall.style.transform = 'translateY(-50px)';
     }
+
 }
 
 
-//3，鼠标划过下拉菜单的左侧二级菜单
-
-// var  ddd = dropMune.children;
-// b = a+2;
-
-
-
-// var dropMenuLists = dropMune.getElementsByClassName('esjy-dropdown-menu');
 
 
 
 
-// for (i = 0; i < dropDownMenuLists.length; i++) {
-//     //鼠标划过左侧菜单
-//     dropDownMenuLists[i].onmouseover = function () {
-//         //3.2.3.4.1.1, 设置左侧菜单鼠标划过的样式
-//         this.style.color = onmouseColor;
-//         this.style.backgroundColor = onmouseBackgroundColor;
-//         //3.2.3.4.1.2, 获取左侧下拉菜单鼠标划过的事件,如果'data-panelid = null'，说明右侧无内容，return
-//         if (this.getAttribute('data-panelid') === null) {
-//             alert('wu-panelid');
-//         } else {
-//             //3.2.3.4.1.3, 获取左侧下拉菜单鼠标划过的data-panelid的右侧内容
-//             //3.8.4, 显示对应的右侧下拉菜单内容
-//             for (i = 0; i < drownMenuRightDiv.length; i++) {
-//                 drownMenuRightDiv[i].style.display = 'none';
-//                 var panelid = this.getAttribute('data-panelid');
-//                 var rightlist_id = drownMenuRightDiv[i].getAttribute('id');
-//                 if (panelid === rightlist_id) {
-//                     drownMenuRightDiv[i].style.display = 'block';
-//
-//                 }
-//             }
-//         }
-//     }
-//     //鼠标离开左侧下拉菜单，隐藏对应右侧内容
-//     dropDownMenuLists[i].onmouseleave = function () {
-//         this.style.color = orignalColor;
-//         this.style.backgroundColor = '';
-//         if (0 < i < dropDownMenuLists.length) {
-//             drownMenuRightDiv[i].style.display = 'none';
-//         }
-//
-//     }
-//
-// }
+
+
+
+
+
+
+for (i = 0; i < dropDownMenus.length; i++) {
+
+    var drownMenuLeft = dropDownMenus[i].getElementsByClassName('esjy-background-neutral-white-30');
+    var drownMenuLeftDiv = drownMenuLeft[0].children[0].children;
+
+    var drownMenuRight = dropDownMenus[i].getElementsByClassName('esjy-background-white-core');
+    var drownMenuRightDiv = drownMenuRight[0].children;
+
+    //鼠标划过左侧菜单
+    drownMenuLeftDiv[i].onmouseover = function () {
+        //3.2.3.4.1.1, 设置左侧菜单鼠标划过的样式
+        this.style.color = onmouseColor;
+        this.style.backgroundColor = onmouseBackgroundColor
+
+
+        var thisa = this.getElementsByTagName('a');
+        var thisadatapanelid = thisa[0].getAttribute('data-panelid');
+        //3.2.3.4.1.2, 获取左侧下拉菜单鼠标划过的事件,如果'data-panelid = null'，说明右侧无内容，return
+        if (thisadatapanelid === null) {
+            alert('wu-panelid');
+        } else {
+            //3.2.3.4.1.3, 获取左侧下拉菜单鼠标划过的data-panelid的右侧内容
+            //3.8.4, 显示对应的右侧下拉菜单内容
+
+            for (var j = 0; j < drownMenuRightDiv.length; j++) {
+                var rightlist_id = drownMenuRightDiv[j].getAttribute('id');
+                if (thisadatapanelid === rightlist_id) {
+                    $(drownMenuRightDiv[j]).addClass('esjy-show-active');
+                    showRight = drownMenuRightDiv[0];
+
+                }
+            }
+        }
+    }
+    //鼠标离开左侧下拉菜单，隐藏对应右侧内容
+    dropDownMenus[i].onmouseleave = function () {
+        this.style.color = orignalColor;
+        this.style.backgroundColor = '';
+        if (0 < i < dropDownMenus.length) {
+            // drownMenuRightDiv[i].style.display = 'none';
+        }
+
+    }
+
+}
 
 
 
