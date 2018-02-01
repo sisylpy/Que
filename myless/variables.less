@@ -31,7 +31,12 @@
 @deviceWidthList:580px,640px,720px,750px,960px,1080px,1280px,1480px;
 
 //导航高度
-@navHeight:3.5rem;
+@navHeight:@navMuneHeight + @advHeight;
+
+//导航菜单高度：
+@navMuneHeight:3rem;
+//广告语高度
+@advHeight:2rem;
 
 
 //logo大小
@@ -42,3 +47,5 @@
 
 //下拉菜单高度
 @drownMenuHeight:35rem;
+
+@brand-primary:darken(#428bca, 6.5%); // #337ab7
