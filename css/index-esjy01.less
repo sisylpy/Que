@@ -116,7 +116,7 @@ nav {
           display: none;
           width: 10rem;
           height: 20rem;
-          background-color: paleturquoise;
+          background-color: #ffffff;
         }
       }
       //1.4.3.2 主菜单式按钮
@@ -163,7 +163,7 @@ nav {
   .esjy-columns {
     width: 100%;
     height: 100%;
-    background: paleturquoise;
+    background: #ffffff;
     position: relative;
     overflow: hidden;
 
@@ -172,30 +172,31 @@ nav {
     .esjy-background-neutral-white-30 {
       width: 35%;
       height: 100%;
-      background-color: gray;
+      background-color: #e6e6e6;
       float: left;
       ul{
         width: 100%;
         height: 100%;
+        padding-left: 5rem;
         //background-color: red;
         li{
-          width: 100%;
-          height: 2.6rem;
-          line-height: 2.6rem;
+          width: 90% ;
+          //height: 2.6rem;
+          //line-height: 2.6rem;
           text-align: center;
-          border: 1px solid green;
           .esjy-show-active {
             background-color: @esjyColor;
             color: white;
           }
           a {
-            font-size:1.2rem;
+            font-size:1.1rem;
             display: block;
             width: 100%;
-            height: 2.6rem;
-            line-height: 2.6rem;
-            //text-align: center;
-            //padding: 7px 20px 8px 40px
+            height: 2.8rem;
+            line-height: 2.8rem;
+            text-align: left;
+            padding: 2px 20px 1px 6px;
+
 
 
           }
@@ -217,35 +218,89 @@ nav {
       //background-color: rebeccapurple;
       position: relative;
 
+
       .esjy-megapanel {
         width: 100%;
+        height: 100%;
+        padding-left: 2rem;
         display: none;
-        h3 {
+        position: absolute;
+        //background-color: blue;
+
+        h1 {
           width: 100%;
+          margin: 1.5rem auto;
+          &:hover{
+            text-decoration: underline;
+          }
+
           a {
             width: 100%;
+            color:@esjyColor;
+
+
           }
         }
+
+
         .esjy-columns{
           width: 100%;
+          height: 100%;
+          //background-color: red;
+
           .ibm-col-6-2 {
             float: left;
             width: 50%;
+            height: 100%;
+            //background: pink;
+
+            &:first-child{
+              //background-color: green;
+
+
+
+            }
+
+            p{
+              font-size: 0.9rem;
+
+            }
             ul{
               width: 100%;
               li{
                 width:100%;
+                //height: 3rem;
+                //line-height: 2.5rem;
                 a{
                   width:100%;
-
+                  display: block;
+                  color: @esjyColor;
+                  font-size: 1rem;
+                  height: 2.6rem;
+                  line-height: 2.6rem;
+                  &:hover{
+                    text-decoration: underline;
+                  }
                 }
               }
             }
-            p{
-              width: 100%;
-            }
           }
+          &:last-child{
+            //background-color: red;
+            p{
+              font-weight: 400;
+            }
+
+          }
+
+
         }
+
+
+
+
+
+
       }
       .esjy-show-active {
         display: block;

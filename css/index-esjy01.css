@@ -106,7 +106,7 @@ html {
   font-size: 16px;
 }
 body {
-  background-color: bisque;
+  background-color: #ffffff;
 }
 a:hover,
 a:focus {
@@ -209,7 +209,7 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin
   display: none;
   width: 10rem;
   height: 20rem;
-  background-color: paleturquoise;
+  background-color: #ffffff;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu {
   float: left;
@@ -236,37 +236,37 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
 .esjy-megamenu-section .esjy-columns {
   width: 100%;
   height: 100%;
-  background: paleturquoise;
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 {
   width: 35%;
   height: 100%;
-  background-color: gray;
+  background-color: #e6e6e6;
   float: left;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul {
   width: 100%;
   height: 100%;
+  padding-left: 5rem;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li {
-  width: 100%;
-  height: 2.6rem;
-  line-height: 2.6rem;
+  width: 90% ;
   text-align: center;
-  border: 1px solid green;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li .esjy-show-active {
   background-color: #3b6caa;
   color: white;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   display: block;
   width: 100%;
-  height: 2.6rem;
-  line-height: 2.6rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  text-align: left;
+  padding: 2px 20px 1px 6px;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li .esjy-show-active {
   font-weight: 600;
@@ -279,20 +279,33 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel {
   width: 100%;
+  height: 100%;
+  padding-left: 2rem;
   display: none;
+  position: absolute;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h3 {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h1 {
   width: 100%;
+  margin: 1.5rem auto;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h3 a {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h1:hover {
+  text-decoration: underline;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h1 a {
   width: 100%;
+  color: #3b6caa;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns {
   width: 100%;
+  height: 100%;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 {
   float: left;
   width: 50%;
+  height: 100%;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 p {
+  font-size: 0.9rem;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 ul {
   width: 100%;
@@ -302,9 +315,17 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 ul li a {
   width: 100%;
+  display: block;
+  color: #3b6caa;
+  font-size: 1rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 p {
-  width: 100%;
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 ul li a:hover {
+  text-decoration: underline;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns:last-child p {
+  font-weight: 400;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-show-active {
   display: block;

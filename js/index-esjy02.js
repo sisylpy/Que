@@ -14,19 +14,20 @@ var itemdatalink_id; //导航菜单和下拉菜单的链接属性
 var allLeftMunes;
 var activeLeftMune;
 var showRight;
+var im = 0;
 
 
 //1，添加隐藏的下划线
-for (; i < items.length; i++) {
-    var underLinewidth = items[i].offsetWidth;
+for (; im < items.length; im++) {
+    var underLinewidth = items[im].offsetWidth;
     var underLineHeight = 4;
-    underDiv = createDiv(items[i], underLinewidth, underLineHeight);
+    underDiv = createDiv(items[im], underLinewidth, underLineHeight);
     underDiv.style.transition = 'all,0.5s';
 }
 //2，（左侧）导航菜单鼠标事件
-for (i = 0; i < items.length; i++) {
+for (im = 0; im < items.length; im++) {
     //2.1 鼠标划过导航菜单
-    items[i].onmouseover = function () {
+    items[im].onmouseover = function () {
 
         this.firstChild.style.transform = 'translateY(-4px)';
         this.firstChild.style.webkitTransform = 'translateY(-4px)';
@@ -36,123 +37,81 @@ for (i = 0; i < items.length; i++) {
         itemdatalink_id = this.getElementsByTagName('a')[0].getAttribute('data-linkid');
         var menutype = this.getElementsByTagName('a')[0].getAttribute('data-menutype');
 
-        //2.1.3, 判断鼠标划过导航菜单是否含有下拉菜单
-        if ('megamenu' === menutype) {
-            //2.1.3.1,显示鼠标划过子菜单
-            for (var i = 0; i < dropDownMenus.length; i++) {
-                dropDownMenus[i].style.display = 'none';
-                var dropDownid = dropDownMenus[i].getAttribute('data-linkid');
-                if (itemdatalink_id === dropDownid) {
-                    dropDownMenus[i].style.display = 'block';//让鼠标划过所对应的下拉菜单显示
+            //2.1.3, 判断鼠标划过导航菜单是否含有下拉菜单
+            if ('megamenu' === menutype) {
+                //2.1.3.1,显示鼠标划过子菜单
+                for (var i = 0; i < dropDownMenus.length; i++) {
 
-                    //初始状态左侧菜单第一个li为active
-                    var drownLeftMunes = document.getElementById(itemdatalink_id);
-                    var tempallLeftMunes = drownLeftMunes.children[0];
-                    var temptwoallLeftMunes = tempallLeftMunes.children[0];
-                    allLeftMunes = temptwoallLeftMunes.children;
-                    var forwordLinks = drownLeftMunes.children[0].getElementsByClassName('esjy-arrow-forward-link');
-                    activeLeftMune = forwordLinks[0];
-                    $(activeLeftMune).addClass('esjy-show-active');
+                    dropDownMenus[i].style.display = 'none';
 
-                    if(activeLeftMune){
-                        //todo: $(activeLeftMune).removeClass('esjy-show-active')
+                    var dropDownid = dropDownMenus[i].getAttribute('data-linkid');
+
+                    if (itemdatalink_id === dropDownid) {
+                        dropDownMenus[i].style.display = 'block';//让鼠标划过所对应的下拉菜单显示
+
+                        //左侧下拉菜单
+                        var dropdownmune = dropDownMenus[i].getElementsByClassName('esjy-dropdown-menu');
+                        activeLeftMune = dropdownmune[0].getElementsByTagName('a')[0];
+                        $(activeLeftMune).addClass('esjy-show-active');
+
+                        //右侧下拉菜单
+                        var drownMenuRight = dropDownMenus[i].getElementsByClassName('esjy-background-white-core');
+                        var drownMenuRightDiv = drownMenuRight[0].children;
+                        //初始状态右侧第一个div为active
+                        $(drownMenuRightDiv[0]).addClass('esjy-show-active');
+                        showRight = drownMenuRightDiv[0];
+
+                        //2.1.3.4 显示并移动下拉菜单
+                        hiddenSmall.style.display = 'block';
+                        hiddenSmall.style.transform = 'translateY(' + hiddenSmall.offsetHeight + 'px)';
 
 
+                            //鼠标划过左侧二级菜单
+                            var droplefts = dropdownmune[0].children;
+                            dropdownmune[0].onmouseover = function (e) {
+                                $(activeLeftMune).removeClass('esjy-show-active');
+                                $(e.target).addClass('esjy-show-active');
+                                activeLeftMune = e.target;
+                                var datapanelid = e.target.getAttribute('data-panelid');
+                                for (j = 0; j < drownMenuRightDiv.length; j++) {
+                                    var rightdata = drownMenuRightDiv[j].getAttribute('id');
+                                    if (rightdata === datapanelid) {
+                                        $(showRight).removeClass('esjy-show-active');
+                                        $(drownMenuRightDiv[j]).addClass('esjy-show-active');
+                                        showRight = drownMenuRightDiv[j];
+                                    }
+                                }
+                            }
+                            //鼠标离开左侧二级菜单
+                            dropdownmune[0].onmouseleave = function (e) {
+                                $(showRight).removeClass('esjy-show-active');
+                            }
+
+                            //鼠标划过三级菜单
+                            for (var n = 0; n < drownMenuRightDiv.length; n++) {
+                                drownMenuRightDiv[n].onmouseover = function () {
+                                    $(showRight).addClass('esjy-show-active');
+
+                                }
+                            }
 
                     }
-
-
-                    //2.1.3.2, 获取鼠标划过下拉菜单的右侧
-                    var drownMenuRight = dropDownMenus[i].getElementsByClassName('esjy-background-white-core');
-                    var drownMenuRightDiv = drownMenuRight[0].children;
-                    $(drownMenuRightDiv[0]).addClass('esjy-show-active');
-                    showRight = drownMenuRightDiv[0];
-
-                    if (showRight) {
-                        // $(showRight).removeClass('esjy-show-active');
-                        //todo showRight = drownMenuRightDiv[0];
-                    }
-
-
-
-
-
-
-                    //2.1.3.4 显示并移动下拉菜单
-                    hiddenSmall.style.display = 'block';
-                    hiddenSmall.style.transform = 'translateY(' + hiddenSmall.offsetHeight + 'px)';
-
                 }
             }
-
-        }
-
     }
 
-    items[i].onmouseleave = function () {
+    //2.2鼠标离开导航菜单
+    items[im].onmouseleave = function () {
         this.firstChild.style.transform = 'translateY(0px)';
         this.firstChild.style.webkitTransform = 'translateY(0px)';
         this.firstChild.style.display = 'none';
-        hiddenSmall.style.transform = 'translateY(-' + hiddenSmall.offsetHeight + 'px)';
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-for (i = 0; i < dropDownMenus.length; i++) {
-
-    var drownMenuLeft = dropDownMenus[i].getElementsByClassName('esjy-background-neutral-white-30');
-    var drownMenuLeftDiv = drownMenuLeft[0].children[0].children;
-
-    var drownMenuRight = dropDownMenus[i].getElementsByClassName('esjy-background-white-core');
-    var drownMenuRightDiv = drownMenuRight[0].children;
-
-    //鼠标划过左侧菜单
-    drownMenuLeftDiv[i].onmouseover = function () {
-        //3.2.3.4.1.1, 设置左侧菜单鼠标划过的样式
-        this.style.color = onmouseColor;
-        this.style.backgroundColor = onmouseBackgroundColor
-
-
-        var thisa = this.getElementsByTagName('a');
-        var thisadatapanelid = thisa[0].getAttribute('data-panelid');
-        //3.2.3.4.1.2, 获取左侧下拉菜单鼠标划过的事件,如果'data-panelid = null'，说明右侧无内容，return
-        if (thisadatapanelid === null) {
-            alert('wu-panelid');
-        } else {
-            //3.2.3.4.1.3, 获取左侧下拉菜单鼠标划过的data-panelid的右侧内容
-            //3.8.4, 显示对应的右侧下拉菜单内容
-
-            for (var j = 0; j < drownMenuRightDiv.length; j++) {
-                var rightlist_id = drownMenuRightDiv[j].getAttribute('id');
-                if (thisadatapanelid === rightlist_id) {
-                    $(drownMenuRightDiv[j]).addClass('esjy-show-active');
-                    showRight = drownMenuRightDiv[0];
-
-                }
-            }
-        }
-    }
-    //鼠标离开左侧下拉菜单，隐藏对应右侧内容
-    dropDownMenus[i].onmouseleave = function () {
-        this.style.color = orignalColor;
-        this.style.backgroundColor = '';
-        if (0 < i < dropDownMenus.length) {
-            // drownMenuRightDiv[i].style.display = 'none';
-        }
-
-    }
-
+//3, 鼠标离开下拉菜单，隐藏下拉菜单
+for(i = 0; i < dropDownMenus.length;i++){
+   dropDownMenus[i].onmouseleave = function (ev) {
+       hiddenSmall.style.transform = 'translateY(-' + hiddenSmall.offsetHeight + 'px)';
+   }
 }
 
 

@@ -88,3 +88,27 @@ function getFirstElementChild(parent) {
         return getFirstElementChild;
     }
 }
+
+//注册事件，处理兼容性问题
+function addEventListener(element,eventName,callback) {
+    if (element.addEventListener){
+        element.addEventListener(eventName,callback,false)
+    }else if(element.attachEvent) {
+        element.attachEvent('on'+ eventName, callback)
+    }else {
+        element['on' + eventName] = callback;
+    }
+
+}
+
+//移除事件，处理兼容性问题
+function removeEventListener(element,eventName,callback) {
+
+    if(element.removeEventListener){
+        element.removeEventListener(eventName,callback,false)
+    }else if (element.datachEvent){
+        element.datachEvent('on' + eventName, callback)
+    }else {
+        element['on' + eventName] = null;
+    }
+}

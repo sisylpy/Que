@@ -65,9 +65,9 @@ function createDiv(item,divWidth,divHeight){
     descDiv.style.height = divHeight + 'px';
     descDiv.style.backgroundColor = '#3b6caa';
     descDiv.style.position = 'absolute';
-    // descDiv.style.display = 'none';
-    descDiv.style.left = '5px';
+    descDiv.style.left = '0px';
     descDiv.style.top= seatY + 'px';
+    descDiv.style.display = 'none';
     descDiv.setAttribute("class","underLine");
     return descDiv;
 }
@@ -86,5 +86,29 @@ function prependChild(parent,newChild){
 function getFirstElementChild(parent) {
     if (parent.firstElementChild){
         return getFirstElementChild;
+    }
+}
+
+//注册事件，处理兼容性问题
+function addEventListener(element,eventName,callback) {
+    if (element.addEventListener){
+        element.addEventListener(eventName,callback,false)
+    }else if(element.attachEvent) {
+        element.attachEvent('on'+ eventName, callback)
+    }else {
+        element['on' + eventName] = callback;
+    }
+
+}
+
+//移除事件，处理兼容性问题
+function removeEventListener(element,eventName,callback) {
+
+    if(element.removeEventListener){
+        element.removeEventListener(eventName,callback,false)
+    }else if (element.datachEvent){
+        element.datachEvent('on' + eventName, callback)
+    }else {
+        element['on' + eventName] = null;
     }
 }
