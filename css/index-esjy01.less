@@ -21,23 +21,28 @@
 nav {
   height: @navHeight;
   width: 100%;
-  background-color:@brand-primary;
+  //background:linear-gradient(to right #1f5bab, #2fa0e5);
   position: absolute;
   border-bottom: 1px solid gray;
   z-index: 9;
+  background-color: @esjyColor;
+
 
   .advertise{
     display: block;
     width: 100%;
-    height: 2rem;
+    height: @advHeight;
+
     .sententce {
       width: 100%;
-      height: 2rem;
-      line-height: 2rem;
+      height: @advHeight;
+      line-height: @advHeight;
       background-color: #ffffff;
       border: 1px solid gray;
       font-size: 0.8rem;
-      font-weight: 400;
+      font-weight: 500;
+      color: @esjyColor;
+      padding-left: 4rem;
     }
   }
 
@@ -49,42 +54,52 @@ nav {
     width: @homeSizeWidth;
     float: left;
     position: relative;
+    padding-left: 4rem;
     a {
       height: @navMuneHeight;
       width: @homeSizeWidth;
       color: #ffffff;
+      font-size: 1.2rem;
+      font-weight: 500;
       line-height: @navMuneHeight;
-      text-align: center;
-      img {
-        height: @homeSizeHeight;
-        line-height: @homeSizeHeight * 0.5;
-        width: @homeSizeWidth;
-        padding: 0.5rem 1.5rem;
-      }
+      //text-align: left;
+      //img {
+      //  height: @homeSizeHeight;
+      //  line-height: @homeSizeHeight * 0.5;
+      //  width: @homeSizeWidth;
+      //  padding: 0.5rem 1.5rem;
+      //}
     }
   }
   //1.2,左边按钮
   .esjy-masthead-categories{
     height:@navMuneHeight;
     width: 50%;
-    float: left;
+    float: right;
     position: relative;
+    //padding-left:30%;
 
     li{
       float: left;
-      padding-right: 1.2rem;
+      padding-right: 1.5rem;
       position: relative;
 
       a {
         line-height: @navMuneHeight;
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-underline-position: below;
         display: block;
         position: relative;
         color: #ffffff;
-
+        font-weight: 300;
         span {
+          line-height: @navMuneHeight;
+          text-align: center;
+          padding-left: 0.2rem;
+          font-weight: 300;
+          font-size: 0.9rem;
+
 
         }
       }
@@ -100,6 +115,7 @@ nav {
  }
   //1.4, 导航栏右侧
   .esjy-masthead-rightside {
+    display: block;
     float: right;
     height: @navMuneHeight;
     width: 30% ;
@@ -120,20 +136,21 @@ nav {
 
     //1.4.3,icon式按钮部分
     .esjy-masthead-iconsonly {
-      float: left;
+      position: relative;
+      float: right;
       height: @navMuneHeight;
       width: 70%;
-      background-color: green;
+      //background-color: green;
 
       //1.4.3.1,用户icon式按钮
       .esjy-masthead-item-signin {
-        float: left;
+        float: right;
         height: @navMuneHeight;
-        width: 50%;
+        width: 100%;
         //1.4.3.1.1,用户按钮
         button {
           height: @navMuneHeight;
-          width: 50%;
+          width: 100%;
         }
         //1.4.3.1.2,用户下拉菜单
         .esjy-dropdown-menu {
@@ -145,9 +162,9 @@ nav {
       }
       //1.4.3.2 主菜单式按钮
       .ibm-masthead-item-menu {
-        float: left;
+        float: right;
         height: @navMuneHeight;
-        width: 50%;
+        width: 100%;
         //1.4.3.2.1,主菜单按钮
         button{
           height: @navMuneHeight;
@@ -201,25 +218,43 @@ nav {
       ul{
         width: 100%;
         height: 100%;
-        padding-left: 5rem;
+        padding: 1rem  0  0 8rem;
         //background-color: red;
         li{
+          &:first-child{
+            font-weight: 500;
+            width: 90% ;
+            height: 2.8rem;
+            line-height: 2.8rem;
+            text-align: left;
+            padding-left:0.5rem;
+
+          }
           width: 90% ;
-          //height: 2.6rem;
-          //line-height: 2.6rem;
+          height: 3rem;
           text-align: center;
-          .esjy-show-active {
-            background-color: @esjyColor;
-            color: white;
+          .esjy-init {
+            color: @esjyColor;
+            font-size: 1.2rem;
           }
           a {
             font-size:1.1rem;
+            padding-left:1rem;
             display: block;
             width: 100%;
             height: 2.8rem;
             line-height: 2.8rem;
             text-align: left;
-            padding: 2px 20px 1px 6px;
+            font-weight:400;
+            //padding: 7px 20px 8px 40px;
+            &:hover{
+              background-color: @esjyColor;
+              color: white;
+            }
+            //.esjy-init {
+            //  color: @esjyColor;
+            //  font-size: 1.2rem;
+            //}
 
 
 
@@ -272,7 +307,7 @@ nav {
           height: 100%;
           //background-color: red;
 
-          .ibm-col-6-2 {
+          .esjy-col-6-2 {
             float: left;
             width: 50%;
             height: 100%;
@@ -280,8 +315,6 @@ nav {
 
             &:first-child{
               //background-color: green;
-
-
 
             }
 
@@ -311,8 +344,16 @@ nav {
           }
           &:last-child{
             //background-color: red;
-            p{
-              font-weight: 400;
+
+            .esjy-bold{
+              font-weight: 500;
+              font-size: 1.2rem;
+            }
+            .esjy-linkcolor-default{
+              a{
+                color: @esjyColor;
+
+              }
             }
 
           }
@@ -459,10 +500,7 @@ main {
         width: 100%;
         position: relative;
         float: left;
-
-        h1{
-          text-align: center;
-        }
+        text-align: center;
 
         .particles-part {
           float: left;
@@ -475,28 +513,7 @@ main {
           }
 
         }
-        .esjy-columns {
-          float: left;
-          position: relative;
 
-          .esjy-alternate-background {
-            float: left;
-            position: relative;
-            color: white;
-            h2 {
-              float: left;
-              width: 100%;
-              text-align: center;
-            }
-            p{
-              float: left;
-              width: 100%;
-              text-align: center;
-
-
-            }
-          }
-        }
       }
     }
   }

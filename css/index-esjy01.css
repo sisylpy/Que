@@ -118,75 +118,81 @@ a {
 }
 .esjy-mhtype-full {
   position: fixed;
-  height: 5rem;
+  height: 7rem;
   width: 100%;
   z-index: 2;
 }
 #ibm-universal-nav {
-  height: 5rem;
+  height: 7rem;
   width: 100%;
   clear: both;
 }
 nav {
-  height: 5rem;
+  height: 7rem;
   width: 100%;
-  background-color: #337ab7;
   position: absolute;
   border-bottom: 1px solid gray;
   z-index: 9;
+  background-color: #1f5bab;
 }
 nav .advertise {
   display: block;
   width: 100%;
-  height: 2rem;
+  height: 3rem;
 }
 nav .advertise .sententce {
   width: 100%;
-  height: 2rem;
-  line-height: 2rem;
+  height: 3rem;
+  line-height: 3rem;
   background-color: #ffffff;
   border: 1px solid gray;
   font-size: 0.8rem;
-  font-weight: 400;
+  font-weight: 500;
+  color: #1f5bab;
+  padding-left: 4rem;
 }
 nav .esjy-home {
-  height: 5rem;
+  height: 7rem;
   width: 8rem;
   float: left;
   position: relative;
+  padding-left: 4rem;
 }
 nav .esjy-home a {
-  height: 3rem;
+  height: 4rem;
   width: 8rem;
   color: #ffffff;
-  line-height: 3rem;
-  text-align: center;
-}
-nav .esjy-home a img {
-  height: 5rem;
-  line-height: 2.5rem;
-  width: 8rem;
-  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 4rem;
 }
 nav .esjy-masthead-categories {
-  height: 3rem;
+  height: 4rem;
   width: 50%;
-  float: left;
+  float: right;
   position: relative;
 }
 nav .esjy-masthead-categories li {
   float: left;
-  padding-right: 1.2rem;
+  padding-right: 1.5rem;
   position: relative;
 }
 nav .esjy-masthead-categories li a {
-  line-height: 3rem;
+  line-height: 4rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-underline-position: below;
   display: block;
   position: relative;
   color: #ffffff;
+  font-weight: 300;
+}
+nav .esjy-masthead-categories li a span {
+  line-height: 4rem;
+  text-align: center;
+  padding-left: 0.2rem;
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 nav .ibm-hidden {
   visibility: hidden;
@@ -195,33 +201,34 @@ nav .ibm-hidden {
   float: left;
 }
 nav .esjy-masthead-rightside {
+  display: block;
   float: right;
-  height: 3rem;
+  height: 4rem;
   width: 30% ;
   position: relative;
 }
 nav .esjy-masthead-rightside p {
-  height: 3rem;
-  line-height: 3rem;
+  height: 4rem;
+  line-height: 4rem;
   text-align: center;
   float: left;
   width: 30%;
   border: 1px solid gray;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly {
-  float: left;
-  height: 3rem;
+  position: relative;
+  float: right;
+  height: 4rem;
   width: 70%;
-  background-color: green;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin {
-  float: left;
-  height: 3rem;
-  width: 50%;
+  float: right;
+  height: 4rem;
+  width: 100%;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin button {
-  height: 3rem;
-  width: 50%;
+  height: 4rem;
+  width: 100%;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin .esjy-dropdown-menu {
   display: none;
@@ -230,12 +237,12 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin
   background-color: #ffffff;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu {
-  float: left;
-  height: 3rem;
-  width: 50%;
+  float: right;
+  height: 4rem;
+  width: 100%;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu button {
-  height: 3rem;
+  height: 4rem;
   width: 50%;
 }
 .esjy-hidden-small {
@@ -267,24 +274,38 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul {
   width: 100%;
   height: 100%;
-  padding-left: 5rem;
+  padding: 1rem  0  0 8rem;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li {
   width: 90% ;
+  height: 3rem;
   text-align: center;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li .esjy-show-active {
-  background-color: #3b6caa;
-  color: white;
+.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li:first-child {
+  font-weight: 500;
+  width: 90% ;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li .esjy-init {
+  color: #1f5bab;
+  font-size: 1.2rem;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li a {
   font-size: 1.1rem;
+  padding-left: 1rem;
   display: block;
   width: 100%;
   height: 2.8rem;
   line-height: 2.8rem;
   text-align: left;
-  padding: 2px 20px 1px 6px;
+  font-weight: 400;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li a:hover {
+  background-color: #1f5bab;
+  color: white;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li .esjy-show-active {
   font-weight: 600;
@@ -311,39 +332,43 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h1 a {
   width: 100%;
-  color: #3b6caa;
+  color: #1f5bab;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns {
   width: 100%;
   height: 100%;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .esjy-col-6-2 {
   float: left;
   width: 50%;
   height: 100%;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 p {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .esjy-col-6-2 p {
   font-size: 0.9rem;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 ul {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .esjy-col-6-2 ul {
   width: 100%;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 ul li {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .esjy-col-6-2 ul li {
   width: 100%;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 ul li a {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .esjy-col-6-2 ul li a {
   width: 100%;
   display: block;
-  color: #3b6caa;
+  color: #1f5bab;
   font-size: 1rem;
   height: 2.6rem;
   line-height: 2.6rem;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 ul li a:hover {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .esjy-col-6-2 ul li a:hover {
   text-decoration: underline;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns:last-child p {
-  font-weight: 400;
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns:last-child .esjy-bold {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns:last-child .esjy-linkcolor-default a {
+  color: #1f5bab;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-show-active {
   display: block;
@@ -351,7 +376,7 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
 .esjy-content-wrapper {
   width: 100%;
   position: relative;
-  top: 5rem;
+  top: 7rem;
   float: left;
   z-index: 1;
 }
@@ -392,7 +417,7 @@ main .esjy-content-main .carousel .carousel-indicators li {
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
-  border: 1px solid #3b6caa;
+  border: 1px solid #1f5bab;
   border-radius: 12px;
   margin-left: 10px;
 }
@@ -402,7 +427,7 @@ main .esjy-content-main .carousel .carousel-indicators .active {
   border-radius: 13px;
   margin: 1px;
   margin-left: 10px;
-  background-color: #3b6caa;
+  background-color: #1f5bab;
 }
 main .esjy-content-main .carousel .carousel-inner .item {
   width: 100%;
@@ -427,38 +452,17 @@ main .esjy-content-main .esjy-columns .esjy-col-1-1 {
   width: 100%;
   position: relative;
   float: left;
-}
-main .esjy-content-main .esjy-columns .esjy-col-1-1 h1 {
   text-align: center;
 }
 main .esjy-content-main .esjy-columns .esjy-col-1-1 .particles-part {
   float: left;
   position: absolute;
-  background-color: #3b6caa;
+  background-color: #1f5bab;
 }
 main .esjy-content-main .esjy-columns .esjy-col-1-1 .particles-part canvas {
   width: 100%;
   height: 100%;
   float: left;
-}
-main .esjy-content-main .esjy-columns .esjy-col-1-1 .esjy-columns {
-  float: left;
-  position: relative;
-}
-main .esjy-content-main .esjy-columns .esjy-col-1-1 .esjy-columns .esjy-alternate-background {
-  float: left;
-  position: relative;
-  color: white;
-}
-main .esjy-content-main .esjy-columns .esjy-col-1-1 .esjy-columns .esjy-alternate-background h2 {
-  float: left;
-  width: 100%;
-  text-align: center;
-}
-main .esjy-content-main .esjy-columns .esjy-col-1-1 .esjy-columns .esjy-alternate-background p {
-  float: left;
-  width: 100%;
-  text-align: center;
 }
 .ibm-padding-bottom-r2 {
   width: 100%;

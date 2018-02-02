@@ -15,6 +15,8 @@ var allLeftMunes;
 var activeLeftMune;
 var showRight;
 var im = 0;
+var drownMenuRightDiv;
+var dropDownMunesActive;
 
 
 //1，添加隐藏的下划线
@@ -37,67 +39,84 @@ for (im = 0; im < items.length; im++) {
         itemdatalink_id = this.getElementsByTagName('a')[0].getAttribute('data-linkid');
         var menutype = this.getElementsByTagName('a')[0].getAttribute('data-menutype');
 
-            //2.1.3, 判断鼠标划过导航菜单是否含有下拉菜单
-            if ('megamenu' === menutype) {
-                //2.1.3.1,显示鼠标划过子菜单
-                for (var i = 0; i < dropDownMenus.length; i++) {
+        //2.1.3, 判断鼠标划过导航菜单是否含有下拉菜单
+        if ('megamenu' === menutype) {
+            //2.1.3.1,显示鼠标划过子菜单
+            for (var i = 0; i < dropDownMenus.length; i++) {
+                dropDownMenus[i].style.display = 'none';
+                var dropDownid = dropDownMenus[i].getAttribute('data-linkid');
+                if (itemdatalink_id === dropDownid) {
+                    dropDownMenus[i].style.display = 'block';//让鼠标划过所对应的下拉菜单显示
 
-                    dropDownMenus[i].style.display = 'none';
+                    dropDownMunesActive = null;
+                    dropDownMunesActive = dropDownMenus[i];
 
-                    var dropDownid = dropDownMenus[i].getAttribute('data-linkid');
-
-                    if (itemdatalink_id === dropDownid) {
-                        dropDownMenus[i].style.display = 'block';//让鼠标划过所对应的下拉菜单显示
-
-                        //左侧下拉菜单
-                        var dropdownmune = dropDownMenus[i].getElementsByClassName('esjy-dropdown-menu');
-                        activeLeftMune = dropdownmune[0].getElementsByTagName('a')[0];
-                        $(activeLeftMune).addClass('esjy-show-active');
-
-                        //右侧下拉菜单
-                        var drownMenuRight = dropDownMenus[i].getElementsByClassName('esjy-background-white-core');
-                        var drownMenuRightDiv = drownMenuRight[0].children;
-                        //初始状态右侧第一个div为active
-                        $(drownMenuRightDiv[0]).addClass('esjy-show-active');
-                        showRight = drownMenuRightDiv[0];
-
-                        //2.1.3.4 显示并移动下拉菜单
-                        hiddenSmall.style.display = 'block';
-                        hiddenSmall.style.transform = 'translateY(' + hiddenSmall.offsetHeight + 'px)';
-
-
-                            //鼠标划过左侧二级菜单
-                            var droplefts = dropdownmune[0].children;
-                            dropdownmune[0].onmouseover = function (e) {
-                                $(activeLeftMune).removeClass('esjy-show-active');
-                                $(e.target).addClass('esjy-show-active');
-                                activeLeftMune = e.target;
-                                var datapanelid = e.target.getAttribute('data-panelid');
-                                for (j = 0; j < drownMenuRightDiv.length; j++) {
-                                    var rightdata = drownMenuRightDiv[j].getAttribute('id');
-                                    if (rightdata === datapanelid) {
-                                        $(showRight).removeClass('esjy-show-active');
-                                        $(drownMenuRightDiv[j]).addClass('esjy-show-active');
-                                        showRight = drownMenuRightDiv[j];
-                                    }
-                                }
-                            }
-                            //鼠标离开左侧二级菜单
-                            dropdownmune[0].onmouseleave = function (e) {
+                    //左侧下拉菜单
+                    var dropdownmune = dropDownMenus[i].getElementsByClassName('esjy-dropdown-menu');
+                    activeLeftMune = dropdownmune[0].getElementsByTagName('a')[0];
+                    $(activeLeftMune).addClass('esjy-init');
+                    //右侧下拉菜单
+                    var drownMenuRight = dropDownMenus[i].getElementsByClassName('esjy-background-white-core');
+                    drownMenuRightDiv = drownMenuRight[0].children;
+                    //初始状态右侧第一个div为active
+                    $(drownMenuRightDiv[0]).addClass('esjy-show-active');
+                    showRight = drownMenuRightDiv[0];
+                    //2.1.3.4 显示并移动下拉菜单
+                    hiddenSmall.style.display = 'block';
+                    hiddenSmall.style.transform = 'translateY(' + hiddenSmall.offsetHeight + 'px)';
+                    //鼠标划过左侧二级菜单
+                    // var droplefts = dropdownmune[0].children;
+                    var droplefts = dropdownmune[0].getElementsByTagName('li');
+                    dropdownmune[0].onmouseover = function (e) {
+                        $(activeLeftMune).removeClass('esjy-init');
+                        $(e.target).addClass('esjy-init');
+                        activeLeftMune = e.target;
+                        var datapanelid = e.target.getAttribute('data-panelid');
+                        for (j = 0; j < drownMenuRightDiv.length; j++) {
+                            var rightdata = drownMenuRightDiv[j].getAttribute('id');
+                            if (rightdata === datapanelid) {
                                 $(showRight).removeClass('esjy-show-active');
+                                $(drownMenuRightDiv[j]).addClass('esjy-show-active');
+                                showRight = null;
+                                showRight = drownMenuRightDiv[j];
                             }
+                        }
+                    }
+                    //鼠标离开左侧二级菜单
+                    dropdownmune[0].onmouseleave = function (e) {
+                    }
 
-                            //鼠标划过三级菜单
-                            for (var n = 0; n < drownMenuRightDiv.length; n++) {
-                                drownMenuRightDiv[n].onmouseover = function () {
-                                    $(showRight).addClass('esjy-show-active');
+                    //离开鼠标无效！
+                    // for(var lf = 0; lf < droplefts.length; lf++){
+                    //         droplefts[lf].onmouseleave = function () {
+                    //             $(this).addClass('esjy-init');
+                    //         }
+                    // }
+
+
+                    //鼠标划过三级菜单a      padding-left: 4rem;
+
+                    var leftitemid = showRight.getAttribute('id');
+                    var haslink = dropDownMunesActive.getElementsByClassName('esjy-arrow-forward-link');
+                    var lll= showRight.getElementsByTagName('ul');
+                    // var lll = ul[0].getElementsByClassName('esjy-mh-quicklinks');
+                    var lis = lll[0].children;
+                    for (var n = 0; n < lis.length; n++) {
+                        lis[n].onmouseover = function () {
+                            for(var k = 0; k < haslink.length; k++ ){
+                                var kid = haslink[k].getAttribute('data-panelid');
+                                if (kid === leftitemid) {
+                                    activeLeftMune = haslink[k];
+                                    $(haslink[k]).addClass('esjy-init');
+                                    // alert(kid,leftitemid);
 
                                 }
                             }
-
+                        }
                     }
                 }
             }
+        }
     }
 
     //2.2鼠标离开导航菜单
@@ -108,10 +127,12 @@ for (im = 0; im < items.length; im++) {
     }
 }
 //3, 鼠标离开下拉菜单，隐藏下拉菜单
-for(i = 0; i < dropDownMenus.length;i++){
-   dropDownMenus[i].onmouseleave = function (ev) {
-       hiddenSmall.style.transform = 'translateY(-' + hiddenSmall.offsetHeight + 'px)';
-   }
+for (i = 0; i < dropDownMenus.length; i++) {
+    dropDownMenus[i].onmouseleave = function () {
+        hiddenSmall.style.transform = 'translateY(-' + hiddenSmall.offsetHeight + 'px)';
+        showRight = null;
+        activeLeftMune = null;
+    }
 }
 
 
