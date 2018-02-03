@@ -136,9 +136,9 @@ nav {
   background-color: #1f5bab;
 }
 nav .advertise {
-  display: block;
   width: 100%;
   height: 3rem;
+  position: relative;
 }
 nav .advertise .sententce {
   width: 100%;
@@ -153,14 +153,13 @@ nav .advertise .sententce {
 }
 nav .esjy-home {
   height: 7rem;
-  width: 8rem;
+  width: 10%;
   float: left;
   position: relative;
-  padding-left: 4rem;
 }
 nav .esjy-home a {
   height: 4rem;
-  width: 8rem;
+  width: 100%;
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
@@ -174,7 +173,7 @@ nav .esjy-masthead-categories {
 }
 nav .esjy-masthead-categories li {
   float: left;
-  padding-right: 1.5rem;
+  padding-right: 1.2rem;
   position: relative;
 }
 nav .esjy-masthead-categories li a {
@@ -204,7 +203,7 @@ nav .esjy-masthead-rightside {
   display: block;
   float: right;
   height: 4rem;
-  width: 30% ;
+  width: 0 ;
   position: relative;
 }
 nav .esjy-masthead-rightside p {
@@ -212,19 +211,18 @@ nav .esjy-masthead-rightside p {
   line-height: 4rem;
   text-align: center;
   float: left;
-  width: 30%;
+  width: 0;
   border: 1px solid gray;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly {
   position: relative;
   float: right;
   height: 4rem;
-  width: 70%;
+  width: 0;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin {
   float: right;
   height: 4rem;
-  width: 100%;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin button {
   height: 4rem;
@@ -232,21 +230,18 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin .esjy-dropdown-menu {
   display: none;
-  width: 10rem;
   height: 20rem;
   background-color: #ffffff;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu {
   float: right;
   height: 4rem;
-  width: 100%;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu button {
   height: 4rem;
   width: 50%;
 }
 .esjy-hidden-small {
-  width: 100%;
   height: 35rem;
   top: -35rem;
   position: relative;
@@ -443,23 +438,84 @@ main .esjy-content-main .carousel .carousel-inner .item video {
   width: 100%;
   height: 25rem;
 }
-main .esjy-content-main .esjy-columns {
+.esjy-columns {
   width: 100%;
   position: relative;
   float: left;
 }
-main .esjy-content-main .esjy-columns .esjy-col-1-1 {
+.esjy-columns .esjy-col-1-1 {
   width: 100%;
   position: relative;
   float: left;
   text-align: center;
 }
-main .esjy-content-main .esjy-columns .esjy-col-1-1 .particles-part {
+.esjy-statistics {
+  width: 100%;
+  height: 10rem;
+  position: relative;
+  background-color: #f7f7f7;
+  text-indent: 0;
+  clear: both;
+}
+.esjy-statistics li {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin-top: 1rem;
+  border-right: 1px solid #e4e4e4;
+}
+.esjy-statistics li .esjy-statistics-text {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+.esjy-statistics li .esjy-statistics-text .num {
+  width: 100%;
+  height: 7rem;
+  line-height: 7rem;
+  text-align: center;
+  font-size: 3.5rem;
+}
+.esjy-statistics li .esjy-statistics-text .num i {
+  height: 1rem;
+  line-height: 1rem;
+  width: 50%;
+  font-size: 0.9rem;
+}
+.esjy-statistics li .esjy-text {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 0;
+  line-height: 0;
+  font-size: 0.9rem;
+  color: #949494;
+}
+.business {
+  width: 100%;
+  height: 300px;
+}
+.business .fadeInDown {
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+}
+.business .business_img {
+  position: relative;
+  float: left;
+}
+.business .business_img img {
+  width: 12%;
+  height: 5rem;
+}
+.particles-part {
   float: left;
   position: absolute;
   background-color: #1f5bab;
 }
-main .esjy-content-main .esjy-columns .esjy-col-1-1 .particles-part canvas {
+.particles-part canvas {
   width: 100%;
   height: 100%;
   float: left;

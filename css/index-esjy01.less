@@ -29,9 +29,10 @@ nav {
 
 
   .advertise{
-    display: block;
+    //display: block;
     width: 100%;
     height: @advHeight;
+    position: relative;
 
     .sententce {
       width: 100%;
@@ -51,13 +52,13 @@ nav {
   //1.1,企业logo位置
   .esjy-home {
     height: @homeSizeHeight;
-    width: @homeSizeWidth;
+    width: 10%;
     float: left;
     position: relative;
-    padding-left: 4rem;
+    //padding-left: 4rem;
     a {
       height: @navMuneHeight;
-      width: @homeSizeWidth;
+      width: 100%;
       color: #ffffff;
       font-size: 1.2rem;
       font-weight: 500;
@@ -77,11 +78,11 @@ nav {
     width: 50%;
     float: right;
     position: relative;
-    //padding-left:30%;
+
 
     li{
       float: left;
-      padding-right: 1.5rem;
+      padding-right: 1.2rem;
       position: relative;
 
       a {
@@ -100,7 +101,6 @@ nav {
           font-weight: 300;
           font-size: 0.9rem;
 
-
         }
       }
     }
@@ -118,7 +118,7 @@ nav {
     display: block;
     float: right;
     height: @navMuneHeight;
-    width: 30% ;
+    width: 0 ;
     //background-color: yellow;
     position: relative;
     //1.4.1,按钮'市场'
@@ -127,7 +127,7 @@ nav {
       line-height: @navMuneHeight;
       text-align: center;
       float: left;
-      width: 30%;
+      width: 0;
       border: 1px solid gray;
     }
     //1.4.2,搜索
@@ -139,14 +139,14 @@ nav {
       position: relative;
       float: right;
       height: @navMuneHeight;
-      width: 70%;
+      width: 0;
       //background-color: green;
 
       //1.4.3.1,用户icon式按钮
       .esjy-masthead-item-signin {
         float: right;
         height: @navMuneHeight;
-        width: 100%;
+        //width: 100%;
         //1.4.3.1.1,用户按钮
         button {
           height: @navMuneHeight;
@@ -155,7 +155,7 @@ nav {
         //1.4.3.1.2,用户下拉菜单
         .esjy-dropdown-menu {
           display: none;
-          width: 10rem;
+          //width: 10rem;
           height: 20rem;
           background-color: #ffffff;
         }
@@ -164,7 +164,7 @@ nav {
       .ibm-masthead-item-menu {
         float: right;
         height: @navMuneHeight;
-        width: 100%;
+        //width: 100%;
         //1.4.3.2.1,主菜单按钮
         button{
           height: @navMuneHeight;
@@ -181,7 +181,7 @@ nav {
 
 //2，隐藏的下拉菜单
 .esjy-hidden-small {
-  width: 100%;
+  //width: 100%;
   height: @drownMenuHeight;
   top: -@drownMenuHeight;
   position: relative;
@@ -404,8 +404,6 @@ main {
     width: 100%;
     position: relative;
     z-index: 12;
-
-
     //轮播图
     .carousel {
       width: 100%;
@@ -489,36 +487,117 @@ main {
       //轮播图——结束
 
     }
+  }
+}
 
-    //主体部分
-    .esjy-columns {
-      width: 100%;
+//主体部分
+.esjy-columns {
+  width: 100%;
+  position: relative;
+  float: left;
+  .esjy-col-1-1 {
+    width: 100%;
+    position: relative;
+    float: left;
+    text-align: center;
+  }
+}
+
+.esjy-statistics {
+  width: 100%;
+  height: 10rem;
+  position: relative;
+  background-color: #f7f7f7;
+  text-indent: 0;
+  clear: both;
+  //padding-top: 1rem;
+  li{
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin-top: 1rem;
+    border-right: 1px solid #e4e4e4;
+    .esjy-statistics-text{
       position: relative;
+      width: 100%;
       float: left;
-
-      .esjy-col-1-1 {
+      .num{
         width: 100%;
-        position: relative;
-        float: left;
+        height: 7rem;
+        line-height: 7rem;
         text-align: center;
+        font-size: 3.5rem;
+        //display: inline-block;
 
-        .particles-part {
-          float: left;
-          position: absolute;
-          background-color: @esjyColor;
-          canvas {
-            width: 100%;
-            height: 100%;
-            float: left;
-          }
-
+        i{
+          height: 1rem;
+          line-height: 1rem;
+          width: 50%;
+          font-size: 0.9rem;
         }
-
       }
+    }
+    .esjy-text{
+      position: relative;
+      text-align: center;
+      width: 100%;
+      height:0;
+      line-height: 0;
+      font-size: 0.9rem;
+      color:#949494;
     }
   }
 }
 
+.business{
+  width:100%;
+  height: 300px;
+
+  .fadeInDown {
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    h1 {
+
+    }
+    p{
+
+    }
+  }
+  .business_img {
+    position: relative;
+    float: left;
+    img {
+      width: 12%;
+      height: 5rem;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+//已隐藏
+.particles-part {
+  float: left;
+  position: absolute;
+  background-color: @esjyColor;
+  canvas {
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+
+}
 
 .ibm-padding-bottom-r2 {
   width: 100%;
