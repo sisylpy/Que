@@ -502,23 +502,21 @@ main {
 
 .esjy-statistics {
   width: 100%;
-  height: 10rem;
+  height: 11rem;
   position: relative;
   background-color: #f7f7f7;
   text-indent: 0;
   clear: both;
-  background-color: gray;
-  border: 1px solid yellow;
-  //padding-top: 1rem;
   .test{
-    //display: inline-block;
+    display: inline-block;
     vertical-align: top;
     float: left;
     width: 20%;
     text-align: center;
-    margin-top: 1rem;
+    //margin-top: ;
+    margin: 1rem 0 1rem 0;
     border-right: 1px solid #e4e4e4;
-    background-color:cornflowerblue;
+    //background-color:cornflowerblue;
     .esjy-statistics-text{
       position: relative;
       width: 100%;
@@ -529,7 +527,7 @@ main {
         line-height: 7rem;
         text-align: center;
         font-size: 2.5rem;
-        background-color: hotpink;
+        //background-color: hotpink;
         display: inline-block;
 
         i{
@@ -537,11 +535,11 @@ main {
           line-height: 0.9rem;
           width: 2rem;
           font-size: 0.9rem;
-          background-color: red;
+          //background-color: red;
           position: absolute;
           right: 0.5rem;
           top:1rem;
-          //display: inline-block;
+          display: inline-block;
         }
       }
     }
@@ -553,7 +551,7 @@ main {
       line-height: 0.9rem;
       font-size: 0.9rem;
       color:#949494;
-      background-color:black;
+      //background-color:black;
       display: inline-block;
 
     }
@@ -562,23 +560,26 @@ main {
 
 .business{
   width:100%;
-  height: 25rem;
+  height: 20rem;
+  margin-top: 2rem;
   //margin-bottom: 2rem;
   //border: 1px solid green;
-  background-color: yellow;
+  //background-color: yellow;
 
-  .fadeInDown {
+  .businee_title {
     width: 100%;
-    height: 9rem;
+    height: 5rem;
     text-align: center;
     //top:100px;
     top:0;
     position: relative;
     //margin-top: 2rem;
-    background-color: green;
+    //background-color: green;
     h1 {
       width: 100%;
-      height: 4rem;
+      height: 3rem;
+      line-height: 3rem;
+
       //background-color: blueviolet;
       margin-top: 0;
       margin-bottom: 0;
@@ -587,8 +588,9 @@ main {
     }
     p{
       width: 100%;
-      height: 30%;
-      background-color: bisque;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      //background-color: bisque;
       margin-top: 0;
       font-size: 1em;
     }
@@ -596,18 +598,18 @@ main {
   .business_imges {
     position: relative;
     width: 90%;
-    height: 80%;
+    height: 15rem;
     margin: 0 auto;
-    background-color: pink;
-
+    //background-color: pink;
     .leftin,.rightIn{
       width: 100%;
-      height: 50%;
+      height: 7.5rem;
+      text-align: center;
       position: relative;
       float: left;
-      background-color: red;
-      //border: 1px solid gray;
-      //margin: 0.5rem auto;
+      //background-color: red;
+      //border: 1px solid cornflowerblue;
+      margin: 0.5rem auto;
 
       .fadeInLeftBig{
         position: relative;
@@ -618,14 +620,12 @@ main {
         position: relative;
         left: 1000px;
         opacity: 0.0;
-
       }
 
       a{
         display: block;
         height: 80%;
         width: 11%;
-        line-height: 11%;
         text-align: center;
         position: relative;
         float: left;
@@ -633,6 +633,7 @@ main {
         margin: 0 1.50%  0 0;
         font-size: 1em;
         background-color: rgba(6,114,218,0.1,);
+
 
         img {
           //width: 1rem;
@@ -649,13 +650,13 @@ main {
 }
 
 
-
+//注销业务
 .esjy-logout{
   position: relative;
   float: left;
   width: 100%;
   height: 28rem;
-  background-color: hotpink;
+  //background-color: hotpink;
   //text-align: center;
 
   h1{
@@ -677,30 +678,36 @@ main {
     top:100px;
     opacity: 0.0;
     //padding-top: 2rem;
-
   }
-
 }
 
+//员工
 .esjy-staff {
   padding-top: 2rem;
   background-color: darkslategrey;
-  height: 50rem;
   color:#Ffffff;
-  a {
-    color: yellow;
+  position:relative;
+  float: left;
+  h1{
+    font-size: 2.4em;
+  }
+  p{
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1em;
   }
 
   .esjy-staffWall {
-    width: 80%;
-    height: 40rem;
-    margin: 0 auto;
     //background-color: purple;
 
+
     .departmentName {
-      width: 100%;
       height: 3rem;
-      //background-color:greenyellow;
+      //position: relative;
+      //float: left;
+      margin: 0;
+      padding: 0;
+
 
       .esjy-show-active2 {
         background-color: white;
@@ -713,23 +720,38 @@ main {
         position: relative;
         float: left;
         text-align: center;
-        background-color: black;
+        //background-color: black;
+
       }
     }
 
-    .staff_All {
-      width: 100%;
-      height: 25rem;
-      background-color: palegreen;
+    .staff_Company {
 
       .staff_Department{
         display: none;
+        .staffPerson {
+          margin: 0;
+          padding: 0;
+          background-color: #253243;
+          border: 1px solid white;
+          overflow: hidden;
 
-        li {
-          position: relative;
-          float: left;
+
+          p{
+            //background-color: pink;
+            text-align: left;
+            padding: 0;
+            margin: 0;
+            border: 1px solid white;
+
+
+            &:last-child{
+              //width: 100%;
+              //background-color: pink;
+              height: 4rem;
+            }
+          }
         }
-
       }
 
       .esjy-show-active2 {

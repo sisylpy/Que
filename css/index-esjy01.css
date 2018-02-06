@@ -499,22 +499,20 @@ main .esjy-content-main .carousel .carousel-inner .item video {
 }
 .esjy-statistics {
   width: 100%;
-  height: 10rem;
+  height: 11rem;
   position: relative;
   background-color: #f7f7f7;
   text-indent: 0;
   clear: both;
-  background-color: gray;
-  border: 1px solid yellow;
 }
 .esjy-statistics .test {
+  display: inline-block;
   vertical-align: top;
   float: left;
   width: 20%;
   text-align: center;
-  margin-top: 1rem;
+  margin: 1rem 0 1rem 0;
   border-right: 1px solid #e4e4e4;
-  background-color: cornflowerblue;
 }
 .esjy-statistics .test .esjy-statistics-text {
   position: relative;
@@ -527,7 +525,6 @@ main .esjy-content-main .carousel .carousel-inner .item video {
   line-height: 7rem;
   text-align: center;
   font-size: 2.5rem;
-  background-color: hotpink;
   display: inline-block;
 }
 .esjy-statistics .test .esjy-statistics-text .num i {
@@ -535,10 +532,10 @@ main .esjy-content-main .carousel .carousel-inner .item video {
   line-height: 0.9rem;
   width: 2rem;
   font-size: 0.9rem;
-  background-color: red;
   position: absolute;
   right: 0.5rem;
   top: 1rem;
+  display: inline-block;
 }
 .esjy-statistics .test .esjy-text {
   position: relative;
@@ -548,50 +545,49 @@ main .esjy-content-main .carousel .carousel-inner .item video {
   line-height: 0.9rem;
   font-size: 0.9rem;
   color: #949494;
-  background-color: black;
   display: inline-block;
 }
 .business {
   width: 100%;
-  height: 25rem;
-  background-color: yellow;
+  height: 20rem;
+  margin-top: 2rem;
 }
-.business .fadeInDown {
+.business .businee_title {
   width: 100%;
-  height: 9rem;
+  height: 5rem;
   text-align: center;
   top: 0;
   position: relative;
-  background-color: green;
 }
-.business .fadeInDown h1 {
+.business .businee_title h1 {
   width: 100%;
-  height: 4rem;
+  height: 3rem;
+  line-height: 3rem;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 2.4em;
 }
-.business .fadeInDown p {
+.business .businee_title p {
   width: 100%;
-  height: 30%;
-  background-color: bisque;
+  height: 1.5rem;
+  line-height: 1.5rem;
   margin-top: 0;
   font-size: 1em;
 }
 .business .business_imges {
   position: relative;
   width: 90%;
-  height: 80%;
+  height: 15rem;
   margin: 0 auto;
-  background-color: pink;
 }
 .business .business_imges .leftin,
 .business .business_imges .rightIn {
   width: 100%;
-  height: 50%;
+  height: 7.5rem;
+  text-align: center;
   position: relative;
   float: left;
-  background-color: red;
+  margin: 0.5rem auto;
 }
 .business .business_imges .leftin .fadeInLeftBig,
 .business .business_imges .rightIn .fadeInLeftBig {
@@ -610,7 +606,6 @@ main .esjy-content-main .carousel .carousel-inner .item video {
   display: block;
   height: 80%;
   width: 11%;
-  line-height: 11%;
   text-align: center;
   position: relative;
   float: left;
@@ -624,7 +619,6 @@ main .esjy-content-main .carousel .carousel-inner .item video {
   float: left;
   width: 100%;
   height: 28rem;
-  background-color: hotpink;
 }
 .esjy-logout a {
   padding-bottom: 2rem;
@@ -642,20 +636,22 @@ main .esjy-content-main .carousel .carousel-inner .item video {
 .esjy-staff {
   padding-top: 2rem;
   background-color: darkslategrey;
-  height: 50rem;
   color: #Ffffff;
+  position: relative;
+  float: left;
 }
-.esjy-staff a {
-  color: yellow;
+.esjy-staff h1 {
+  font-size: 2.4em;
 }
-.esjy-staff .esjy-staffWall {
-  width: 80%;
-  height: 40rem;
-  margin: 0 auto;
+.esjy-staff p {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1em;
 }
 .esjy-staff .esjy-staffWall .departmentName {
-  width: 100%;
   height: 3rem;
+  margin: 0;
+  padding: 0;
 }
 .esjy-staff .esjy-staffWall .departmentName .esjy-show-active2 {
   background-color: white;
@@ -668,21 +664,27 @@ main .esjy-content-main .carousel .carousel-inner .item video {
   position: relative;
   float: left;
   text-align: center;
-  background-color: black;
 }
-.esjy-staff .esjy-staffWall .staff_All {
-  width: 100%;
-  height: 25rem;
-  background-color: palegreen;
-}
-.esjy-staff .esjy-staffWall .staff_All .staff_Department {
+.esjy-staff .esjy-staffWall .staff_Company .staff_Department {
   display: none;
 }
-.esjy-staff .esjy-staffWall .staff_All .staff_Department li {
-  position: relative;
-  float: left;
+.esjy-staff .esjy-staffWall .staff_Company .staff_Department .staffPerson {
+  margin: 0;
+  padding: 0;
+  background-color: #253243;
+  border: 1px solid white;
+  overflow: hidden;
 }
-.esjy-staff .esjy-staffWall .staff_All .esjy-show-active2 {
+.esjy-staff .esjy-staffWall .staff_Company .staff_Department .staffPerson p {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  border: 1px solid white;
+}
+.esjy-staff .esjy-staffWall .staff_Company .staff_Department .staffPerson p:last-child {
+  height: 4rem;
+}
+.esjy-staff .esjy-staffWall .staff_Company .esjy-show-active2 {
   display: block;
 }
 .particles-part {

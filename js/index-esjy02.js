@@ -322,28 +322,12 @@ for (i = 0; i < dropDownMenus.length; i++) {
     var logoutTop = $(".esjy-logoutimg").offset().top;
 
 
+
+    //台式机页面滚动监听动画
     window.onscroll = function () {
-
         if($(window).scrollTop() + windowHeight - 100 > businessTop) {
-
             //事件绑定
-            $.Velocity.RunSequence(seqFadeInleft1);
-            $.Velocity.RunSequence(seqFadeInleft2);
-            $.Velocity.RunSequence(seqFadeInleft3);
-            $.Velocity.RunSequence(seqFadeInleft4);
-            $.Velocity.RunSequence(seqFadeInleft5);
-            $.Velocity.RunSequence(seqFadeInleft6);
-            $.Velocity.RunSequence(seqFadeInleft7);
-            $.Velocity.RunSequence(seqFadeInleft8);
-
-            $.Velocity.RunSequence(seqFadeInright1);
-            $.Velocity.RunSequence(seqFadeInright2);
-            $.Velocity.RunSequence(seqFadeInright3);
-            $.Velocity.RunSequence(seqFadeInright4);
-            $.Velocity.RunSequence(seqFadeInright5);
-            $.Velocity.RunSequence(seqFadeInright6);
-            $.Velocity.RunSequence(seqFadeInright7);
-            $.Velocity.RunSequence(seqFadeInright8);
+          businessAnimation();
 
 
         } if ($(window).scrollTop() + windowHeight - 100 > logoutTop){
@@ -353,11 +337,43 @@ for (i = 0; i < dropDownMenus.length; i++) {
 
     };
 
+   businessAnimation = function () {
+
+       $.Velocity.RunSequence(seqFadeInleft1);
+       $.Velocity.RunSequence(seqFadeInleft2);
+       $.Velocity.RunSequence(seqFadeInleft3);
+       $.Velocity.RunSequence(seqFadeInleft4);
+       $.Velocity.RunSequence(seqFadeInleft5);
+       $.Velocity.RunSequence(seqFadeInleft6);
+       $.Velocity.RunSequence(seqFadeInleft7);
+       $.Velocity.RunSequence(seqFadeInleft8);
+
+       $.Velocity.RunSequence(seqFadeInright1);
+       $.Velocity.RunSequence(seqFadeInright2);
+       $.Velocity.RunSequence(seqFadeInright3);
+       $.Velocity.RunSequence(seqFadeInright4);
+       $.Velocity.RunSequence(seqFadeInright5);
+       $.Velocity.RunSequence(seqFadeInright6);
+       $.Velocity.RunSequence(seqFadeInright7);
+       $.Velocity.RunSequence(seqFadeInright8);
+
+
+   }
+
+    //pad终端动画自动显示
+    if(windowHeight >= businessTop){
+        // businessAnimation();
+    }if(windowHeight >=logoutTop){
+        $.Velocity.RunSequence(seqFadeInDown);
+
+    }
+
+
     $(".esjy-staffWall>ul>li").mouseenter(function () {
 
         $(this).addClass('esjy-show-active2').siblings().removeClass('esjy-show-active2');
         var index = $(this).index();
-        $(".staff_All>ul").eq(index).addClass('esjy-show-active2').siblings().removeClass('esjy-show-active2');
+        $(".staff_Company>.staff_Department").eq(index).addClass('esjy-show-active2').siblings().removeClass('esjy-show-active2');
     })
 
 
