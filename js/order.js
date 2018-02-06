@@ -22,7 +22,7 @@
     $.Velocity.RegisterEffect('lixin.slideDownOut',{
         defaultDuration:300,
         calls: [
-            [{opacity: [0,1], translateY: [100, 0]}]
+            [{opacity: [0,1], translateX: [100, 0]}]
         ]
     });
 

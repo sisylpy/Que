@@ -1,4 +1,49 @@
 @charset "utf-8";
+@media (min-width: 320px) {
+  html {
+    font-size: 6.82666667px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 7.68px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 8.192px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 8.53333333px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 8.832px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 9.04533333px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 10.24px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 11.52px;
+  }
+}
 @media (min-width: 580px) {
   html {
     font-size: 12.37333333px;
@@ -117,7 +162,7 @@ a {
   color: #323232;
 }
 .esjy-mhtype-full {
-  position: fixed;
+  position: relative;
   height: 7rem;
   width: 100%;
   z-index: 2;
@@ -152,22 +197,23 @@ nav .advertise .sententce {
   padding-left: 4rem;
 }
 nav .esjy-home {
-  height: 7rem;
-  width: 10%;
+  height: 4rem;
+  width: 8rem;
   float: left;
   position: relative;
 }
 nav .esjy-home a {
-  height: 4rem;
+  height: 100%;
   width: 100%;
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 4rem;
+  text-align: center;
 }
 nav .esjy-masthead-categories {
   height: 4rem;
-  width: 50%;
+  width: 35rem;
   float: right;
   position: relative;
 }
@@ -371,9 +417,11 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
 .esjy-content-wrapper {
   width: 100%;
   position: relative;
-  top: 7rem;
   float: left;
   z-index: 1;
+}
+.esjy-show-active2 {
+  display: block;
 }
 header {
   width: 100%;
@@ -443,7 +491,7 @@ main .esjy-content-main .carousel .carousel-inner .item video {
   position: relative;
   float: left;
 }
-.esjy-columns .esjy-col-1-1 {
+.esjy-col-1-1 {
   width: 100%;
   position: relative;
   float: left;
@@ -456,59 +504,186 @@ main .esjy-content-main .carousel .carousel-inner .item video {
   background-color: #f7f7f7;
   text-indent: 0;
   clear: both;
+  background-color: gray;
+  border: 1px solid yellow;
 }
-.esjy-statistics li {
-  display: inline-block;
+.esjy-statistics .test {
   vertical-align: top;
   float: left;
   width: 20%;
   text-align: center;
   margin-top: 1rem;
   border-right: 1px solid #e4e4e4;
+  background-color: cornflowerblue;
 }
-.esjy-statistics li .esjy-statistics-text {
+.esjy-statistics .test .esjy-statistics-text {
   position: relative;
   width: 100%;
   float: left;
 }
-.esjy-statistics li .esjy-statistics-text .num {
+.esjy-statistics .test .esjy-statistics-text .num {
   width: 100%;
   height: 7rem;
   line-height: 7rem;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  background-color: hotpink;
+  display: inline-block;
 }
-.esjy-statistics li .esjy-statistics-text .num i {
-  height: 1rem;
-  line-height: 1rem;
-  width: 50%;
+.esjy-statistics .test .esjy-statistics-text .num i {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  width: 2rem;
   font-size: 0.9rem;
+  background-color: red;
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
 }
-.esjy-statistics li .esjy-text {
+.esjy-statistics .test .esjy-text {
   position: relative;
   text-align: center;
   width: 100%;
-  height: 0;
-  line-height: 0;
+  height: 0.9rem;
+  line-height: 0.9rem;
   font-size: 0.9rem;
   color: #949494;
+  background-color: black;
+  display: inline-block;
 }
 .business {
   width: 100%;
-  height: 300px;
+  height: 25rem;
+  background-color: yellow;
 }
 .business .fadeInDown {
   width: 100%;
-  height: 5rem;
+  height: 9rem;
   text-align: center;
+  top: 0;
+  position: relative;
+  background-color: green;
 }
-.business .business_img {
+.business .fadeInDown h1 {
+  width: 100%;
+  height: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.4em;
+}
+.business .fadeInDown p {
+  width: 100%;
+  height: 30%;
+  background-color: bisque;
+  margin-top: 0;
+  font-size: 1em;
+}
+.business .business_imges {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+  background-color: pink;
+}
+.business .business_imges .leftin,
+.business .business_imges .rightIn {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  float: left;
+  background-color: red;
+}
+.business .business_imges .leftin .fadeInLeftBig,
+.business .business_imges .rightIn .fadeInLeftBig {
+  position: relative;
+  left: -1000px;
+  opacity: 0.0;
+}
+.business .business_imges .leftin .fadeInRightBig,
+.business .business_imges .rightIn .fadeInRightBig {
+  position: relative;
+  left: 1000px;
+  opacity: 0.0;
+}
+.business .business_imges .leftin a,
+.business .business_imges .rightIn a {
+  display: block;
+  height: 80%;
+  width: 11%;
+  line-height: 11%;
+  text-align: center;
+  position: relative;
+  float: left;
+  border: 1px solid gray;
+  margin: 0 1.50%  0 0;
+  font-size: 1em;
+  background-color: rgba(6, 114, 218, 0.1);
+}
+.esjy-logout {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 28rem;
+  background-color: hotpink;
+}
+.esjy-logout a {
+  padding-bottom: 2rem;
+  position: relative;
+}
+.esjy-logout .esjy-logoutimg {
+  height: 20rem;
+  width: 60%;
+  margin: 0 auto;
+  background-color: cornflowerblue;
+  position: relative;
+  top: 100px;
+  opacity: 0.0;
+}
+.esjy-staff {
+  padding-top: 2rem;
+  background-color: darkslategrey;
+  height: 50rem;
+  color: #Ffffff;
+}
+.esjy-staff a {
+  color: yellow;
+}
+.esjy-staff .esjy-staffWall {
+  width: 80%;
+  height: 40rem;
+  margin: 0 auto;
+}
+.esjy-staff .esjy-staffWall .departmentName {
+  width: 100%;
+  height: 3rem;
+}
+.esjy-staff .esjy-staffWall .departmentName .esjy-show-active2 {
+  background-color: white;
+  color: black;
+}
+.esjy-staff .esjy-staffWall .departmentName li {
+  height: 3rem;
+  line-height: 3rem;
+  width: 20%;
+  position: relative;
+  float: left;
+  text-align: center;
+  background-color: black;
+}
+.esjy-staff .esjy-staffWall .staff_All {
+  width: 100%;
+  height: 25rem;
+  background-color: palegreen;
+}
+.esjy-staff .esjy-staffWall .staff_All .staff_Department {
+  display: none;
+}
+.esjy-staff .esjy-staffWall .staff_All .staff_Department li {
   position: relative;
   float: left;
 }
-.business .business_img img {
-  width: 12%;
-  height: 5rem;
+.esjy-staff .esjy-staffWall .staff_All .esjy-show-active2 {
+  display: block;
 }
 .particles-part {
   float: left;
