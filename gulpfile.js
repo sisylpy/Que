@@ -113,7 +113,7 @@ gulp.task('reload',function () {
 
 // watch
 gulp.task ('watch',function () {
-    gulp.watch('html/*.*',['htmlcopy']);
+    // gulp.watch('html/*.*',['htmlcopy']);
     gulp.watch('css/*.css',['minicopy']);
     gulp.watch('js/*.*',['uglifycopy']);
     gulp.watch('images/hct/Huichangtong-assets/*.*',['imagemin']);
@@ -121,7 +121,7 @@ gulp.task ('watch',function () {
 })
 
 
-gulp.task('default',['htmlcopy','minicopy','imagemin','uglifycopy','serve','watch','fileinclude']);
+gulp.task('default',['minicopy','imagemin','uglifycopy','serve','watch','fileinclude']);
 
 
 
