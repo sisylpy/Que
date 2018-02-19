@@ -1,42 +1,87 @@
 @charset "utf-8";
+@media (min-width: 320px) {
+  html {
+    font-size: 4.48px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 5.04px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 5.25px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 5.376px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 5.6px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 5.796px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 5.936px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 6.72px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 7.56px;
+  }
+}
 @media (min-width: 580px) {
   html {
-    font-size: 12.37333333px;
+    font-size: 8.12px;
   }
 }
 @media (min-width: 640px) {
   html {
-    font-size: 13.65333333px;
+    font-size: 8.96px;
   }
 }
 @media (min-width: 720px) {
   html {
-    font-size: 15.36px;
+    font-size: 10.08px;
   }
 }
 @media (min-width: 750px) {
   html {
-    font-size: 16px;
+    font-size: 10.5px;
   }
 }
 @media (min-width: 960px) {
   html {
-    font-size: 20.48px;
+    font-size: 13.44px;
   }
 }
 @media (min-width: 1080px) {
   html {
-    font-size: 23.04px;
+    font-size: 15.12px;
   }
 }
 @media (min-width: 1280px) {
   html {
-    font-size: 27.30666667px;
+    font-size: 17.92px;
   }
 }
 @media (min-width: 1480px) {
   html {
-    font-size: 31.57333333px;
+    font-size: 20.72px;
   }
 }
 /*reset css*/
@@ -102,11 +147,8 @@ textarea {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-html {
-  font-size: 16px;
-}
 body {
-  background-color: bisque;
+  background-color: #ffffff;
 }
 a:hover,
 a:focus {
@@ -117,44 +159,62 @@ a {
   color: #323232;
 }
 .esjy-mhtype-full {
-  position: fixed;
-  height: 3.5rem;
+  position: relative;
+  height: 7rem;
   width: 100%;
   z-index: 2;
 }
 #ibm-universal-nav {
-  height: 3.5rem;
+  height: 7rem;
   width: 100%;
   clear: both;
 }
+body {
+  position: relative;
+}
 nav {
-  height: 3.5rem;
+  height: 7rem;
   width: 100%;
-  background-color: #ffffff;
   position: absolute;
   border-bottom: 1px solid gray;
   z-index: 9;
+  background-color: #1f5bab;
+}
+nav .advertise {
+  width: 100%;
+  height: 3rem;
+  position: relative;
+}
+nav .advertise .sententce {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #ffffff;
+  border: 1px solid gray;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #1f5bab;
+  padding-left: 4rem;
 }
 nav .esjy-home {
-  height: 3.5rem;
+  height: 4rem;
   width: 8rem;
   float: left;
   position: relative;
 }
 nav .esjy-home a {
-  height: 3.5rem;
-  width: 8rem;
-}
-nav .esjy-home a img {
-  height: 3.5rem;
-  line-height: 1.75rem;
-  width: 8rem;
-  padding: 0.5rem 1.5rem;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 4rem;
+  text-align: center;
 }
 nav .esjy-masthead-categories {
-  height: 3.5rem;
-  width: 50%;
-  float: left;
+  height: 4rem;
+  width: 35rem;
+  float: right;
   position: relative;
 }
 nav .esjy-masthead-categories li {
@@ -163,12 +223,21 @@ nav .esjy-masthead-categories li {
   position: relative;
 }
 nav .esjy-masthead-categories li a {
-  line-height: 3.5rem;
+  line-height: 4rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-underline-position: below;
   display: block;
   position: relative;
+  color: #ffffff;
+  font-weight: 300;
+}
+nav .esjy-masthead-categories li a span {
+  line-height: 4rem;
+  text-align: center;
+  padding-left: 0.2rem;
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 nav .ibm-hidden {
   visibility: hidden;
@@ -177,51 +246,48 @@ nav .ibm-hidden {
   float: left;
 }
 nav .esjy-masthead-rightside {
+  display: block;
   float: right;
-  height: 3.5rem;
-  width: 30% ;
+  height: 4rem;
+  width: 0 ;
   position: relative;
 }
 nav .esjy-masthead-rightside p {
-  height: 3.5rem;
-  line-height: 3.5rem;
+  height: 4rem;
+  line-height: 4rem;
   text-align: center;
   float: left;
-  width: 30%;
+  width: 0;
   border: 1px solid gray;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly {
-  float: left;
-  height: 3.5rem;
-  width: 70%;
-  background-color: green;
+  position: relative;
+  float: right;
+  height: 4rem;
+  width: 0;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin {
-  float: left;
-  height: 3.5rem;
-  width: 50%;
+  float: right;
+  height: 4rem;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin button {
-  height: 3.5rem;
-  width: 50%;
+  height: 4rem;
+  width: 100%;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .esjy-masthead-item-signin .esjy-dropdown-menu {
   display: none;
-  width: 10rem;
   height: 20rem;
-  background-color: paleturquoise;
+  background-color: #ffffff;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu {
-  float: left;
-  height: 3.5rem;
-  width: 50%;
+  float: right;
+  height: 4rem;
 }
 nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu button {
-  height: 3.5rem;
+  height: 4rem;
   width: 50%;
 }
 .esjy-hidden-small {
-  width: 100%;
   height: 35rem;
   top: -35rem;
   position: relative;
@@ -236,37 +302,51 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
 .esjy-megamenu-section .esjy-columns {
   width: 100%;
   height: 100%;
-  background: paleturquoise;
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 {
   width: 35%;
   height: 100%;
-  background-color: gray;
+  background-color: #e6e6e6;
   float: left;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul {
   width: 100%;
   height: 100%;
+  padding: 1rem  0  0 8rem;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li {
-  width: 100%;
-  height: 2.6rem;
-  line-height: 2.6rem;
+  width: 90% ;
+  height: 3rem;
   text-align: center;
-  border: 1px solid green;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li .esjy-show-active {
-  background-color: #3b6caa;
-  color: white;
+.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li:first-child {
+  font-weight: 500;
+  width: 90% ;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li .esjy-init {
+  color: #1f5bab;
+  font-size: 1.2rem;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  padding-left: 1rem;
   display: block;
   width: 100%;
-  height: 2.6rem;
-  line-height: 2.6rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  text-align: left;
+  font-weight: 400;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li a:hover {
+  background-color: #1f5bab;
+  color: white;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-neutral-white-30 ul li .esjy-show-active {
   font-weight: 600;
@@ -279,32 +359,57 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel {
   width: 100%;
+  height: 100%;
+  padding-left: 2rem;
   display: none;
+  position: absolute;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h3 {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h1 {
   width: 100%;
+  margin: 1.5rem auto;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h3 a {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h1:hover {
+  text-decoration: underline;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel h1 a {
   width: 100%;
+  color: #1f5bab;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns {
   width: 100%;
+  height: 100%;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .esjy-col-6-2 {
   float: left;
   width: 50%;
+  height: 100%;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 ul {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .esjy-col-6-2 p {
+  font-size: 0.9rem;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .esjy-col-6-2 ul {
   width: 100%;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 ul li {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .esjy-col-6-2 ul li {
   width: 100%;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 ul li a {
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .esjy-col-6-2 ul li a {
   width: 100%;
+  display: block;
+  color: #1f5bab;
+  font-size: 1rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
 }
-.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .ibm-col-6-2 p {
-  width: 100%;
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns .esjy-col-6-2 ul li a:hover {
+  text-decoration: underline;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns:last-child .esjy-bold {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-megapanel .esjy-columns:last-child .esjy-linkcolor-default a {
+  color: #1f5bab;
 }
 .esjy-megamenu-section .esjy-columns .esjy-background-white-core .esjy-show-active {
   display: block;
@@ -312,9 +417,11 @@ nav .esjy-masthead-rightside .esjy-masthead-iconsonly .ibm-masthead-item-menu bu
 .esjy-content-wrapper {
   width: 100%;
   position: relative;
-  top: 3.5rem;
   float: left;
   z-index: 1;
+}
+.esjy-show-active2 {
+  display: block;
 }
 header {
   width: 100%;
@@ -353,7 +460,7 @@ main .esjy-content-main .carousel .carousel-indicators li {
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
-  border: 1px solid #3b6caa;
+  border: 1px solid #1f5bab;
   border-radius: 12px;
   margin-left: 10px;
 }
@@ -363,7 +470,7 @@ main .esjy-content-main .carousel .carousel-indicators .active {
   border-radius: 13px;
   margin: 1px;
   margin-left: 10px;
-  background-color: #3b6caa;
+  background-color: #1f5bab;
 }
 main .esjy-content-main .carousel .carousel-inner .item {
   width: 100%;
@@ -379,47 +486,224 @@ main .esjy-content-main .carousel .carousel-inner .item video {
   width: 100%;
   height: 25rem;
 }
-main .esjy-content-main .esjy-columns {
+.esjy-columns {
   width: 100%;
   position: relative;
   float: left;
 }
-main .esjy-content-main .esjy-columns .esjy-col-1-1 {
+.esjy-col-1-1 {
   width: 100%;
   position: relative;
   float: left;
-}
-main .esjy-content-main .esjy-columns .esjy-col-1-1 h1 {
   text-align: center;
 }
-main .esjy-content-main .esjy-columns .esjy-col-1-1 .particles-part {
+.esjy-statistics {
+  width: 100%;
+  height: 11rem;
+  position: relative;
+  background-color: #f7f7f7;
+  text-indent: 0;
+  clear: both;
+}
+.esjy-statistics .test {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+  border-right: 1px solid #e4e4e4;
+}
+.esjy-statistics .test .esjy-statistics-text {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+.esjy-statistics .test .esjy-statistics-text .num {
+  width: 100%;
+  height: 7rem;
+  line-height: 7rem;
+  text-align: center;
+  font-size: 2.5rem;
+  display: inline-block;
+}
+.esjy-statistics .test .esjy-statistics-text .num i {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  width: 2rem;
+  font-size: 0.9rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
+  display: inline-block;
+}
+.esjy-statistics .test .esjy-text {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  font-size: 0.9rem;
+  color: #949494;
+  display: inline-block;
+}
+.business {
+  width: 100%;
+  height: 20rem;
+  margin-top: 2rem;
+}
+.business .businee_title {
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  top: 0;
+  position: relative;
+}
+.business .businee_title h1 {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  float: left;
+}
+.business .businee_title p {
+  width: 100%;
+  position: relative;
+  float: left;
+  font-size: 1em;
+}
+.business .business_imges {
+  position: relative;
+  width: 90%;
+  height: 15rem;
+  margin: 0 auto;
+}
+.business .business_imges .leftin,
+.business .business_imges .rightIn {
+  width: 100%;
+  height: 7.5rem;
+  text-align: center;
+  position: relative;
+  float: left;
+  margin: 0.5rem auto;
+}
+.business .business_imges .leftin .fadeInLeftBig,
+.business .business_imges .rightIn .fadeInLeftBig {
+  position: relative;
+  left: -1000px;
+  opacity: 0.0;
+}
+.business .business_imges .leftin .fadeInRightBig,
+.business .business_imges .rightIn .fadeInRightBig {
+  position: relative;
+  left: 1000px;
+  opacity: 0.0;
+}
+.business .business_imges .leftin a,
+.business .business_imges .rightIn a {
+  display: block;
+  height: 80%;
+  width: 11%;
+  text-align: center;
+  position: relative;
+  float: left;
+  border: 1px solid gray;
+  margin: 0 1.50%  0 0;
+  font-size: 1em;
+  background-color: rgba(6, 114, 218, 0.1);
+}
+.esjy-logout {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 30rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.esjy-logout h1 {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.esjy-logout a {
+  position: relative;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.esjy-logout .esjy-logoutBusiness {
+  height: 20rem;
+  width: 60%;
+  margin: 0 auto;
+  background-color: cornflowerblue;
+  position: relative;
+  opacity: 0.0;
+  top: 150px;
+}
+.esjy-staff {
+  padding-top: 2rem;
+  background-color: darkslategrey;
+  color: #Ffffff;
+  position: relative;
+  float: left;
+}
+.esjy-staff h1 {
+  font-size: 2.4em;
+  width: 100%;
+  text-align: center;
+}
+.esjy-staff p {
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+}
+.esjy-staff .esjy-staffWall .departmentName {
+  height: 3rem;
+  margin: 0;
+  padding: 0;
+}
+.esjy-staff .esjy-staffWall .departmentName .esjy-show-active2 {
+  background-color: white;
+  color: black;
+}
+.esjy-staff .esjy-staffWall .departmentName li {
+  height: 3rem;
+  line-height: 3rem;
+  width: 20%;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+.esjy-staff .esjy-staffWall .staff_Company .staff_Department {
+  display: none;
+}
+.esjy-staff .esjy-staffWall .staff_Company .staff_Department .staffPerson {
+  margin: 0;
+  padding: 0;
+  background-color: #253243;
+  overflow: hidden;
+}
+.esjy-staff .esjy-staffWall .staff_Company .staff_Department .staffPerson p {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #2b334f;
+}
+.esjy-staff .esjy-staffWall .staff_Company .staff_Department .staffPerson p:last-child {
+  height: 4rem;
+}
+.esjy-staff .esjy-staffWall .staff_Company .esjy-show-active2 {
+  display: block;
+}
+.particles-part {
   float: left;
   position: absolute;
-  background-color: #3b6caa;
+  background-color: #1f5bab;
 }
-main .esjy-content-main .esjy-columns .esjy-col-1-1 .particles-part canvas {
+.particles-part canvas {
   width: 100%;
   height: 100%;
   float: left;
-}
-main .esjy-content-main .esjy-columns .esjy-col-1-1 .esjy-columns {
-  float: left;
-  position: relative;
-}
-main .esjy-content-main .esjy-columns .esjy-col-1-1 .esjy-columns .esjy-alternate-background {
-  float: left;
-  position: relative;
-  color: white;
-}
-main .esjy-content-main .esjy-columns .esjy-col-1-1 .esjy-columns .esjy-alternate-background h2 {
-  float: left;
-  width: 100%;
-  text-align: center;
-}
-main .esjy-content-main .esjy-columns .esjy-col-1-1 .esjy-columns .esjy-alternate-background p {
-  float: left;
-  width: 100%;
-  text-align: center;
 }
 .ibm-padding-bottom-r2 {
   width: 100%;

@@ -15,7 +15,9 @@
   clear: both;
 }
 
-
+body{
+  position: relative;
+}
 
 //1，导航栏
 nav {
@@ -499,7 +501,7 @@ main {
     text-align: center;
   }
 
-
+//企业统计数字
 .esjy-statistics {
   width: 100%;
   height: 11rem;
@@ -558,6 +560,7 @@ main {
   }
 }
 
+//业务动画
 .business{
   width:100%;
   height: 20rem;
@@ -577,21 +580,25 @@ main {
     //background-color: green;
     h1 {
       width: 100%;
-      height: 3rem;
-      line-height: 3rem;
-
+      //height: 3rem;
+      //line-height: 3rem;
       //background-color: blueviolet;
       margin-top: 0;
       margin-bottom: 0;
-      font-size: 2.4em;
+      position: relative;
+      float: left;
+
+
+      //font-size: 200;
 
     }
     p{
       width: 100%;
-      height: 1.5rem;
-      line-height: 1.5rem;
+      //height: 1.5rem;
+      //line-height: 1.5rem;
+      position: relative;
+      float: left;
       //background-color: bisque;
-      margin-top: 0;
       font-size: 1em;
     }
   }
@@ -655,29 +662,34 @@ main {
   position: relative;
   float: left;
   width: 100%;
-  height: 28rem;
   //background-color: hotpink;
-  //text-align: center;
+  height: 30rem;
+  text-align: center;
+  margin-top: 2rem;
 
   h1{
+    position: relative;
+    float: left;
+    width: 100%;
 
   }
   a{
-    padding-bottom: 2rem;
     position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
     //background-color: red;
 
   }
 
-  .esjy-logoutimg {
+  .esjy-logoutBusiness {
     height: 20rem;
     width: 60%;
     margin: 0 auto;
     background-color: cornflowerblue;
     position: relative;
-    top:100px;
     opacity: 0.0;
-    //padding-top: 2rem;
+    top:150px;
   }
 }
 
@@ -690,11 +702,13 @@ main {
   float: left;
   h1{
     font-size: 2.4em;
+    width: 100%;
+    text-align: center;
   }
   p{
-    height: 2rem;
-    line-height: 2rem;
     font-size: 1em;
+    width: 100%;
+    text-align: center;
   }
 
   .esjy-staffWall {
@@ -733,7 +747,7 @@ main {
           margin: 0;
           padding: 0;
           background-color: #253243;
-          border: 1px solid white;
+          //border: 1px solid white;
           overflow: hidden;
 
 
@@ -742,7 +756,7 @@ main {
             text-align: left;
             padding: 0;
             margin: 0;
-            border: 1px solid white;
+            border: 1px solid #2b334f;
 
 
             &:last-child{

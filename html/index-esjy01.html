@@ -2,20 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1,user-scalable=0">
+    <meta name="apple-touch-fullscreen" content="YES" >
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--以上是固定必须的！-->
 
-    <!--
-        <link href="https://www.ibm.com/favicon.ico" rel="icon"/>
-        <link href="https://www.ibm.com/cn-zh/" rel="canonical"/>
-        <meta content="CN" name="geo.country"/>
-        <meta content="2018-01-08" name="dcterms.date"/>
-        <meta content="© Copyright IBM Corp. 2018, 2016" name="dcterms.rights"/>
-    -->
     <meta content="ESJY 主页" name="description"/>
     <meta content="ESJY 主页" name="keywords"/>
     <meta content="index,follow" name="robots"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-
     <title>安新卓一 -主页</title>
+
 
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../css/index-esjy01.css">
@@ -34,14 +32,22 @@
 
     <script src="../bootstrap/js/bootstrap.js"></script>
 
-    <!--velocity-->
 
+    <!--[if IE 9]>
+    <script type="text/javascript" src="../jquery-1.12.4.min.js"></script>
+    <script src="../html5shiv.min.js"></script>
+    <script src="../respond.js"></script>
+    <![endif]-->
+
+    <!--velocity-->
     <script src="../velocity/velocity.min.js"></script>
     <script src="../velocity/velocity.ui.min.js"></script>
+    <script src="../gulpfile.js"></script>
 
 
 </head>
-<body id="esjy-com">
+
+<body id="esjy-com" >
 
 <!--<div class="esjy-landing-page">-->
 <!--MASTHEAD_BEGIN-->
@@ -49,8 +55,6 @@
     <div id="ibm-universal-nav"> <!-- jr(justWrite)-->
 
         <nav role="navigation">
-
-
             <div class="advertise ">
                 <div class="sententce">全北京公司注销、吊销转注销、解除工商法人黑名单。专业解除您工商税务业务中的问题！</div>
             </div>
@@ -393,7 +397,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="https://www.ibm.com/images/portal/F059086K13455Q06/banner-600x320-01.jpg" alt="...">
+                        <img src="../images/hct/Home-LS.jpg" alt="...">
                         <div class="carousel-caption">
                             <h3>zheshidier</h3>
                         </div>
@@ -490,14 +494,13 @@
             </div>
             <!--hct专用 企业统计数字N-->
 
-
             <!--业务动画-->
             <div class="esjy-columns business clearfix">
                 <div class="businee_title">
-                    <h1>从企业需求出发，提供以下服务</h1>
+                    <h1 class="col-sm-1">从企业需求出发，提供以下服务</h1>
                     <p>以敏锐的视角，紧跟国家新政策、新法规，为企业提供专业的咨询和建议，确保企业的快速发展</p>
                 </div>
-                <div class="business_imges ">
+                <div class="business_imges">
                     <div class="leftin">
                         <a href="" class="wow animated fadeInLeftBig"><img src="" alt="">公司注册</a>
                         <a href="" class="wow animated fadeInLeftBig"><img src="" alt="">无地址服务</a>
@@ -517,20 +520,15 @@
                         <a href="" class="wow animated fadeInRightBig"><img src="" alt=""></a>
                         <a href="" class="wow animated fadeInRightBig"><img src="" alt=""></a>
                         <a href="" class="wow animated fadeInRightBig"><img src="" alt=""></a>
-
                     </div>
                 </div>
-
             </div>
 
             <!--注销业务专辑-->
-            <div class="esjy-columns esjy-col-1-1 esjy-logout clearfix">
+            <div class="esjy-columns esjy-logout clearfix">
                 <h1>2018年公司"注销业务"</h1>
                 <a href="#">进一步了解</a>
-                <div class="esjy-logoutimg">
-
-                </div>
-
+                <div class="esjy-logoutBusiness"></div>
             </div>
 
             <!--照片墙-->
@@ -548,6 +546,26 @@
                     </ul>
                     <div class="staff_Company">
                         <div class="staff_Department esjy-show-active2 row">
+                            <div  class="staffPerson col-xs-4 col-md-2"><img src="../images/about05-img01.jpg" alt="">
+                                <p class="name">dddMrli</p>
+                                <p class="job">ffd会计师</p>
+                                <p class="brefIntro">fa国家二级会计师，从业15年。</p>
+                            </div>
+                            <div  class="staffPerson col-xs-4 col-md-2"><img src="../images/about05-img01.jpg" alt="">
+                                <p class="name">dddMrli</p>
+                                <p class="job">ffd会计师</p>
+                                <p class="brefIntro">fa国家二级会计师，从业15年。</p>
+                            </div>
+                            <div  class="staffPerson col-xs-4 col-md-2"><img src="../images/about05-img01.jpg" alt="">
+                                <p class="name">dddMrli</p>
+                                <p class="job">ffd会计师</p>
+                                <p class="brefIntro">fa国家二级会计师，从业15年。</p>
+                            </div>
+                            <div  class="staffPerson col-xs-4 col-md-2"><img src="../images/about05-img01.jpg" alt="">
+                                <p class="name">dddMrli</p>
+                                <p class="job">ffd会计师</p>
+                                <p class="brefIntro">fa国家二级会计师，从业15年。</p>
+                            </div>
                             <div  class="staffPerson col-xs-4 col-md-2"><img src="../images/about05-img01.jpg" alt="">
                                 <p class="name">dddMrli</p>
                                 <p class="job">ffd会计师</p>
@@ -604,7 +622,7 @@
                 <h1>在三个特点鲜明的系列中找到你的风格</h1>
                 <div class="row">
                     <div class="column">
-                        <img src="../images/li1.png" alt="">
+                        <!--<img src="../images/li1.png" alt="">-->
                         <h4 class="primary">IWatch Basic</h4>
 
                         <div class="intro">
@@ -641,6 +659,12 @@
         </div>
     </main>
 </div>
+
+
+<script src="../js/Common.js"></script>
+<script src="../js/index-esjy02.js"></script>
+<script src="../js/animation.js"></script>
+
 </body>
 
 
@@ -662,18 +686,7 @@
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/vendors/jquery.easings.min.js"></script>-->
 <!--<script src="../js/fullpage.js"></script>-->
 
-<script src="../js/Common.js"></script>
-<script src="../js/index-esjy02.js"></script>
-<script src="../js/animation.js"></script>
 
-
-<script>
-
-
-</script>
-
-
-</body>
 </html>
 
 

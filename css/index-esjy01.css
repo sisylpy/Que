@@ -1,87 +1,87 @@
 @charset "utf-8";
 @media (min-width: 320px) {
   html {
-    font-size: 6.82666667px;
+    font-size: 4.48px;
   }
 }
 @media (min-width: 360px) {
   html {
-    font-size: 7.68px;
+    font-size: 5.04px;
   }
 }
 @media (min-width: 375px) {
   html {
-    font-size: 8px;
+    font-size: 5.25px;
   }
 }
 @media (min-width: 384px) {
   html {
-    font-size: 8.192px;
+    font-size: 5.376px;
   }
 }
 @media (min-width: 400px) {
   html {
-    font-size: 8.53333333px;
+    font-size: 5.6px;
   }
 }
 @media (min-width: 414px) {
   html {
-    font-size: 8.832px;
+    font-size: 5.796px;
   }
 }
 @media (min-width: 424px) {
   html {
-    font-size: 9.04533333px;
+    font-size: 5.936px;
   }
 }
 @media (min-width: 480px) {
   html {
-    font-size: 10.24px;
+    font-size: 6.72px;
   }
 }
 @media (min-width: 540px) {
   html {
-    font-size: 11.52px;
+    font-size: 7.56px;
   }
 }
 @media (min-width: 580px) {
   html {
-    font-size: 12.37333333px;
+    font-size: 8.12px;
   }
 }
 @media (min-width: 640px) {
   html {
-    font-size: 13.65333333px;
+    font-size: 8.96px;
   }
 }
 @media (min-width: 720px) {
   html {
-    font-size: 15.36px;
+    font-size: 10.08px;
   }
 }
 @media (min-width: 750px) {
   html {
-    font-size: 16px;
+    font-size: 10.5px;
   }
 }
 @media (min-width: 960px) {
   html {
-    font-size: 20.48px;
+    font-size: 13.44px;
   }
 }
 @media (min-width: 1080px) {
   html {
-    font-size: 23.04px;
+    font-size: 15.12px;
   }
 }
 @media (min-width: 1280px) {
   html {
-    font-size: 27.30666667px;
+    font-size: 17.92px;
   }
 }
 @media (min-width: 1480px) {
   html {
-    font-size: 31.57333333px;
+    font-size: 20.72px;
   }
 }
 /*reset css*/
@@ -147,9 +147,6 @@ textarea {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-html {
-  font-size: 16px;
-}
 body {
   background-color: #ffffff;
 }
@@ -171,6 +168,9 @@ a {
   height: 7rem;
   width: 100%;
   clear: both;
+}
+body {
+  position: relative;
 }
 nav {
   height: 7rem;
@@ -561,17 +561,15 @@ main .esjy-content-main .carousel .carousel-inner .item video {
 }
 .business .businee_title h1 {
   width: 100%;
-  height: 3rem;
-  line-height: 3rem;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 2.4em;
+  position: relative;
+  float: left;
 }
 .business .businee_title p {
   width: 100%;
-  height: 1.5rem;
-  line-height: 1.5rem;
-  margin-top: 0;
+  position: relative;
+  float: left;
   font-size: 1em;
 }
 .business .business_imges {
@@ -618,20 +616,29 @@ main .esjy-content-main .carousel .carousel-inner .item video {
   position: relative;
   float: left;
   width: 100%;
-  height: 28rem;
+  height: 30rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.esjy-logout h1 {
+  position: relative;
+  float: left;
+  width: 100%;
 }
 .esjy-logout a {
-  padding-bottom: 2rem;
   position: relative;
+  float: left;
+  width: 100%;
+  text-align: center;
 }
-.esjy-logout .esjy-logoutimg {
+.esjy-logout .esjy-logoutBusiness {
   height: 20rem;
   width: 60%;
   margin: 0 auto;
   background-color: cornflowerblue;
   position: relative;
-  top: 100px;
   opacity: 0.0;
+  top: 150px;
 }
 .esjy-staff {
   padding-top: 2rem;
@@ -642,11 +649,13 @@ main .esjy-content-main .carousel .carousel-inner .item video {
 }
 .esjy-staff h1 {
   font-size: 2.4em;
+  width: 100%;
+  text-align: center;
 }
 .esjy-staff p {
-  height: 2rem;
-  line-height: 2rem;
   font-size: 1em;
+  width: 100%;
+  text-align: center;
 }
 .esjy-staff .esjy-staffWall .departmentName {
   height: 3rem;
@@ -672,14 +681,13 @@ main .esjy-content-main .carousel .carousel-inner .item video {
   margin: 0;
   padding: 0;
   background-color: #253243;
-  border: 1px solid white;
   overflow: hidden;
 }
 .esjy-staff .esjy-staffWall .staff_Company .staff_Department .staffPerson p {
   text-align: left;
   padding: 0;
   margin: 0;
-  border: 1px solid white;
+  border: 1px solid #2b334f;
 }
 .esjy-staff .esjy-staffWall .staff_Company .staff_Department .staffPerson p:last-child {
   height: 4rem;
