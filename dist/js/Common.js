@@ -63,7 +63,7 @@ function createDiv(item,divWidth,divHeight){
     //将样式添加到div上，显示div
     descDiv.style.width = divWidth - 20 + 'px';
     descDiv.style.height = divHeight + 'px';
-    descDiv.style.backgroundColor = '#3b6caa';
+    descDiv.style.backgroundColor = '#ffffff';
     descDiv.style.position = 'absolute';
     descDiv.style.left = '0px';
     descDiv.style.top= seatY + 'px';
