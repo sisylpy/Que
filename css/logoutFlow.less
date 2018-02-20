@@ -3,49 +3,250 @@
 
 main {
   width: 100%;
-  .Cols {
+  position: relative;
+  float: left;
+  .Splash {
+    position: relative;
     width: 100%;
-    .Step {
-      width: 100%;
-      position: relative;
-
+    background-color: #24344A;
+    height: @hct-CorulaseSlideHeight;
+    .Splash-title {
+      color: yellow;
     }
-
   }
 }
 
-.Step .EventCard {
-  width: 50%;
+
+main .container {
+  width: 100%;
+  height: 100%;
   position: relative;
   float: left;
-  background-color: yellow;
-  h1 {
+  //background-color: peru;
+  border: 1px solid gray;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
 
+  .row {
+    width: 100%;
+    position: relative;
+    float: left;
+    //background-color: red;
+    padding: 0;
+    margin: 0;
+
+    /* 超小屏幕（手机，小于 768px） */
+    /* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+    height: @hct-StepHeight-Mob;
+    /* 小屏幕（平板，大于等于 768px） */
+    @media (min-width: @screen-sm-min) {
+      height: @hct-StepImgHeight-sm;
+    }
+    /* 中等屏幕（桌面显示器，大于等于 992px） */
+    @media (min-width: @screen-md-min) {
+      height: @hct-StepImgHeight-md;
+    }
+    /* 大屏幕（大桌面显示器，大于等于 1200px） */
+    @media (min-width: @screen-lg-min) {
+      height: @hct-StepImgHeight-lg;
+    }
+  }
+}
+
+
+.Step .EventCard {
+  position: relative;
+  float: left;
+  //border: 1px solid red;
+  margin: 0;
+  //padding: 0;
+
+  /* 超小屏幕（手机，小于 768px） */
+  /* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+  height: @hct-Step-detail-Mob;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  font-size: 1em;
+
+  /* 小屏幕（平板，大于等于 768px） */
+  @media (min-width: @screen-sm-min) {
+    height: @hct-StepImgHeight-sm;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 5rem;
+    font-size: 1em;
+  }
+
+  /* 中等屏幕（桌面显示器，大于等于 992px） */
+  @media (min-width: @screen-md-min) {
+    height: @hct-StepImgHeight-md;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 6rem;
+    font-size: 1.1em;
+  }
+
+  /* 大屏幕（大桌面显示器，大于等于 1200px） */
+  @media (min-width: @screen-lg-min) {
+    height: @hct-StepImgHeight-lg;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 6rem;
+    font-size: 1.1em;
+  }
+
+
+  h1{
+    width: 100%;
+    -webkit-margin-before: 0;
+    //height: auto;
+    text-align: left;
+    letter-spacing:0.1em;
+    position: relative;
+    float: left;
+    //background-color: purple;
+    color: #333333;
+    margin: 0;
+
+    font-size: @hct-FS-StepTitle-Mob;
+    @media (min-width: @screen-sm-min) {
+      font-size: @hct-FS-StepTitle-sm;
+    }
+    @media (min-width: @screen-md-min) {
+      font-size: @hct-FS-StepTitle-md;
+    }
+    @media (min-width: @screen-lg-min) {
+      font-size: @hct-FS-StepTitle-lg;
+    }
   }
   p {
+    width: 100%;
+    height: auto;
+    font-size: 1.1em;
+    //letter-spacing:0.1em;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2rem;
+    text-align: left;
+    position: relative;
+    float: left;
+    //background-color: pink;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: #505050;
+    padding: 1rem 0;
+    margin-top: 1rem;
 
   }
-  .InfoList {
-    dt {
+  dl {
+    width: 100%;
+    height: 3rem;
+    position: relative;
+    float: left;
+    //background-color: bisque;
 
+    dt {
+      width: 10%;
+      height: 3rem;
+      position: relative;
+      float: left;
+      //background-color: blue;
+      //border: 1px solid blueviolet;
+      display: inline-block;
     }
     dd {
-
+      width: 30%;
+      height: 3rem;
+      line-height: 3rem;
+      text-align: left;
+      padding-left: 1rem;
+      position: relative;
+      float: left;
+      font-family: "Gilroy", "Avenir", "Century Gothic", -apple-system, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif;
+      font-weight: bold;
+      -webkit-font-smoothing: antialiased;
+      //border: 2px solid darkblue;
     }
-    a {
-      width: 80%;
-      height: 2rem;
-      display: block;
-      font-weight: 700;
-      border: 1px solid red;
+  }
+
+}
+
+.btn {
+  width: 100%;
+  position: relative;
+  float: left;
+  padding: 0;
+
+  a {
+    width: 100%;
+    position: relative;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 1rem 2rem;
+    display: block;
+    background-color: #EA215A;
+    color: #FFFFFF;
+
+    /* 超小屏幕（手机，小于 768px） */
+    /* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+    height: 4rem;
+    margin-top: 2rem;
+    //bottom:  3rem;
+
+
+    /* 小屏幕（平板，大于等于 768px） */
+    @media (min-width: @screen-sm-min) {
+      height: 4rem;
+      margin-top: 2rem;
+    }
+
+    /* 中等屏幕（桌面显示器，大于等于 992px） */
+    @media (min-width: @screen-md-min) {
+      height: 4rem;
+      margin-top: 2rem;
+    }
+
+    /* 大屏幕（大桌面显示器，大于等于 1200px） */
+    @media (min-width: @screen-lg-min) {
+      height: 4rem;
+      margin-top: 2rem;
     }
   }
 }
 
 .Step .Picture {
-  width: 50%;
+  //height: 100%;
   position: relative;
   float: right;
+  background-size:100%;
+  background-color:green;
+
+
+  /* 超小屏幕（手机，小于 768px） */
+  /* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+  height: @hct-StepImgHeight-Mob;
+  background:  url('../images/hct/Huichangtong-assets/hct_logo.jpg');
+
+  /* 小屏幕（平板，大于等于 768px） */
+  @media (min-width: @screen-sm-min) {
+    height: @hct-StepImgHeight-sm;
+    background: url("../images/hct/Huichangtong-assets/r1.jpg");
+  }
+
+  /* 中等屏幕（桌面显示器，大于等于 992px） */
+  @media (min-width: @screen-md-min) {
+    height: @hct-StepImgHeight-md;
+    background: url("../images/hct/Huichangtong-assets/r1.jpg");
+
+  }
+
+  /* 大屏幕（大桌面显示器，大于等于 1200px） */
+  @media (min-width: @screen-lg-min) {
+    height: @hct-StepImgHeight-lg;
+    background: url("../images/hct/Huichangtong-assets/r1.jpg");
+  }
+
 
 
 }

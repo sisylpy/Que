@@ -22,17 +22,12 @@ gulp.task('htmlmin',function () {
 });
 //复制html文件
 gulp.task('htmlcopy',function () {
-
     gulp.src('html/*.*')
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
         }))
         .pipe(gulp.dest('dist/html'));
-    // setTimeout(function () {
-    //
-    // },2000)
-
 });
 
 
