@@ -103,7 +103,7 @@ gulp.task ('watch',function () {
     gulp.watch('css/*.css',['minicopy']);
     gulp.watch('js/*.*',['uglifycopy']);
     gulp.watch('images/hct/Huichangtong-assets/*.*',['imagemin']);
-})
+});
 
 
 gulp.task('default',['htmlcopy','minicopy','imagemin','uglifycopy','serve','watch']);
