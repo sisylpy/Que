@@ -31,7 +31,46 @@ a {
 }
 
 
+
 //public esjy-css
+main {
+  width: 100%;
+  position: relative;
+  float: left;
+  /* 小屏幕（平板，大于等于 768px） */
+  @media (min-width: @screen-sm-min) {
+    top:-@hct-navHeight-pc;
+  }
+  /* 中等屏幕（桌面显示器，大于等于 992px） */
+  @media (min-width: @screen-md-min) {
+    top:-@hct-navHeight-pc;
+  }
+  /* 大屏幕（大桌面显示器，大于等于 1200px） */
+  @media (min-width: @screen-lg-min) {
+    top:-@hct-navHeight-pc-lg;
+  }
+  .Splash {
+    position: relative;
+    width: 100%;
+    background-color: #d6e9c6;
+    height: @hct-CorulaseSlideHeight;
+    .Splash-content{
+
+      .Splash-title {
+        color: black;
+      }
+    }
+
+  }
+}
+
+.container {
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+
 .esjy-columns {
   width: 100%;
   position: relative;
@@ -70,6 +109,9 @@ a {
       width: 100%;
       height: 100%;
       margin-left: 0;
+
     }
   }
 }
+
+
