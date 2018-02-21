@@ -29,3 +29,47 @@ a:focus {
 a {
   color: @fontColor;
 }
+
+
+//public esjy-css
+.esjy-columns {
+  width: 100%;
+  position: relative;
+  float: left;
+  margin-bottom: 2rem;
+  .esjy-col-1-1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+    text-align: center;
+    //background-color: blue;
+
+    h1{
+      font-size: @hct-FS-h1-mob;
+      font-weight: 500;
+      /* 小屏幕（平板，大于等于 768px） */
+      @media (min-width: @screen-sm-min) {
+
+        font-size: @hct-FS-h1-pc;
+        font-weight: 500;
+      }
+      /* 中等屏幕（桌面显示器，大于等于 992px） */
+      @media (min-width: @screen-md-min) {
+
+        font-size: @hct-FS-h1-pc-lg;
+        font-weight: 500;
+      }
+      /* 大屏幕（大桌面显示器，大于等于 1200px） */
+      @media (min-width: @screen-lg-min) {
+        font-size: @hct-FS-h1-pc-lg;
+        font-weight: 500;
+      }
+    }
+    .row {
+      width: 100%;
+      height: 100%;
+      margin-left: 0;
+    }
+  }
+}

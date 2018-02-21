@@ -1,0 +1,164 @@
+@charset "utf-8";
+@import "../myless/main";
+
+main {
+  width: 100%;
+  position: relative;
+  float: left;
+
+  /* 小屏幕（平板，大于等于 768px） */
+  @media (min-width: @screen-sm-min) {
+    top:-@hct-navHeight-pc;
+
+  }
+
+  /* 中等屏幕（桌面显示器，大于等于 992px） */
+  @media (min-width: @screen-md-min) {
+    top:-@hct-navHeight-pc;
+
+  }
+  /* 大屏幕（大桌面显示器，大于等于 1200px） */
+  @media (min-width: @screen-lg-min) {
+    top:-@hct-navHeight-pc-lg;
+
+  }
+
+  .Splash {
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: #3e8f3e;
+    height: @hct-CorulaseSlideHeight;
+    margin-bottom: 1rem;
+
+    .Splash-title {
+      color: yellow;
+    }
+  }
+}
+
+
+
+//
+
+.esjy-col-4-1 {
+  position: relative;
+  float: left;
+  //background-color:blue;
+  padding: 0 2rem;
+  margin: 1rem auto;
+  border:1px solid red;
+
+  ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+      li{
+        text-align: left;
+
+        height: @hct-linkHeight-mob;
+        line-height: @hct-linkHeight-mob;
+
+        /* 小屏幕（平板，大于等于 768px） */
+        @media (min-width: @screen-sm-min) {
+          height: @hct-linkHeight-pc;
+          line-height: @hct-linkHeight-pc;
+
+        }
+
+        /* 中等屏幕（桌面显示器，大于等于 992px） */
+        @media (min-width: @screen-md-min) {
+          height: @hct-linkHeight-pc;
+          line-height: @hct-linkHeight-pc;
+
+
+        }
+
+        /* 大屏幕（大桌面显示器，大于等于 1200px） */
+        @media (min-width: @screen-lg-min) {
+          height: @hct-linkHeight-pc;
+          line-height: @hct-linkHeight-pc;
+
+        }
+
+        a{
+          color: #3b6caa;
+          font-size: @hct-Fs-textbigger;
+
+          i {
+            color: #3b6caa;
+            margin-right: 0.5rem;
+          }
+        }
+
+      }
+  }
+
+}
+
+
+
+
+//本周活动_Begin
+.esjy-card {
+  position: relative;
+  float: left;
+
+  .esjy-white-30{
+    background-color: #f0f2f4;
+  }
+  .esjy-white-40
+  {
+    background-color: #ecf2f2;
+  }
+
+  .esjy-card-3-1 {
+    position: relative;
+    float: left;
+    border-radius: 0; //reset bootstrap
+    padding: 0; //reset bootstrap
+
+
+    .card-image {
+      position: relative;
+      float: left;
+
+    }
+
+    .card-content {
+      position: relative;
+      float: left;
+      text-align: left;
+      //background-color: red;
+      padding: 0 2rem;
+
+      h3 {
+        width: 100%;
+        position: relative;
+        float: left;
+      }
+      p{
+        width: 100%;
+        position: relative;
+        float: left;
+        font-size: @hct-Fs-textbigger;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+
+
+      }
+
+    }
+    .card-bottom {
+      position: relative;
+      float: left;
+      background-color: greenyellow;
+
+    }
+  }
+
+
+
+}
+
