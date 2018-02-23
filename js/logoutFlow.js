@@ -19,16 +19,6 @@
     });
 
 
-    // StepHeight = function () {
-    //
-    //
-    //
-    //     // $(".btn1").click(function(){
-    //     //     $("p").height(50);
-    //     // });
-    //
-    // }
 
-    // StepHeight();
 
 })(jQuery);

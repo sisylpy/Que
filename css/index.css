@@ -186,6 +186,7 @@ main .Splash {
   width: 100%;
   background-color: #d6e9c6;
   height: 30rem;
+  margin-bottom: 2rem;
 }
 main .Splash .Splash-content .Splash-title {
   color: black;
@@ -207,29 +208,31 @@ main .Splash .Splash-content .Splash-title {
   position: relative;
   float: left;
   text-align: center;
+  padding: 0 3rem;
 }
 .esjy-columns .esjy-col-1-1 h1 {
   font-size: 2em;
   font-weight: 500;
+  letter-spacing: 2px;
   /* 小屏幕（平板，大于等于 768px） */
   /* 中等屏幕（桌面显示器，大于等于 992px） */
   /* 大屏幕（大桌面显示器，大于等于 1200px） */
 }
 @media (min-width: 768px) {
   .esjy-columns .esjy-col-1-1 h1 {
-    font-size: 3em;
-    font-weight: 500;
+    font-size: 2.2em;
+    font-weight: 600;
   }
 }
 @media (min-width: 992px) {
   .esjy-columns .esjy-col-1-1 h1 {
-    font-size: 3.4em;
+    font-size: 2.4em;
     font-weight: 500;
   }
 }
 @media (min-width: 1200px) {
   .esjy-columns .esjy-col-1-1 h1 {
-    font-size: 3.4em;
+    font-size: 2.4em;
     font-weight: 500;
   }
 }
@@ -237,4 +240,7 @@ main .Splash .Splash-content .Splash-title {
   width: 100%;
   height: 100%;
   margin-left: 0;
+}
+.esjy-padding-content {
+  padding: 1.6rem;
 }

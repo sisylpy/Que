@@ -10,78 +10,52 @@
 
 
     <style>
-        /*div {*/
-            /*width: 200px;*/
-            /*height: 100px;*/
-            /*margin-top: 10px;*/
-            /*border: 1px solid #ddd;*/
-        /*}*/
 
-        /*.container{*/
-            /*width: 100px;*/
-            /*height: 100px;*/
-            /*background-color: red;*/
-
-        /*}*/
-        /*.box {*/
-            /*width: 50px;*/
-            /*height: 50px;*/
-            /*background-color: blue;*/
-        /*}*/
-
-
-        body {
-            font-family: "Helvetica Neue", Helvetica;
-            width: 90%;
-            font-weight: 200;
-            letter-spacing: 1px;
-            margin: 25px auto 0 auto;
-            background: rgb(234, 235, 235);
-            color: rgb(25, 25, 25);
+        .demo{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #39c;
+            margin: 100px;
+            left: 0;
+        }
+        .demo1{
+            top: 10px;
         }
 
-        div, p {
-            margin: 0 auto;
+        .demo2{
+            top: 100px;
+            /*-webkit-transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);*/
+            /*transition:         all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);*/
+
+            transition:         all 600ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+
+        }
+        .demo2:hover{
+            /*left: 800px;*/
+            opacity: 1;
+            width: 3290px;
+            transform: translate3d(0px, 0px, 0px);
         }
 
-        p {
-            color: rgb(125, 125, 125);
-            font-size: 0.85rem;
-            text-align: center;
-            margin-bottom: 17px;
-        }
-
-        div {
-            width: 35%;
-        }
     </style>
 </head>
 <body>
+<div class="demo demo1">demo1</div>
+<div class="demo demo2">demo2</div>
 
-<div class="container"></div>
-<div class="box"></div>
-
-<p>
-    Refresh this page to re-run the demo.
-</p>
-
-<div>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-</div>
-<script src="../js/vel.js"></script>
 
 <script>
 
-    $.Velocity.RegisterUI("callout.twirl", {
-        defaultDuration: 3000,
-        calls: [
-            [ { rotateZ: 1080 }, 0.50 ],
-            [ { scaleX: 0.5 }, 0.25, { easing: "spring" } ],
-            [ { scaleX: 1 }, 0.25, { easing: "spring" } ]
-        ]
+    $(".demo1").animate({ left: '+=800px' }, 1200, 'easeInOutCirc', function(){
+        console.log('end');
     });
 
-    $("div").velocity("callout.twirl");
+    setTimeout(function(){
+        $(".demo2").css({left: '800px'});
+    }, 100)
 </script>
+
 </body>
 </html>
