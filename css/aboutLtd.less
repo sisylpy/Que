@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "../myless/main";
+
+//
+.orgnasition-link {
+  padding: 0 3rem 0 5rem;
+}
+
+.esjy-col-4-1 {
+  position: relative;
+  float: left;
+  //background-color:blue;
+  padding: 0 2rem;
+  //margin: 0 auto;
+  //border:1px solid red;
+  ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+    //border:1px solid green;
+    li {
+      //border:1px solid red;
+      margin: @esjy-linkMarginTopBottom 0;
+      text-align: left;
+      //height: @esjy-linkHeight-mob;
+      line-height: @esjy-linkHeight-mob;
+      /* 小屏幕（平板，大于等于 768px） */
+      @media (min-width: @screen-sm-min) {
+        //height: @esjy-linkHeight-pc;
+        line-height: @esjy-linkHeight-pc;
+      }
+      /* 中等屏幕（桌面显示器，大于等于 992px） */
+      @media (min-width: @screen-md-min) {
+        //height: @esjy-linkHeight-pc;
+        line-height: @esjy-linkHeight-pc;
+      }
+      /* 大屏幕（大桌面显示器，大于等于 1200px） */
+      @media (min-width: @screen-lg-min) {
+        //height: @esjy-linkHeight-pc;
+        line-height: @esjy-linkHeight-pc-lg;
+      }
+      a {
+        color: #3b6caa;
+        font-size: @esjy-Fs-textbigger;
+        text-indent: -2rem;
+
+        i {
+          color: #3b6caa;
+          //margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
