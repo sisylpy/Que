@@ -17,7 +17,6 @@
 
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
-
     <link rel="stylesheet" href="../css/organisationLogout.css">
     <!--<link rel="stylesheet" href="../testJs/contact_module.css">-->
 
@@ -283,7 +282,8 @@
             <div id="esjy-contact-module" class="esjy-contact-widget clearfix">
                 <div class="esjy-icononly">
                     <h3 class="esjy-bold">晖昌通 在您身边</h3>
-                    <i class="fa fa-times fa-lg"></i>
+                    <i class="fa fa-times fa-lg hidden-xs pc-close"></i>
+                    <i class="fa fa-times fa-2x visible-xs mob-close"></i>
                 </div>
 
                 <ul class="esjy-contact-list">
@@ -302,14 +302,22 @@
                     </li>
                     <li class="esjy-microcode">
                         <i class="fa fa-weixin fa-lg"></i>
-                        <a class="esjy-weixin-detail" href="/">添加微信联系（点击查看大图)<br>
-                            <img class="esjy-microcode-img" src="../images/hct/Huichangtong-assets/WX.png" alt="微信号">
-                        </a>
+                        <a href="">添加微信联系（点击查看大图)</a>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".esjy-addWechat-lg-img"></button>
                     </li>
                 </ul>
             </div>
             <!--隐藏的联系方式——END-->
 
+            <!--二维码图片-->
+            <!-- Large modal -->
+            <div class="modal fade esjy-addWechat-lg-img" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <img class="esjy-microcode-img" src="../images/hct/Huichangtong-assets/WX.png" alt="微信号">
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -318,24 +326,18 @@
    <!--3种按钮——Begin-->
     <!--回到顶部按钮-->
     <p id="toTop" class="esjy-tools-Circle  hidden-xs">
-        <a class="tool-toTop" href="#top"><i class="fa fa-angle-up fa-2x"></i></a>
+        <a class="tool-toTop" href="#top"><i class="fa fa-angle-up fa-3x"></i></a>
     </p>
     <!--联系我们按钮pc-->
     <button type="button" class="esjy-contact-btn-pc hidden-xs hidden-sm">
-       <span>联<br>系<br>我<br>们（pc)</span>
+       <span>联<br>系<br>我<br>们</span>
     </button>
     <!--联系我们按钮mob-->
     <button type="button"  class="esjy-contact-btn-mob hidden-md hidden-lg">
-        <span class="">联系我们mob</span>
+        <span class="">联系我们</span>
     </button>
     <!--3种按钮——End-->
     <!--联系我们——END-->
-
-
-
-
-
-
 
 
 
@@ -354,6 +356,8 @@
 </main>
 
 <script src="../js/organisationLogout.js"></script>
+<!--<script type="text/javascript" src="http://c.ibangkf.com/i/c-sisy.js"></script>-->
+
 <!--<script src="../testJs/chat_now.js"></script>-->
 <!--<script src="../testJs/dynamic-chat-button.js"></script>-->
 </body>
