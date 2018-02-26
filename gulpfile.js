@@ -10,6 +10,8 @@ const uglify = require('gulp-uglify');
 const del = require('del');
 const connect = require('gulp-connect');
 const fileinclude = require('gulp-file-include');
+var changed = require('gulp-changed');
+
 
 // const concat = require('gulp-concat');
 
@@ -22,11 +24,12 @@ gulp.task('htmlmin',function () {
 });
 //复制html文件
 gulp.task('htmlcopy',function () {
-    gulp.src('html/*.*')
+    gulp.src('html/*.html')
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
         }))
+        .pipe(changed('dist/html'))
         .pipe(gulp.dest('dist/html'));
 });
 
@@ -41,12 +44,14 @@ gulp.task ('minify',function () {
 //复制css
 gulp.task ('minicopy',function () {
     gulp.src('css/*.css')
+        .pipe(changed('dist/css'))
         .pipe(gulp.dest('dist/css'));
 });
 
 //压缩image文件
 gulp.task ('imagemin',function () {
     gulp.src('images/hct/Huichangtong-assets/*.*')
+        .pipe(changed('dist/images/hct/Huichangtong-assets'))
         .pipe(gulp.dest('dist/images/hct/Huichangtong-assets'));
 });
 
@@ -99,9 +104,9 @@ gulp.task('reload',function () {
 // watch
 gulp.task ('watch',function () {
     gulp.watch('html/*.*',['htmlcopy']);
-    gulp.watch('hct-html/*.*',['htmlcopy']);
-    gulp.watch('css/*.css',['minicopy']);
-    gulp.watch('js/*.*',['uglifycopy']);
+    // gulp.watch('hct-html/*.*',['htmlcopy']);
+    gulp.watch('css/*.*',['minicopy']);
+    // gulp.watch('js/*.*',['uglifycopy']);
     gulp.watch('images/hct/Huichangtong-assets/*.*',['imagemin']);
 });
 
