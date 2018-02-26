@@ -106,7 +106,7 @@ gulp.task ('watch',function () {
     gulp.watch('html/*.*',['htmlcopy']);
     // gulp.watch('hct-html/*.*',['htmlcopy']);
     gulp.watch('css/*.*',['minicopy']);
-    // gulp.watch('js/*.*',['uglifycopy']);
+    gulp.watch('js/*.*',['uglifycopy']);
     gulp.watch('images/hct/Huichangtong-assets/*.*',['imagemin']);
 });
 
