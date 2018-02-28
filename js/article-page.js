@@ -16,11 +16,6 @@
             $('.mune-col').removeClass('fixed');
             $('.article-detail').css("marginTop",0);
         }
-
-
-
-
-
     };
 
 

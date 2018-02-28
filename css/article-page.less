@@ -254,15 +254,33 @@ nav {
   @media (min-width: @screen-lg-min) {
     top: -@esjy-navHeight-pc-lg;
   }
-
 }
 
 .article-page-banner {
-  height: 18rem; //总高度
+  height: 38rem; //总高度
   position: relative;
   float: left;
   width: 100%;
   z-index: 10; //article-page-set
+
+  @media (min-width: @screen-sm-min) {
+    height: 18rem; //总高度
+  }
+
+  /* 中等屏幕（桌面显示器，大于等于 992px） */
+  @media (min-width: @screen-md-min) {
+
+    height: 18rem; //总高度
+
+  }
+  /* 大屏幕（大桌面显示器，大于等于 1200px） */
+  @media (min-width: @screen-lg-min) {
+    height: 18rem; //总高度
+
+  }
+
+
+
 
 
   .banner-content {
@@ -271,7 +289,6 @@ nav {
     background-size: 130% 100%;
     position: relative;
     overflow: hidden;
-
     //z-index: 0;
 
     .Splash-title {
@@ -291,15 +308,8 @@ nav {
           margin-right: 0.3rem;
           color: rgba(255,255,255,0.8);
           font-weight: 300;
-
-
-
         }
       }
-
-
-
-
     }
 
 
@@ -454,35 +464,90 @@ nav {
         .article-col {
           border: 1px solid #e3e3e3;
           //border:@bb;
-          padding: 2rem;
+          padding: 5rem;
+
+          @media (min-width: @screen-sm-min) {
+            padding: 3rem;
+
+          }
+
+          /* 中等屏幕（桌面显示器，大于等于 992px） */
+          @media (min-width: @screen-md-min) {
+            padding: 3rem;
+
+
+          }
+          /* 大屏幕（大桌面显示器，大于等于 1200px） */
+          @media (min-width: @screen-lg-min) {
+            padding: 2rem;
+
+          }
+
 
 
           .article {
-            margin-bottom: 3rem;
+            margin-bottom: 6rem;
             position: relative;
             height: 100%;
 
+            @media (min-width: @screen-sm-min) {
+              margin-bottom: 3rem;
+
+            }
+
+            /* 中等屏幕（桌面显示器，大于等于 992px） */
+            @media (min-width: @screen-md-min) {
+              margin-bottom: 3rem;
+
+
+            }
+            /* 大屏幕（大桌面显示器，大于等于 1200px） */
+            @media (min-width: @screen-lg-min) {
+              margin-bottom: 3rem;
+
+            }
+
+
+
+
             .article-title {
-              //position: relative;
+              position: relative;
               //float: left;
 
 
             }
             .article-sub-title {
-              //position: relative;
+              position: relative;
 
             }
 
             .article-list {
-              //position: relative;
+              position: relative;
 
               li {
 
                 position: relative;
                 list-style-type: decimal;
                 list-style-position: outside;
-                line-height: 1.5rem;
+                line-height: 4rem;
                 margin-bottom: 1rem;
+
+
+                @media (min-width: @screen-sm-min) {
+                  line-height: 1.5rem;
+                }
+
+                /* 中等屏幕（桌面显示器，大于等于 992px） */
+                @media (min-width: @screen-md-min) {
+
+                  line-height: 1.5rem;
+
+                }
+                /* 大屏幕（大桌面显示器，大于等于 1200px） */
+                @media (min-width: @screen-lg-min) {
+                  line-height: 1.5rem;
+
+                }
 
               }
 
@@ -520,14 +585,6 @@ nav {
     }
 
   }
-
-}
-
-.test {
-  height: 200px;
-  width: 200px;
-  background-color: blue;
-  position: relative;
 
 }
 
