@@ -34,15 +34,15 @@
             background-color: blue;
             position: absolute;
         }
-        .ccc{
-            background-color: pink;
-            /*position: relative;*/
-        }
-        /*#section1 {color: #fff; background-color: #1E88E5;}*/
-        /*#section2 {color: #fff; background-color: #673ab7;}*/
-        /*#section3 {color: #fff; background-color: #ff9800;}*/
-        /*#section41 {color: #fff; background-color: #00bcd4;}*/
-        /*#section42 {color: #fff; background-color: #009688;}*/
+        /*.ccc{*/
+            /*background-color: pink;*/
+            /*!*position: relative;*!*/
+        /*}*/
+        #section1 {color: #fff; background-color: #1E88E5;}
+        #section2 {color: #fff; background-color: #673ab7;}
+        #section3 {color: #fff; background-color: #ff9800;}
+        #section41 {color: #fff; background-color: #00bcd4;}
+        #section42 {color: #fff; background-color: #009688;}
 
         @media screen and (max-width: 810px) {
             #section1, #section2, #section3, #section41, #section42  {
@@ -54,19 +54,19 @@
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
 
 <!--<div class="part"></div>-->
-<div class="container ccc">
+<div class="container">
     <div class="row">
         <nav class="col-sm-3 h" id="myScrollspy">
             <div class="container-fluid">
                 <div class="container-fluid">
                     <ul class="nav nav-pills nav-stacked">
-                        <span id="activeitem" style="color:red;"></span>
+                        <!--<span id="activeitem" style="color:red;"></span>-->
 
-                        <li class="active"><a href="#section1">国税注销</a></li>
-                        <li><a href="#section2">地税注销</a></li>
-                        <li><a href="#section3">工商注销</a></li>
+                        <li class="active"><a href="#section1">Section 1</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                        <li><a href="#section3">Section 3</a></li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">银行开户<span class="caret"></span></a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#section41">Section 4-1</a></li>
                                 <li><a href="#section42">Section 4-2</a></li>
@@ -117,23 +117,23 @@
             offsetMethod = 'position';
             offsetBase = $("#myScrollspy").scrollTop() //获取基础高度，如果滚动区域内有不参与滚动计算的内容
         }
-        // removeSection = function(e) {
-        //     $(e).parents(".section").remove();
-        //     $('[data-spy="scroll"]').each(function () {
-        //         var $spy = $(this).scrollspy('refresh')
-        //     });
-        // }
+        removeSection = function(e) {
+            $(e).parents(".section").remove();
+            $('[data-spy="scroll"]').each(function () {
+                var $spy = $(this).scrollspy('refresh')
+            });
+        }
         $("#myScrollspy").scrollspy();
 
-        // ScrollSpy.prototype.getScrollHeight = function () {
-        //     return $("#myScrollspy")[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
-        // }
+        ScrollSpy.prototype.getScrollHeight = function () {
+            return $("#myScrollspy")[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
+        }
 
-        $('#myScrollspy').on('activate.bs.scrollspy', function () {
-            var currentItem = $(".nav li.active > a").text();
-            $("#activeitem").html("目前您正在查看 - " + currentItem);
-
-        })
+        // $('#myScrollspy').on('activate.bs.scrollspy', function () {
+        //     var currentItem = $(".nav li.active > a").text();
+        //     $("#activeitem").html("目前您正在查看 - " + currentItem);
+        //
+        // })
     });
 
 </script>

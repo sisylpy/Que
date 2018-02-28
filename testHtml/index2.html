@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面2</title>
+    <style>
+        #id1{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+
+        #id2{
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+<div id="id1">box1</div>
+<div style="width: 10px;height: 10px;margin-bottom: 1000px;"></div>
+<div id="id2">box2</div>
+</body>
+<script>
+    window.onload = function () {
+        console.log(window.location.href)//此处会打印出当前页面的href值，为http://localhost:63342/HTML_ExamplePractice/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E6%8F%90%E5%89%8D%E7%BB%83%E4%B9%A0/index2.html#id1，井号后面的为传递的参数，需要进行处理一下
+        //首先要获取当前的href值
+        let url = window.location.href.split('#');
+        console.log(url);//打印出来是一个数组[‘http://localhost:63342/HTML_ExamplePractice/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E6%8F%90%E5%89%8D%E7%BB%83%E4%B9%A0/index2.html’,'id1']  数组的第二个就是我们传递的数据
+
+
+        function goHash(hash) {
+            if( hash == 'id1' ){
+                console.log('打印出id1');//次处会打印出id1
+
+            }else if ( hash == 'id2' ){
+                console.log('打印出id2');//此处会打印出id2
+            }
+        }
+        goHash(url[1]);
+    }
+</script>
+</html>

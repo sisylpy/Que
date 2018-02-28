@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+    .son-panel {
+        height: 200px;
+    }
+
+        #thisMainPanel{
+            height:100%;
+            overflow-y: scroll;
+            border:1px solid #f3f3f3;
+            background-color: #2b542c;
+
+
+        }
+        .first {
+            height: 300px;
+            background-color: grey;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="first">
+
+</div>
+
+
+
+
+<div id="thisMainPanel" >
+    <div class="son-panel">我是类容区域-1</div>
+    <div class="son-panel">我是类容区域-2</div>
+    <div class="son-panel">我是类容区域-3</div>
+    <div class="son-panel">我是类容区域-4</div>
+    <div class="son-panel" style="height:360px;">我是类容区域-5</div>
+    <div class="son-panel">我是类容区域-6</div>
+    <div class="son-panel">我是类容区域-7</div>
+    <div class="son-panel">我是类容区域-8</div>
+</div>
+<script src="../jquery-3.2.1.js"></script>
+
+<script>
+
+
+    onload = function () {
+        //初始化
+        scrollToLocation();
+    };
+    function scrollToLocation() {
+        var mainContainer = $('#thisMainPanel');
+
+
+            // scrollToContainer = mainContainer.find('.son-panel:last');//滚动到<div id="thisMainPanel">中类名为son-panel的最后一个div处
+        scrollToContainer = mainContainer.find('.son-panel:eq(5)');//滚动到<div id="thisMainPanel">中类名为son-panel的第六个处
+        //非动画效果
+        mainContainer.scrollTop(
+        //   scrollToContainer.offset().top - mainContainer.offset().top + mainContainer.scrollTop()
+        );
+        //动画效果
+        // mainContainer.animate({
+        //     scrollTop: scrollToContainer.offset().top - mainContainer.offset().top + mainContainer.scrollTop()
+        // }, 200);
+
+
+        mainContainer.animate({
+            scrollTop: 30
+        }, 2000);
+    }
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

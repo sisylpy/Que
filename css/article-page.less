@@ -1,6 +1,9 @@
 @charset "utf-8";
 @import "../myless/main";
 
+
+
+
 header {
   width: 100%;
   //z-index: 999;
@@ -261,15 +264,44 @@ nav {
   width: 100%;
   z-index: 10; //article-page-set
 
+
   .banner-content {
     height: 100%;
-
     background: url("../images/hct/Huichangtong-assets/xuexi.png");
     background-size: 130% 100%;
     position: relative;
     overflow: hidden;
-    //top:-@navMuneHeight/4;
-    z-index: 0;
+
+    //z-index: 0;
+
+    .Splash-title {
+      //border: @bh;
+      padding-left: 5rem;
+      margin-top: 1rem;
+      height: 10%;
+      position: relative;
+
+
+      p {
+
+        a{
+          position: relative;
+          height: 100%;
+          //border: 1px solid wheat;
+          margin-right: 0.3rem;
+          color: rgba(255,255,255,0.8);
+          font-weight: 300;
+
+
+
+        }
+      }
+
+
+
+
+    }
+
 
   }
 
@@ -395,49 +427,69 @@ nav {
   width: 100%;
   position: relative;
 
+
+  .esjy-rule {
+    border-top: 1px dotted #c7c7c7;
+    clear: both;
+    min-height: 1px;
+    width: 100%;
+  }
+
   .articles-content {
     width: 100%;
+    //margin-top: 5rem;
+    position: relative;
 
     .articles-row {
-      margin-top: 5rem;
-
       width: 85%;
       position: relative;
       left: 7.5%;
+      top:3rem;
       margin-left: 0; //bootstrap reset!!
+
       .left-content {
 
         padding-left: 1rem;
         //border:@bh;
         .article-col {
           border: 1px solid #e3e3e3;
-
           //border:@bb;
           padding: 2rem;
 
+
           .article {
-            margin-bottom: 1rem;
+            margin-bottom: 3rem;
+            position: relative;
+            height: 100%;
 
             .article-title {
+              //position: relative;
+              //float: left;
+
 
             }
             .article-sub-title {
+              //position: relative;
 
             }
 
             .article-list {
+              //position: relative;
 
               li {
 
+                position: relative;
                 list-style-type: decimal;
-                list-style-position: inside;
-                line-height: 3rem;
+                list-style-position: outside;
+                line-height: 1.5rem;
+                margin-bottom: 1rem;
 
               }
 
             }
 
             .article-supplement {
+              position: relative;
 
             }
 
@@ -471,9 +523,11 @@ nav {
 
 }
 
-.text {
-
-  height: 1200px;
+.test {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  position: relative;
 
 }
 
