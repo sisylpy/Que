@@ -111,7 +111,7 @@ gulp.task ('watch',function () {
 });
 
 
-gulp.task('default',['htmlcopy','minicopy','imagemin','uglifycopy','serve','watch']);
+gulp.task('default', ['htmlcopy','minicopy','imagemin','uglifycopy','serve','watch']);
 
 
 

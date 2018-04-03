@@ -53,7 +53,6 @@ main .article-col {
 
       }
 
-
     }
 
     .article-col-title {
@@ -115,13 +114,7 @@ main .article-col {
 
     }
 
-
-
-
-
   }
-
-
 
   input {
     background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
@@ -200,8 +193,6 @@ main .article-col {
   }
 }
 
-
-
 //企业统计数字
 .esjy-statistics {
   width: 100%;
@@ -261,264 +252,408 @@ main .article-col {
   }
 }
 
-
-
-
-//文章类别
-
-
-.artcle-category-col {
-  //width: 100%;
-  //position: relative;
-  //float: left;
-  //height: 100%;
-  //border: 3px solid red;
-
+//1，注销公司
+.esjy-col-1 {
+  width: 100%;
+  height: 100%;
   .esjy-rule {
     position: relative;
     border-top: 1px dotted #c7c7c7;
-    clear: both;
-    margin: 7px 0 15px;
     min-height: 1px;
     width: 90%;
-    left:5%;
-
-
-
-  }
-
-
-  .article-category {
-    position: relative;
-    float: left;
-    width: 95%;
-    left:7%;
-
-
-    /* 小屏幕（平板，大于等于 768px） */
-    @media (min-width: @screen-sm-min) {
-      width: 86%;
-      left:7%;
-    }
-
-    /* 中等屏幕（桌面显示器，大于等于 992px） */
-    @media (min-width: @screen-md-min) {
-      width: 86%;
-      left:7%;
-    }
-
-    /* 大屏幕（大桌面显示器，大于等于 1200px） */
-    @media (min-width: @screen-lg-min) {
-      width: 86%;
-      left:7%;
-    }
-
-
+    left: 5%;
   }
 
 }
 
+//每行第一个部分
+.padding {
+  height: 100%;
 
-.esjy-card{
+  .title {
 
-  height: 44rem;
-  //border: 2px solid green;
+    height: 20rem;
+    padding-top: 5rem;
+    /* 小屏幕（平板，大于等于 768px） */
+    @media (min-width: @screen-sm-min) {
+      padding-top: 0;
+    }
+
+    /* 中等屏幕（桌面显示器，大于等于 992px） */
+    @media (min-width: @screen-md-min) {
+      padding-top: 0;
+
+    }
+
+    /* 大屏幕（大桌面显示器，大于等于 1200px） */
+    @media (min-width: @screen-lg-min) {
+      padding-top: 0;
+
+    }
+  }
+}
+
+//每行图片部分
+.card_image {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  .esjy_resize {
+    height: @esjy_resizeHeight-mob;
+    width: 100%;
+    background: url("../images/hct/Huichangtong-assets/wzgs.jpg");
+
+    /* 小屏幕（平板，大于等于 768px） */
+    @media (min-width: @screen-sm-min) {
+      height: @esjy_resizeHeight-p-sm ;
+      width: 100%;
+    }
+    /* 中等屏幕（桌面显示器，大于等于 992px） */
+    @media (min-width: @screen-md-min) {
+      height: @esjy_resizeHeight-p-md ;
+      width: 100%;
+    }
+    /* 大屏幕（大桌面显示器，大于等于 1200px） */
+    @media (min-width: @screen-lg-min) {
+      height: @esjy_resizeHeight-p-lg ;
+      width: 100%;
+    }
+  }
+}
+
+//每行文字部分
+.card_content {
+  margin-top: 1rem;
+  height: @card_contentHeight-mob;
+  text-align: left;
+
+  h3 {
+    height: 3rem;
+    line-height: 3rem;
+  }
+  p {
+
+  }
 
   /* 小屏幕（平板，大于等于 768px） */
   @media (min-width: @screen-sm-min) {
-    height: 22rem;
-    //border: 2px solid gold;
+    height: @card_contentHeight-p-sm ;
+  }
+
+  /* 中等屏幕（桌面显示器，大于等于 992px） */
+  @media (min-width: @screen-md-min) {
+    height: @card_contentHeight-p-md;
+  }
+
+  /* 大屏幕（大桌面显示器，大于等于 1200px） */
+  @media (min-width: @screen-lg-min) {
+    height: @card_contentHeight-p-lg;
+  }
+
+}
+
+//每行底部
+.card_bottom {
+
+  height: @card_bottomHeight-mob;
+  /* 小屏幕（平板，大于等于 768px） */
+  @media (min-width: @screen-sm-min) {
+    height: @card_bottomHeight-p-sm;
+  }
+
+  /* 中等屏幕（桌面显示器，大于等于 992px） */
+  @media (min-width: @screen-md-min) {
+    height: @card_bottomHeight-p-md;
+  }
+
+  /* 大屏幕（大桌面显示器，大于等于 1200px） */
+  @media (min-width: @screen-lg-min) {
+    height: @card_bottomHeight-p-lg;
+  }
+
+  p {
+    //color: #1b6d85;
+  }
+;
+
+}
+
+//每行的h3字体设置
+.padding .title h3 {
+
+  font-size: 1.5em;
+  padding-left: 1rem;
+
+  /* 小屏幕（平板，大于等于 768px） */
+  @media (min-width: @screen-sm-min) {
+    font-size: 1.5em;
+    padding-left: 1rem;
 
   }
 
   /* 中等屏幕（桌面显示器，大于等于 992px） */
   @media (min-width: @screen-md-min) {
-    height: 22rem;
-    //border: 2px solid green;
-
+    font-size: 1.5em;
+    padding-left: 1rem;
 
   }
 
   /* 大屏幕（大桌面显示器，大于等于 1200px） */
   @media (min-width: @screen-lg-min) {
-    height: 18rem;
-
-    //border: 2px solid pink;
+    font-size: 2em;
+    padding-left: 1rem;
 
   }
+}
 
-
-
+//1.公司注销
+.logoutFlow {
+  position: relative;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 2rem;
 
 
 }
 
-.padding {
-  border: 1px solid #e3e3e3;
-  //margin-left: 0.5rem;
-  //margin-right:0.5rem;
-  //margin-bottom: 2.5rem;
-  //height: 100%;
-  //position: relative;
-  //float: left;
-  //border:1px solid deeppink;
+//2，外资注册
+#foreign {
+  background-color: #ececec;
+  padding-top: 2rem;
 
 
-  .card-img {
-    height: 16rem ;
+}
 
-    //border: 1px solid deeppink;
-    margin-left: 0.5rem;
-    margin-right:0.5rem;
+//3.资质审批
+.qualifications {
+  padding-top: 2rem;
 
+  #qua_title {
+    background-color: #0064ff;
+    color: #fff;
+
+    height: @esjy-s-resizeHeight-mob ;
 
 
     /* 小屏幕（平板，大于等于 768px） */
     @media (min-width: @screen-sm-min) {
-      height: 7rem ;
-
+      height: @esjy-s-resizeHeight-p-sm + @card-s_contentHeight-p-sm + @esjy-s-resizeHeight-p-sm;
 
     }
 
     /* 中等屏幕（桌面显示器，大于等于 992px） */
     @media (min-width: @screen-md-min) {
-      height: 8rem ;
-      //border: 1px solid pink;
+      height: @esjy-s-resizeHeight-p-md + @card-s_contentHeight-p-md + @card-s_bottomHeight-p-md;
     }
 
     /* 大屏幕（大桌面显示器，大于等于 1200px） */
     @media (min-width: @screen-lg-min) {
-      height: 7rem ;
-      //border: 1px solid pink;
+      height: @esjy-s-resizeHeight-p-lg + @card-s_contentHeight-p-lg + @card-s_bottomHeight-p-lg;
+
     }
 
-    h2 {
-      text-align: center;
-      height: 3rem;
-      line-height: 3rem;
-      //border: 1px solid red;
+     h3{
+
+     }
+    p{
+
     }
-    span {
-      display: block;
-      height: 2rem;
-      width: 100%;
-      text-align: center;
-      //border:10px solid rebeccapurple;
-
-      i {
-        display: block;
-        height: 2rem;
-        width: 100%;
-        //border:1px  solid blue;
-
-      }
-    }
-
 
   }
 
- .card-content {
-   margin-top: 1rem;
-   height: 17rem;
-   //position: relative;
-   //float: left;
-   //border: 2px solid peru;
+  .qualifications_card{
 
+    height: 100%;
+    .card-s_image{
+      height: 100%;
 
-   /* 小屏幕（平板，大于等于 768px） */
-   @media (min-width: @screen-sm-min) {
-     height: 7rem ;
+      .esjy-s_resize{
 
-   }
-
-   /* 中等屏幕（桌面显示器，大于等于 992px） */
-   @media (min-width: @screen-md-min) {
-     height: 12rem ;
-     //border: 1px solid gold;
-
-   }
-
-   /* 大屏幕（大桌面显示器，大于等于 1200px） */
-   @media (min-width: @screen-lg-min) {
-     height: 7rem ;
-
-   }
-
-
-
-    ul {
-      position: relative;
-      float: left;
-      //height: 100%;
-      width: 100%;
-      //border: 1px solid pink;
-      .article-name {
-
-        display: block;
         width: 100%;
-        //height: 5rem;
-        line-height: 5rem;
-        font-size: 1.1em;
-        color: #3b6caa;
+        background: url("../images/hct/Huichangtong-assets/wzgs.jpg");
+        height: @esjy-s-resizeHeight-mob;
 
         /* 小屏幕（平板，大于等于 768px） */
         @media (min-width: @screen-sm-min) {
-          //height: 2rem;
-          line-height: 2rem;
+          height: @esjy-s-resizeHeight-p-sm;
+
         }
 
         /* 中等屏幕（桌面显示器，大于等于 992px） */
         @media (min-width: @screen-md-min) {
-          //height: 3rem;
-          line-height: 3rem;
+          height: @esjy-s-resizeHeight-p-md;
         }
 
         /* 大屏幕（大桌面显示器，大于等于 1200px） */
         @media (min-width: @screen-lg-min) {
-          //height: 2rem;
-          line-height: 2rem;
-        }
-
-
-        i {
-          margin-left: 1rem;
+          height: @esjy-s-resizeHeight-p-lg;
 
         }
-        a {
-          //display: block;
-          //padding: 0.5rem 0;
-          line-height: 5rem;
-          font-size: 1em;
-          color: #3b6caa;
-          //border:@bb;
 
 
-          /* 小屏幕（平板，大于等于 768px） */
-          @media (min-width: @screen-sm-min) {
-            line-height: 2rem;
-          }
+      }
 
-          /* 中等屏幕（桌面显示器，大于等于 992px） */
-          @media (min-width: @screen-md-min) {
-            line-height: 2rem;
-            font-size: 1.1em;
 
-          }
 
-          /* 大屏幕（大桌面显示器，大于等于 1200px） */
-          @media (min-width: @screen-lg-min) {
-            line-height: 2rem;
-          }
-        }
+    }
+    .card-s_content {
+
+      height: @card-s_contentHeight-mob;
+
+
+      /* 小屏幕（平板，大于等于 768px） */
+      @media (min-width: @screen-sm-min) {
+        height: @card-s_contentHeight-p-sm;
+
+
+      }
+
+      /* 中等屏幕（桌面显示器，大于等于 992px） */
+      @media (min-width: @screen-md-min) {
+        height: @card-s_contentHeight-p-md;
+
+      }
+
+      /* 大屏幕（大桌面显示器，大于等于 1200px） */
+      @media (min-width: @screen-lg-min) {
+        height: @card-s_contentHeight-p-lg;
+
       }
     }
+
+    .card-s_bottom{
+
+      height: @card-s_bottomHeight-mob;
+      /* 小屏幕（平板，大于等于 768px） */
+      @media (min-width: @screen-sm-min) {
+        height: @card-s_bottomHeight-p-sm;
+
+
+      }
+
+      /* 中等屏幕（桌面显示器，大于等于 992px） */
+      @media (min-width: @screen-md-min) {
+        height: @card-s_bottomHeight-p-md;
+
+      }
+
+      /* 大屏幕（大桌面显示器，大于等于 1200px） */
+      @media (min-width: @screen-lg-min) {
+        height: @card-s_bottomHeight-p-lg;
+
+      }
+
+
+
+
+
+    }
+
+
   }
+
 
 }
 
 
 
+//4，文字链接
+.article-content {
+  height: 100%;
+  padding-top: 2rem;
 
+
+  @media (min-width: @screen-sm-min) {
+    //height: @article-colHeight-p-sm;
+
+  }
+
+  /* 中等屏幕（桌面显示器，大于等于 992px） */
+  @media (min-width: @screen-md-min) {
+    //height: @article-colHeight-p-md;
+
+  }
+
+  /* 大屏幕（大桌面显示器，大于等于 1200px） */
+  @media (min-width: @screen-lg-min) {
+    //height: @article-colHeight-p-lg;
+
+  }
+  .article_main {
+
+  }
+
+  .article {
+    //border: 1px solid red;
+
+    a {
+
+      h4 {
+
+        height: 10rem;
+        line-height: 10rem;
+        text-align: left;
+        font-weight: 500;
+        //font-size: 1.2em;
+        //background-color: #1b6d85;
+        /* 小屏幕（平板，大于等于 768px） */
+        @media (min-width: @screen-sm-min) {
+          height: 5rem;
+          line-height: 3rem;
+
+        }
+
+        /* 中等屏幕（桌面显示器，大于等于 992px） */
+        @media (min-width: @screen-md-min) {
+          height: 4rem;
+          line-height: 3rem;
+
+        }
+
+        /* 大屏幕（大桌面显示器，大于等于 1200px） */
+        @media (min-width: @screen-lg-min) {
+          height: 3rem;
+          line-height: 3rem;
+
+        }
+      }
+      p {
+
+        height: 16rem;
+        line-height: 10rem;
+        text-align: left;
+        color: #0064ff;
+        font-size: 1.3em;
+
+        /* 小屏幕（平板，大于等于 768px） */
+        @media (min-width: @screen-sm-min) {
+          height: 10rem;
+          font-size: 1em;
+          line-height: 2rem;
+
+        }
+
+        /* 中等屏幕（桌面显示器，大于等于 992px） */
+        @media (min-width: @screen-md-min) {
+          height: 8rem;
+          font-size: 1em;
+          line-height: 2rem;
+
+        }
+
+        /* 大屏幕（大桌面显示器，大于等于 1200px） */
+        @media (min-width: @screen-lg-min) {
+          height: 6rem;
+          font-size: 1em;
+          line-height: 2rem;
+
+        }
+
+      }
+    }
+  }
+
+}
 
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: @screen-sm-min) {
